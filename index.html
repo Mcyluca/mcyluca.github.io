@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Site</title>
+  <style>
+    :root {
+      --bg: #07131d;
+      --bg2: #0d2231;
+      --panel: rgba(255,255,255,0.08);
+      --line: rgba(255,255,255,0.14);
+      --text: #eaf6ff;
+      --sub: #b7cede;
+      --accent: #8fd3ff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Hiragino Sans", "Yu Gothic", sans-serif;
+      color: var(--text);
+      background: linear-gradient(180deg, var(--bg) 0%, var(--bg2) 100%);
+      line-height: 1.7;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      backdrop-filter: blur(10px);
+      background: rgba(7, 19, 29, 0.75);
+      border-bottom: 1px solid var(--line);
+      z-index: 10;
+    }
+
+    .nav {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 14px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .brand {
+      font-size: 20px;
+      letter-spacing: 0.12em;
+      font-weight: 700;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      font-size: 14px;
+    }
+
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 40px 20px 80px;
+    }
+
+    .hero {
+      padding: 64px 24px;
+      border: 1px solid var(--line);
+      background: var(--panel);
+      border-radius: 24px;
+      text-align: center;
+      margin-bottom: 28px;
+    }
+
+    .hero h1 {
+      margin: 0 0 12px;
+      font-size: 40px;
+      letter-spacing: 0.12em;
+    }
+
+    .hero p {
+      max-width: 640px;
+      margin: 0 auto 20px;
+      color: var(--sub);
+    }
+
+    .button-row {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 10px 16px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.06);
+    }
+
+    section {
+      margin-top: 24px;
+      padding: 28px 24px;
+      border-radius: 24px;
+      border: 1px solid var(--line);
+      background: var(--panel);
+    }
+
+    h2 {
+      margin-top: 0;
+      margin-bottom: 12px;
+      font-size: 24px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin-top: 16px;
+    }
+
+    .card {
+      padding: 18px;
+      border-radius: 18px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.04);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      margin-bottom: 8px;
+      font-size: 18px;
+    }
+
+    .muted {
+      color: var(--sub);
+    }
+
+    ul {
+      padding-left: 1.2em;
+    }
+
+    footer {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 20px 40px;
+      color: var(--sub);
+      font-size: 14px;
+    }
+
+    @media (max-width: 640px) {
+      .hero h1 {
+        font-size: 32px;
+      }
+
+      .nav {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="nav">
+      <div class="brand">MY SITE</div>
+      <nav class="nav-links">
+        <a href="#about">このサイトについて</a>
+        <a href="#eden">EDEN</a>
+        <a href="#news">お知らせ</a>
+        <a href="#links">リンク</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Welcome</h1>
+      <p>
+        ここは個人サイトのトップページです。
+        作品紹介や攻略、お知らせなどを少しずつまとめていきます。
+      </p>
+      <div class="button-row">
+        <a class="button" href="#eden">EDENを見る</a>
+        <a class="button" href="#news">お知らせを見る</a>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>このサイトについて</h2>
+      <p class="muted">
+        まずはシンプルな形で公開して、あとから少しずつページを増やしていく予定です。
+      </p>
+    </section>
+
+    <section id="eden">
+      <h2>EDEN</h2>
+      <p class="muted">
+        ゲーム紹介、攻略ページ、今後の公開予定などをここからまとめていきます。
+      </p>
+      <div class="cards">
+        <div class="card">
+          <h3>ゲーム紹介</h3>
+          <p>EDENのあらすじや世界観を載せる予定です。</p>
+        </div>
+        <div class="card">
+          <h3>攻略</h3>
+          <p>ルート別の攻略や補足情報を整理していきます。</p>
+        </div>
+        <div class="card">
+          <h3>公開予定</h3>
+          <p>更新予定や進捗を掲載していく予定です。</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="news">
+      <h2>お知らせ</h2>
+      <ul>
+        <li>サイト準備中</li>
+        <li>EDENページは今後追加予定</li>
+      </ul>
+    </section>
+
+    <section id="links">
+      <h2>リンク</h2>
+      <ul>
+        <li><a href="#">配布ページ（準備中）</a></li>
+        <li><a href="#">感想フォーム（準備中）</a></li>
+        <li><a href="#">SNS / NOTE（準備中）</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    © My Site
+  </footer>
+</body>
+</html>
