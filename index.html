@@ -6,246 +6,236 @@
   <title>置き所</title>
   <style>
     :root {
-      --bg: #07131d;
-      --bg2: #0d2231;
-      --panel: rgba(255,255,255,0.08);
-      --line: rgba(255,255,255,0.14);
-      --text: #eaf6ff;
-      --sub: #b7cede;
-      --accent: #8fd3ff;
+      --bg: #efefef;
+      --text: #2f2b28;
+      --sub: #5a5450;
+      --accent: #eeb083;
+      --accent-hover: #e3a06f;
+      --line: #d8d3ce;
     }
 
     * {
       box-sizing: border-box;
     }
 
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       margin: 0;
-      font-family: "Hiragino Sans", "Yu Gothic", sans-serif;
+      background: var(--bg);
       color: var(--text);
-      background: linear-gradient(180deg, var(--bg) 0%, var(--bg2) 100%);
-      line-height: 1.7;
+      font-family: "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
+      line-height: 1.8;
     }
 
     a {
-      color: var(--accent);
+      color: inherit;
       text-decoration: none;
     }
 
-    a:hover {
-      text-decoration: underline;
-    }
-
-    header {
-      position: sticky;
-      top: 0;
-      backdrop-filter: blur(10px);
-      background: rgba(7, 19, 29, 0.75);
-      border-bottom: 1px solid var(--line);
-      z-index: 10;
-    }
-
-    .nav {
-      max-width: 960px;
+    .container {
+      max-width: 980px;
       margin: 0 auto;
-      padding: 14px 20px;
+      padding: 20px 28px 100px;
+    }
+
+    .site-title {
+      font-size: 48px;
+      font-weight: 400;
+      letter-spacing: 0.04em;
+      margin: 0 0 22px;
+      line-height: 1.2;
+    }
+
+    .hero-link {
+      display: block;
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .hero-image {
+      width: 100%;
+      aspect-ratio: 16 / 4;
+      background: var(--accent);
       display: flex;
-      justify-content: space-between;
       align-items: center;
-      gap: 16px;
-    }
-
-    .brand {
-      font-size: 20px;
+      justify-content: center;
+      color: var(--text);
+      font-size: 28px;
       letter-spacing: 0.12em;
-      font-weight: 700;
+      transition: background 0.2s ease, transform 0.2s ease;
     }
 
-    .nav-links {
-      display: flex;
-      gap: 16px;
-      flex-wrap: wrap;
-      font-size: 14px;
+    .hero-link:hover .hero-image {
+      background: var(--accent-hover);
+      transform: translateY(-2px);
     }
 
-    main {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 40px 20px 80px;
-    }
-
-    .hero {
-      padding: 64px 24px;
-      border: 1px solid var(--line);
-      background: var(--panel);
-      border-radius: 24px;
-      text-align: center;
-      margin-bottom: 28px;
-    }
-
-    .hero h1 {
-      margin: 0 0 12px;
-      font-size: 40px;
-      letter-spacing: 0.12em;
-    }
-
-    .hero p {
-      max-width: 640px;
-      margin: 0 auto 20px;
-      color: var(--sub);
-    }
-
-    .button-row {
+    .menu {
       display: flex;
       justify-content: center;
-      gap: 12px;
+      align-items: center;
       flex-wrap: wrap;
+      gap: 18px;
+      margin: 36px 0 110px;
+      font-size: 28px;
+      line-height: 1.6;
     }
 
-    .button {
+    .menu a {
       display: inline-block;
-      padding: 10px 16px;
-      border-radius: 999px;
-      border: 1px solid var(--line);
-      background: rgba(255,255,255,0.06);
+      padding: 0 2px;
     }
 
-    section {
-      margin-top: 24px;
-      padding: 28px 24px;
-      border-radius: 24px;
-      border: 1px solid var(--line);
-      background: var(--panel);
-    }
-
-    h2 {
-      margin-top: 0;
-      margin-bottom: 12px;
-      font-size: 24px;
-    }
-
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 16px;
-      margin-top: 16px;
-    }
-
-    .card {
-      padding: 18px;
-      border-radius: 18px;
-      border: 1px solid var(--line);
-      background: rgba(255,255,255,0.04);
-    }
-
-    .card h3 {
-      margin-top: 0;
-      margin-bottom: 8px;
-      font-size: 18px;
-    }
-
-    .muted {
+    .separator {
       color: var(--sub);
     }
 
-    ul {
-      padding-left: 1.2em;
+    .updates {
+      max-width: 520px;
+      margin: 0 auto;
+      text-align: center;
     }
 
-    footer {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 0 20px 40px;
+    .updates h2 {
+      font-size: 32px;
+      font-weight: 400;
+      margin: 0 0 10px;
+      letter-spacing: 0.08em;
+    }
+
+    .update-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      font-size: 22px;
+    }
+
+    .update-list li {
+      margin-top: 8px;
+    }
+
+    .update-date {
+      color: var(--sub);
+      margin-right: 0.5em;
+      font-size: 0.9em;
+    }
+
+    .footer {
+      margin-top: 100px;
+      text-align: center;
       color: var(--sub);
       font-size: 14px;
     }
 
-    @media (max-width: 640px) {
-      .hero h1 {
-        font-size: 32px;
+    @media (max-width: 700px) {
+      .container {
+        padding: 18px 18px 72px;
       }
 
-      .nav {
-        align-items: flex-start;
-        flex-direction: column;
+      .site-title {
+        font-size: 40px;
+        margin-bottom: 18px;
+      }
+
+      .hero-image {
+        font-size: 22px;
+        aspect-ratio: 16 / 5;
+      }
+
+      .menu {
+        margin: 28px 0 80px;
+        gap: 12px;
+        font-size: 20px;
+      }
+
+      .updates h2 {
+        font-size: 28px;
+      }
+
+      .update-list {
+        font-size: 18px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .site-title {
+        font-size: 34px;
+      }
+
+      .hero-image {
+        font-size: 18px;
+        letter-spacing: 0.08em;
+      }
+
+      .menu {
+        font-size: 18px;
+        gap: 10px;
+      }
+
+      .updates h2 {
+        font-size: 24px;
       }
     }
   </style>
 </head>
 <body>
-  <header>
-    <div class="nav">
-      <div class="brand">置き所</div>
-      <nav class="nav-links">
-        <a href="#about">このサイトについて</a>
-        <a href="#eden">EDEN</a>
-        <a href="#news">お知らせ</a>
-        <a href="#links">リンク</a>
-      </nav>
-    </div>
-  </header>
+  <div class="container">
+    <h1 class="site-title">置き所</h1>
 
-  <main>
-    <section class="hero">
-      <h1>Welcome</h1>
-      <p>
-        ここは個人サイトのトップページです。
-        作品紹介や攻略、お知らせなどを少しずつまとめていきます。
-      </p>
-      <div class="button-row">
-        <a class="button" href="#eden">EDENを見る</a>
-        <a class="button" href="#news">お知らせを見る</a>
-      </div>
-    </section>
+    <a class="hero-link" href="#eden" aria-label="EDENページへ">
+      <div class="hero-image">ＥＤＥＮへのリンク画像</div>
+    </a>
 
-    <section id="about">
-      <h2>このサイトについて</h2>
-      <p class="muted">
-        まずはシンプルな形で公開して、あとから少しずつページを増やしていく予定です。
-      </p>
-    </section>
+    <nav class="menu" aria-label="メニュー">
+      <a href="#news">お知らせ</a>
+      <span class="separator">/</span>
+      <a href="#published">公開中</a>
+      <span class="separator">/</span>
+      <a href="#guide">攻略</a>
+      <span class="separator">/</span>
+      <a href="#contact">問い合わせ</a>
+    </nav>
 
-    <section id="eden">
-      <h2>EDEN</h2>
-      <p class="muted">
-        ゲーム紹介、攻略ページ、今後の公開予定などをここからまとめていきます。
-      </p>
-      <div class="cards">
-        <div class="card">
-          <h3>ゲーム紹介</h3>
-          <p>EDENのあらすじや世界観を載せる予定です。</p>
-        </div>
-        <div class="card">
-          <h3>攻略</h3>
-          <p>ルート別の攻略や補足情報を整理していきます。</p>
-        </div>
-        <div class="card">
-          <h3>公開予定</h3>
-          <p>更新予定や進捗を掲載していく予定です。</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="news">
-      <h2>お知らせ</h2>
-      <ul>
-        <li>サイト準備中</li>
-        <li>EDENページは今後追加予定</li>
+    <section class="updates" id="news">
+      <h2>更新情報</h2>
+      <ul class="update-list">
+        <li>・ここに直に表示</li>
       </ul>
     </section>
 
-    <section id="links">
-      <h2>リンク</h2>
-      <ul>
-        <li><a href="#">配布ページ（準備中）</a></li>
-        <li><a href="#">感想フォーム（準備中）</a></li>
-        <li><a href="#">SNS / NOTE（準備中）</a></li>
-      </ul>
+    <section id="published" style="margin-top: 120px;">
+      <h2 style="text-align:center; font-size:32px; font-weight:400; letter-spacing:0.08em; margin-bottom:20px;">公開中</h2>
+      <div style="max-width:700px; margin:0 auto; text-align:center; color:var(--sub); font-size:20px;">
+        現在公開中のコンテンツをここに載せていく予定です。
+      </div>
     </section>
-  </main>
 
-  <footer>
-    © 置き所
-  </footer>
+    <section id="eden" style="margin-top: 120px;">
+      <h2 style="text-align:center; font-size:32px; font-weight:400; letter-spacing:0.08em; margin-bottom:20px;">EDEN</h2>
+      <div style="max-width:700px; margin:0 auto; text-align:center; color:var(--sub); font-size:20px;">
+        ゲーム紹介や公開予定などを、ここから追加していく予定です。
+      </div>
+    </section>
+
+    <section id="guide" style="margin-top: 120px;">
+      <h2 style="text-align:center; font-size:32px; font-weight:400; letter-spacing:0.08em; margin-bottom:20px;">攻略</h2>
+      <div style="max-width:700px; margin:0 auto; text-align:center; color:var(--sub); font-size:20px;">
+        攻略ページへの入口をここにまとめていく予定です。
+      </div>
+    </section>
+
+    <section id="contact" style="margin-top: 120px;">
+      <h2 style="text-align:center; font-size:32px; font-weight:400; letter-spacing:0.08em; margin-bottom:20px;">問い合わせ</h2>
+      <div style="max-width:700px; margin:0 auto; text-align:center; color:var(--sub); font-size:20px;">
+        問い合わせ先や連絡方法をここに載せる予定です。
+      </div>
+    </section>
+
+    <div class="footer">© 置き所</div>
+  </div>
 </body>
 </html>
