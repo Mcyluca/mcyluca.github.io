@@ -1,1 +1,185 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>公開中 - 置き所</title>
+  <style>
+    @font-face {
+      font-family: "KokuGothicLight";
+      src: url("font_1_kokugl_1.15_rls.ttf") format("truetype");
+      font-weight: normal;
+      font-style: normal;
+    }
 
+    :root {
+      --bg: #efefef;
+      --text: #2f2b28;
+      --sub: #5a5450;
+      --line: #bfb8b2;
+      --link: #3f3a36;
+      --link-hover: #7a726b;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "Yu Gothic", "YuGothic", sans-serif;
+      line-height: 1.9;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 40px 28px 100px;
+    }
+
+    .works {
+      max-width: 840px;
+      margin: 0 auto;
+    }
+
+    .work-item + .work-item {
+      margin-top: 72px;
+    }
+
+    .work-title {
+      margin: 0;
+      font-size: 38px;
+      font-weight: 400;
+      color: var(--text);
+    }
+
+    .work-sub {
+      margin-top: 10px;
+      font-size: 22px;
+      color: var(--sub);
+    }
+
+    .work-desc {
+      margin-top: 18px;
+      font-size: 22px;
+      color: var(--text);
+    }
+
+    .work-links {
+      margin-top: 28px;
+      font-size: 22px;
+      color: var(--link);
+    }
+
+    .work-links a {
+      color: var(--link);
+      transition: color 0.2s ease;
+    }
+
+    .work-links a:hover {
+      color: var(--link-hover);
+    }
+
+    .separator {
+      margin: 0 22px;
+      color: var(--sub);
+    }
+
+    .bottom-nav {
+      margin-top: 110px;
+      padding-top: 28px;
+      border-top: 1px solid var(--line);
+      text-align: center;
+      font-size: 22px;
+      line-height: 1.8;
+      font-family: "KokuGothicLight", "Hiragino Sans", "Yu Gothic", sans-serif;
+    }
+
+    .bottom-nav a {
+      color: var(--text);
+      transition: color 0.2s ease;
+    }
+
+    .bottom-nav a:hover {
+      color: var(--link-hover);
+    }
+
+    .bottom-nav .separator {
+      margin: 0 10px;
+    }
+
+    @media (max-width: 700px) {
+      .container {
+        padding: 28px 18px 72px;
+      }
+
+      .work-item + .work-item {
+        margin-top: 56px;
+      }
+
+      .work-title {
+        font-size: 30px;
+      }
+
+      .work-sub,
+      .work-desc,
+      .work-links,
+      .bottom-nav {
+        font-size: 18px;
+      }
+
+      .separator {
+        margin: 0 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <main class="works">
+
+      <section class="work-item">
+        <h1 class="work-title">EDEN（旧版）</h1>
+        <div class="work-sub">近日中にリメイクverを公開予定です。</div>
+
+        <div class="work-links">
+          <a href="#">ふりーむ</a>
+          <span class="separator">/</span>
+          <a href="#">夢現</a>
+        </div>
+      </section>
+
+      <section class="work-item">
+        <h2 class="work-title">EDEN　ルートA</h2>
+        <div class="work-desc">ゲームの説明をここに入れる予定です。</div>
+
+        <div class="work-links">
+          <a href="#">ふりーむ</a>
+          <span class="separator">/</span>
+          <a href="#">夢現</a>
+        </div>
+      </section>
+
+    </main>
+
+    <nav class="bottom-nav" aria-label="ページ移動">
+      <a href="index.html">Top</a>
+      <span class="separator">/</span>
+      <a href="news.html">お知らせ</a>
+      <span class="separator">/</span>
+      <a href="published.html">公開中</a>
+      <span class="separator">/</span>
+      <a href="guide.html">攻略</a>
+      <span class="separator">/</span>
+      <a href="contact.html">問い合わせ</a>
+    </nav>
+  </div>
+</body>
+</html>
