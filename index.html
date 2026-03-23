@@ -48,23 +48,25 @@
       margin: 0 auto;
     }
 
-    .hero-image {
-      width: 100%;
-      aspect-ratio: 16 / 4;
-      background: var(--accent);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--text);
-      font-size: 28px;
-      letter-spacing: 0.12em;
-      transition: background 0.2s ease, transform 0.2s ease;
-    }
+   .hero-image {
+  width: 100%;
+  aspect-ratio: 16 / 4;
+  overflow: hidden;
+  background: var(--accent);
+  transition: transform 0.2s ease;
+}
 
-    .hero-link:hover .hero-image {
-      background: var(--accent-hover);
-      transform: translateY(-2px);
-    }
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 35%;
+  display: block;
+}
+
+.hero-link:hover .hero-image {
+  transform: translateY(-2px);
+}
 
     .menu {
       display: flex;
