@@ -1,1 +1,258 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ＯＰ〜プロローグ終了まで - 置き所</title>
+  <style>
+    @font-face {
+      font-family: "KokuGothicLight";
+      src: url("font_1_kokugl_1.15_rls.ttf") format("truetype");
+      font-weight: normal;
+      font-style: normal;
+    }
 
+    :root {
+      --bg: #efefef;
+      --text: #2f2b28;
+      --sub: #5a5450;
+      --line: #bfb8b2;
+      --link: #3f3a36;
+      --link-hover: #7a726b;
+      --panel: #f4f4f4;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "Yu Gothic", "YuGothic", sans-serif;
+      line-height: 1.9;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 36px 28px 100px;
+    }
+
+    .guide-wrap {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .page-title {
+      margin: 0 0 22px;
+      font-size: 38px;
+      font-weight: 400;
+      color: var(--text);
+    }
+
+    .section-nav {
+      margin: 0 0 56px;
+      font-size: 30px;
+      line-height: 1.5;
+      color: var(--text);
+      font-family: "KokuGothicLight", "Hiragino Sans", "Yu Gothic", sans-serif;
+    }
+
+    .section-nav a {
+      display: inline-block;
+      margin-right: 0.2em;
+      color: var(--text);
+      transition: color 0.2s ease;
+    }
+
+    .section-nav a:hover {
+      color: var(--link-hover);
+    }
+
+    .guide-section + .guide-section {
+      margin-top: 120px;
+    }
+
+    .guide-heading {
+      margin: 0 0 24px;
+      text-align: center;
+      font-size: 34px;
+      font-weight: 400;
+      color: var(--text);
+    }
+
+    .guide-body {
+      max-width: 760px;
+      margin: 0 auto;
+      font-size: 22px;
+      color: var(--text);
+    }
+
+    .guide-body p {
+      margin: 0 0 18px;
+    }
+
+    .guide-image {
+      width: 100%;
+      margin: 28px 0;
+      padding: 48px 20px;
+      border: 1px solid var(--line);
+      background: var(--panel);
+      text-align: center;
+      color: var(--sub);
+      font-size: 20px;
+    }
+
+    .back-guide {
+      margin-top: 90px;
+      text-align: center;
+      font-size: 18px;
+      color: var(--sub);
+    }
+
+    .back-guide a {
+      color: var(--sub);
+      transition: color 0.2s ease;
+    }
+
+    .back-guide a:hover {
+      color: var(--link-hover);
+    }
+
+    .bottom-nav {
+      margin-top: 80px;
+      padding-top: 28px;
+      border-top: 1px solid var(--line);
+      text-align: center;
+      font-size: 22px;
+      line-height: 1.8;
+      font-family: "KokuGothicLight", "Hiragino Sans", "Yu Gothic", sans-serif;
+    }
+
+    .bottom-nav a {
+      color: var(--text);
+      transition: color 0.2s ease;
+    }
+
+    .bottom-nav a:hover {
+      color: var(--link-hover);
+    }
+
+    .separator {
+      margin: 0 10px;
+      color: var(--sub);
+    }
+
+    @media (max-width: 700px) {
+      .container {
+        padding: 28px 18px 72px;
+      }
+
+      .page-title {
+        font-size: 30px;
+      }
+
+      .section-nav {
+        font-size: 24px;
+        margin-bottom: 44px;
+      }
+
+      .guide-heading {
+        font-size: 28px;
+      }
+
+      .guide-body {
+        font-size: 18px;
+      }
+
+      .guide-image {
+        font-size: 16px;
+        padding: 36px 16px;
+      }
+
+      .bottom-nav {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <main class="guide-wrap">
+      <h1 class="page-title">ＯＰ〜プロローグ終了まで</h1>
+
+      <nav class="section-nav" aria-label="ページ内移動">
+        <a href="#part1">①</a>
+        <a href="#part2">②</a>
+        <a href="#part3">③</a>
+        <a href="#part4">④</a>
+        <span>…</span>
+      </nav>
+
+      <section class="guide-section" id="part1">
+        <h2 class="guide-heading">～攻略①～</h2>
+        <div class="guide-body">
+          <p>ここに攻略本文を入れます。</p>
+          <p>スクリーンショットや選択肢の説明などを追加していく予定です。</p>
+
+          <div class="guide-image">ここに画像を入れる予定</div>
+        </div>
+      </section>
+
+      <section class="guide-section" id="part2">
+        <h2 class="guide-heading">～攻略②～</h2>
+        <div class="guide-body">
+          <p>ここに攻略本文を入れます。</p>
+
+          <div class="guide-image">ここに画像を入れる予定</div>
+        </div>
+      </section>
+
+      <section class="guide-section" id="part3">
+        <h2 class="guide-heading">～攻略③～</h2>
+        <div class="guide-body">
+          <p>ここに攻略本文を入れます。</p>
+
+          <div class="guide-image">ここに画像を入れる予定</div>
+        </div>
+      </section>
+
+      <section class="guide-section" id="part4">
+        <h2 class="guide-heading">～攻略④～</h2>
+        <div class="guide-body">
+          <p>ここに攻略本文を入れます。</p>
+
+          <div class="guide-image">ここに画像を入れる予定</div>
+        </div>
+      </section>
+
+      <div class="back-guide">
+        <a href="guide.html">← 攻略一覧にもどる</a>
+      </div>
+    </main>
+
+    <nav class="bottom-nav" aria-label="ページ移動">
+      <a href="index.html">Top</a>
+      <span class="separator">/</span>
+      <a href="eden.html">EDEN</a>
+      <span class="separator">/</span>
+      <a href="published.html">Game</a>
+      <span class="separator">/</span>
+      <a href="guide.html">攻略</a>
+      <span class="separator">/</span>
+      <a href="contact.html">問い合わせ</a>
+    </nav>
+  </div>
+</body>
+</html>
