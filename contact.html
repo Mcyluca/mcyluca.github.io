@@ -18,6 +18,7 @@
       --sub: #5a5450;
       --line: #bfb8b2;
       --panel: #f4f4f4;
+      --link-hover: #7a726b;
     }
 
     * {
@@ -124,6 +125,29 @@
       text-align: left;
     }
 
+.bottom-nav {
+  margin-top: 110px;
+  padding-top: 28px;
+  border-top: 1px solid var(--line);
+  text-align: center;
+  font-size: 22px;
+  line-height: 1.8;
+  font-family: "KokuGothicLight", "Hiragino Sans", "Yu Gothic", sans-serif;
+}
+
+.bottom-nav a {
+  color: var(--text);
+  transition: color 0.2s ease;
+}
+
+.bottom-nav a:hover {
+  color: var(--link-hover);
+}
+
+.bottom-nav .separator {
+  margin: 0 10px;
+}
+    
     @media (max-width: 700px) {
       .container {
         padding: 20px 18px 72px;
@@ -177,6 +201,19 @@
 
       <button type="submit">送信</button>
     </form>
+    <nav class="bottom-nav" aria-label="ページ移動">
+  <a href="index.html">Top</a>
+  <span class="separator">/</span>
+  <a href="eden.html">EDEN</a>
+  <span class="separator">/</span>
+  <a href="news.html">お知らせ</a>
+  <span class="separator">/</span>
+  <a href="published.html">Game</a>
+  <span class="separator">/</span>
+  <a href="guide.html">攻略</a>
+  <span class="separator">/</span>
+  <a href="contact.html">問い合わせ</a>
+</nav>
   </div>
 </body>
 </html>
