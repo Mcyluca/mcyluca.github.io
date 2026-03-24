@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>EDEN</title>
-  <meta http-equiv="refresh" content="3.5; url=eden-top.html">
+  <meta http-equiv="refresh" content="4.8; url=eden-top.html">
   <style>
     * {
       margin: 0;
@@ -25,33 +25,80 @@
 
     .message {
       text-align: center;
-      font-size: clamp(1.8rem, 4vw, 3rem);
-      letter-spacing: 0.15em;
-      opacity: 0;
-      animation: fadeMessage 3s ease forwards;
+      line-height: 1.8;
+      letter-spacing: 0.12em;
+      animation: wholeFade 4.8s ease forwards;
     }
 
-    @keyframes fadeMessage {
-      0% {
+    .line1 {
+      font-size: clamp(1.8rem, 4vw, 3rem);
+      margin-bottom: 0.2em;
+      min-height: 1.8em;
+    }
+
+    .line2 {
+      font-size: clamp(2rem, 4.4vw, 3.4rem);
+      min-height: 1.8em;
+      opacity: 0;
+      animation: line2Show 0.6s ease forwards;
+      animation-delay: 2.4s;
+    }
+
+    .char {
+      opacity: 0;
+      display: inline-block;
+      animation: charFade 0.4s ease forwards;
+    }
+
+    .char:nth-child(1) { animation-delay: 0.2s; }
+    .char:nth-child(2) { animation-delay: 0.6s; }
+    .char:nth-child(3) { animation-delay: 1.0s; }
+    .char:nth-child(4) { animation-delay: 1.4s; }
+
+    @keyframes charFade {
+      from {
+        opacity: 0;
+        transform: translateY(6px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes line2Show {
+      from {
         opacity: 0;
         transform: translateY(8px);
       }
-      20% {
+      to {
         opacity: 1;
         transform: translateY(0);
       }
-      70% {
+    }
+
+    @keyframes wholeFade {
+      0% {
         opacity: 1;
-        transform: translateY(0);
+      }
+      80% {
+        opacity: 1;
       }
       100% {
         opacity: 0;
-        transform: translateY(-8px);
       }
     }
   </style>
 </head>
 <body>
-  <div class="message">Welcome to EDEN</div>
+  <div class="message">
+    <div class="line1">
+      <span class="char">よ</span>
+      <span class="char">う</span>
+      <span class="char">こ</span>
+      <span class="char">そ</span>
+    </div>
+    <div class="line2">EDENへ</div>
+  </div>
 </body>
 </html>
