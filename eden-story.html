@@ -1,1 +1,148 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EDEN STORY</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
+    body {
+      background: url("e-tower2.png") center top / cover no-repeat fixed;
+      color: #fff;
+      font-family: "KokuGothicLight", "Yu Gothic", "Hiragino Kaku Gothic ProN", sans-serif;
+    }
+
+    @font-face {
+      font-family: "KokuGothicLight";
+      src: url("font_1_kokugl_1.15_rls.ttf") format("truetype");
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    .page-overlay {
+      min-height: 100vh;
+      background: rgba(0, 0, 0, 0.58);
+    }
+
+    .eden-menu {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.88);
+      backdrop-filter: blur(4px);
+      -webkit-backdrop-filter: blur(4px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .eden-menu a {
+      color: #fff;
+      text-decoration: none;
+      display: block;
+      padding: 18px 24px;
+      font-size: 1.15rem;
+      letter-spacing: 0.12em;
+      transition: background 0.25s ease, opacity 0.25s ease;
+    }
+
+    .eden-menu a:hover {
+      background: rgba(255, 255, 255, 0.08);
+      opacity: 0.95;
+    }
+
+    .content {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 80px 24px 120px;
+    }
+
+    .story-box {
+      background: rgba(0, 0, 0, 0.45);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      padding: 48px 40px;
+    }
+
+    .page-title {
+      font-size: 2rem;
+      letter-spacing: 0.12em;
+      margin-bottom: 32px;
+      text-align: center;
+    }
+
+    .story-text {
+      font-size: 1rem;
+      line-height: 2.2;
+      letter-spacing: 0.06em;
+    }
+
+    .story-text p + p {
+      margin-top: 1.6em;
+    }
+
+    @media screen and (max-width: 600px) {
+      .eden-menu {
+        justify-content: flex-start;
+      }
+
+      .eden-menu a {
+        padding: 14px 14px;
+        font-size: 0.88rem;
+        letter-spacing: 0.08em;
+      }
+
+      .content {
+        padding: 48px 16px 80px;
+      }
+
+      .story-box {
+        padding: 32px 20px;
+      }
+
+      .page-title {
+        font-size: 1.5rem;
+        margin-bottom: 24px;
+      }
+
+      .story-text {
+        font-size: 0.95rem;
+        line-height: 2;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page-overlay">
+    <nav class="eden-menu">
+      <a href="index.html">Home</a>
+      <a href="eden-top.html">Top</a>
+      <a href="eden-story.html">Story</a>
+      <a href="eden-character.html">Character</a>
+      <a href="eden-word.html">Word</a>
+    </nav>
+
+    <main class="content">
+      <section class="story-box">
+        <h1 class="page-title">Story</h1>
+        <div class="story-text">
+          <p>
+            ここにあらすじを入れる。
+          </p>
+          <p>
+            長く降り続く雨に閉ざされた世界。<br>
+            その中で、人は楽園を夢見ていた。
+          </p>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
