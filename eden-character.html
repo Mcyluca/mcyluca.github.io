@@ -130,16 +130,6 @@
       object-fit: cover;
     }
 
-    .thumb-name {
-      display: block;
-      padding: 10px 8px;
-      font-size: 0.9rem;
-      line-height: 1.5;
-      letter-spacing: 0.06em;
-      color: #fff;
-      text-align: center;
-    }
-
     .modal {
       position: fixed;
       inset: 0;
@@ -276,10 +266,6 @@
         width: 100px;
       }
 
-      .thumb-name {
-        font-size: 0.82rem;
-      }
-
       .modal {
         padding: 14px;
       }
@@ -323,12 +309,10 @@
                 class="thumb-btn"
                 type="button"
                 data-name="ノア"
-                data-route="ルートA"
                 data-image="noa-t.png"
                 data-description="ここにノアの紹介文を入れる。"
               >
                 <img src="noa-s.png" alt="ノア">
-                <span class="thumb-name">ノア</span>
               </button>
             </div>
           </div>
@@ -342,12 +326,10 @@
                 class="thumb-btn"
                 type="button"
                 data-name="レイ"
-                data-route="ルートF"
                 data-image="rei-t.png"
                 data-description="ここにレイの紹介文を入れる。"
               >
                 <img src="rei-s.png" alt="レイ">
-                <span class="thumb-name">レイ</span>
               </button>
             </div>
           </div>
@@ -361,12 +343,10 @@
                 class="thumb-btn"
                 type="button"
                 data-name="イヴ"
-                data-route="ルートB"
                 data-image="eve-t.png"
                 data-description="ここにイヴの紹介文を入れる。"
               >
                 <img src="eve-s.png" alt="イヴ">
-                <span class="thumb-name">イヴ</span>
               </button>
             </div>
           </div>
@@ -387,7 +367,6 @@
 
         <div class="modal-text">
           <h2 id="modalName">キャラクター名</h2>
-          <p class="modal-route" id="modalRoute">ルート名</p>
           <p class="modal-description" id="modalDescription">ここに説明が入る。</p>
         </div>
       </div>
@@ -399,7 +378,6 @@
     const modalClose = document.getElementById("modalClose");
     const modalImage = document.getElementById("modalImage");
     const modalName = document.getElementById("modalName");
-    const modalRoute = document.getElementById("modalRoute");
     const modalDescription = document.getElementById("modalDescription");
     const thumbButtons = document.querySelectorAll(".thumb-btn");
 
@@ -408,7 +386,6 @@
         modalImage.src = button.dataset.image;
         modalImage.alt = button.dataset.name;
         modalName.textContent = button.dataset.name;
-        modalRoute.textContent = button.dataset.route;
         modalDescription.textContent = button.dataset.description;
         modal.classList.add("is-open");
       });
