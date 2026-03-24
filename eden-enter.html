@@ -61,7 +61,7 @@
     .char {
       opacity: 0;
       display: inline-block;
-      animation: charFade 0.4s ease forwards;
+      animation: charFade 0.7s ease forwards;
       margin-right: -0.08em;
     }
 
@@ -70,16 +70,23 @@
     .char:nth-child(3) { animation-delay: 1.0s; }
     .char:nth-child(4) { animation-delay: 1.4s; }
 
-    @keyframes charFade {
-      from {
-        opacity: 0;
-        transform: translateY(6px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
+ @keyframes charFade {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+    filter: blur(6px);
+  }
+  60% {
+    opacity: 0.7;
+    transform: translateY(4px);
+    filter: blur(2px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
 
     @keyframes line2Show {
       from {
