@@ -1,1 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EDEN</title>
+  <meta http-equiv="refresh" content="3.5; url=eden-top.html">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
+    body {
+      background: #000;
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      font-family: "Yu Gothic", "Hiragino Kaku Gothic ProN", sans-serif;
+    }
+
+    .message {
+      text-align: center;
+      font-size: clamp(1.8rem, 4vw, 3rem);
+      letter-spacing: 0.15em;
+      opacity: 0;
+      animation: fadeMessage 3s ease forwards;
+    }
+
+    @keyframes fadeMessage {
+      0% {
+        opacity: 0;
+        transform: translateY(8px);
+      }
+      20% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      70% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      100% {
+        opacity: 0;
+        transform: translateY(-8px);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="message">Welcome to EDEN</div>
+</body>
+</html>
