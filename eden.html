@@ -4,56 +4,62 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>EDEN</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+ <style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
-    :root {
-      --bg: #efefef;
-    }
+  :root {
+    --bg: #efefef;
+    --line: #d8d3ce;
+  }
 
+  body {
+    background: var(--bg);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 40px;
+    padding-bottom: 80px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .tower-link {
+    display: block;
+    line-height: 0;
+    text-decoration: none;
+    border: 1px solid var(--line);
+    background: #fff;
+  }
+
+  .tower-link img {
+    display: block;
+    width: min(100%, 520px);
+    height: auto;
+    cursor: pointer;
+  }
+
+  .tower-link:hover {
+    opacity: 0.97;
+  }
+
+  @media screen and (max-width: 600px) {
     body {
-      background: var(--bg);
-      min-height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 24px;
-    }
-
-    .tower-link {
-      display: block;
-      line-height: 0;
-      text-decoration: none;
+      padding-top: 24px;
+      padding-bottom: 40px;
+      padding-left: 16px;
+      padding-right: 16px;
     }
 
     .tower-link img {
-      display: block;
-      max-width: min(70vw, 420px);
-      max-height: calc(100vh - 48px);
-      width: auto;
-      height: auto;
-      cursor: pointer;
+      width: min(100%, 420px);
     }
-
-    .tower-link:hover img {
-      opacity: 0.96;
-    }
-
-    @media screen and (max-width: 600px) {
-      body {
-        padding: 16px;
-      }
-
-      .tower-link img {
-        max-width: min(88vw, 420px);
-        max-height: calc(100vh - 32px);
-      }
-    }
-  </style>
+  }
+</style>
 </head>
 <body>
   <a href="eden-top.html" class="tower-link">
