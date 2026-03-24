@@ -17,40 +17,45 @@
       font-family: "Yu Gothic", "Hiragino Kaku Gothic ProN", sans-serif;
     }
 
-    .container {
-      width: 100%;
-      max-width: 800px;
-      margin: 0 auto;
-      background: #000;
-    }
-
     .eden-menu {
-      background: rgba(0, 0, 0, 0.9);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.88);
+      backdrop-filter: blur(4px);
+      -webkit-backdrop-filter: blur(4px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.12);
       display: flex;
       flex-wrap: wrap;
+      justify-content: center;
       align-items: center;
-      gap: 0;
-      border-bottom: 1px solid #222;
     }
 
     .eden-menu a {
       color: #fff;
       text-decoration: none;
-      padding: 14px 18px;
       display: block;
+      padding: 16px 20px;
       font-size: 0.95rem;
-      letter-spacing: 0.08em;
-      transition: background 0.3s ease;
+      letter-spacing: 0.12em;
+      transition: background 0.25s ease, opacity 0.25s ease;
     }
 
     .eden-menu a:hover {
-      background: rgba(255, 255, 255, 0.12);
+      background: rgba(255, 255, 255, 0.08);
+      opacity: 0.95;
     }
 
-    .tower-image img {
+    .tower-wrap {
+      width: 100%;
+      line-height: 0;
+    }
+
+    .tower-wrap img {
+      display: block;
       width: 100%;
       height: auto;
-      display: block;
     }
 
     @media screen and (max-width: 600px) {
@@ -59,25 +64,24 @@
       }
 
       .eden-menu a {
-        padding: 12px 14px;
-        font-size: 0.9rem;
+        padding: 14px 14px;
+        font-size: 0.88rem;
+        letter-spacing: 0.08em;
       }
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <nav class="eden-menu">
-      <a href="index.html">Home</a>
-      <a href="eden-top.html">Top</a>
-      <a href="eden-story.html">Story</a>
-      <a href="eden-character.html">Character</a>
-      <a href="eden-word.html">Word</a>
-    </nav>
+  <nav class="eden-menu">
+    <a href="index.html">Home</a>
+    <a href="eden-top.html">Top</a>
+    <a href="eden-story.html">Story</a>
+    <a href="eden-character.html">Character</a>
+    <a href="eden-word.html">Word</a>
+  </nav>
 
-    <div class="tower-image">
-      <img src="e-tower2.png" alt="雨のEDENタワー">
-    </div>
+  <div class="tower-wrap">
+    <img src="e-tower2.png" alt="雨のEDENタワー">
   </div>
 </body>
 </html>
