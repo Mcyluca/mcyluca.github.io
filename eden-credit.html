@@ -86,19 +86,40 @@
     }
 
     .credit-section + .credit-section {
-      margin-top: 28px;
+      margin-top: 20px;
     }
 
-    .credit-item-box {
+    .credit-toggle {
+      display: none;
+    }
+
+    .credit-label {
+      display: block;
       background: rgba(255, 255, 255, 0.06);
       border: 1px solid rgba(255, 255, 255, 0.12);
-      padding: 24px 24px 28px;
+      padding: 22px 24px;
+      font-size: 1.15rem;
+      letter-spacing: 0.08em;
+      cursor: pointer;
+      transition: background 0.25s ease, border-color 0.25s ease;
+      line-height: 1.6;
     }
 
-    .credit-item-title {
-      font-size: 1.2rem;
-      letter-spacing: 0.08em;
-      margin-bottom: 14px;
+    .credit-label:hover {
+      background: rgba(255, 255, 255, 0.1);
+      border-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .credit-content {
+      max-height: 0;
+      overflow: hidden;
+      background: rgba(0, 0, 0, 0.35);
+      border-left: 1px solid rgba(255, 255, 255, 0.12);
+      border-right: 1px solid rgba(255, 255, 255, 0.12);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+      transition: max-height 0.35s ease, padding 0.35s ease;
+      padding: 0 24px;
+      line-height: normal;
     }
 
     .credit-text {
@@ -116,13 +137,21 @@
       color: #fff;
       text-decoration: underline;
       text-underline-offset: 0.2em;
+      word-break: break-all;
     }
 
+    .credit-toggle:checked + .credit-label + .credit-content {
+      max-height: 500px;
+      padding: 20px 24px 24px;
+    }
+
+    @media (max-width: 900px) {
       .credit-box {
         padding: 36px 28px;
       }
     }
 
+    @media (max-width: 600px) {
       .eden-menu a {
         padding: 14px 14px;
         font-size: 0.88rem;
@@ -144,12 +173,17 @@
         margin-bottom: 24px;
       }
 
-      .credit-item-box {
-        padding: 18px 16px 22px;
+      .credit-label {
+        padding: 18px 16px;
+        font-size: 1.02rem;
       }
 
-      .credit-item-title {
-        font-size: 1.05rem;
+      .credit-content {
+        padding: 0 16px;
+      }
+
+      .credit-toggle:checked + .credit-label + .credit-content {
+        padding: 16px 16px 20px;
       }
 
       .credit-text {
@@ -177,8 +211,9 @@
         <h1 class="page-title">Credit</h1>
 
         <section class="credit-section">
-          <div class="credit-item-box">
-            <h2 class="credit-item-title">Font</h2>
+          <input type="radio" name="credit-item" id="credit-font" class="credit-toggle">
+          <label for="credit-font" class="credit-label">Font</label>
+          <div class="credit-content">
             <div class="credit-text">
               <p>ここにフォント素材のクレジットを入れる。</p>
             </div>
@@ -186,8 +221,39 @@
         </section>
 
         <section class="credit-section">
-          <div class="credit-item-box">
-            <h2 class="credit-item-title">Image</h2>
+          <input type="radio" name="credit-item" id="credit-se" class="credit-toggle">
+          <label for="credit-se" class="credit-label">Sound Effect</label>
+          <div class="credit-content">
+            <div class="credit-text">
+              <p>ここに効果音素材のクレジットを入れる。</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="credit-section">
+          <input type="radio" name="credit-item" id="credit-bgm" class="credit-toggle">
+          <label for="credit-bgm" class="credit-label">Music</label>
+          <div class="credit-content">
+            <div class="credit-text">
+              <p>ここに音楽素材のクレジットを入れる。</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="credit-section">
+          <input type="radio" name="credit-item" id="credit-tile" class="credit-toggle">
+          <label for="credit-tile" class="credit-label">Tile Set</label>
+          <div class="credit-content">
+            <div class="credit-text">
+              <p>ここにタイルセット素材のクレジットを入れる。</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="credit-section">
+          <input type="radio" name="credit-item" id="credit-image" class="credit-toggle">
+          <label for="credit-image" class="credit-label">Image</label>
+          <div class="credit-content">
             <div class="credit-text">
               <p>ここに画像素材のクレジットを入れる。</p>
             </div>
@@ -195,19 +261,11 @@
         </section>
 
         <section class="credit-section">
-          <div class="credit-item-box">
-            <h2 class="credit-item-title">Sound</h2>
+          <input type="radio" name="credit-item" id="credit-plugin" class="credit-toggle">
+          <label for="credit-plugin" class="credit-label">Plugin</label>
+          <div class="credit-content">
             <div class="credit-text">
-              <p>ここにBGM・SEなどのクレジットを入れる。</p>
-            </div>
-          </div>
-        </section>
-
-        <section class="credit-section">
-          <div class="credit-item-box">
-            <h2 class="credit-item-title">Special Thanks</h2>
-            <div class="credit-text">
-              <p>ここに謝辞や参考元などを入れる。</p>
+              <p>ここにプラグインのクレジットを入れる。</p>
             </div>
           </div>
         </section>
