@@ -4,61 +4,32 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>EDEN</title>
- <style>
+<style>
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
 
-  :root {
-    --bg: #efefef;
-    --line: #d8d3ce;
-  }
-
   body {
-    background: var(--bg);
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    padding-top: 40px;
-    padding-bottom: 80px;
-    padding-left: 24px;
-    padding-right: 24px;
+    background: #000;
   }
 
- .tower-link {
-  display: block;
-  width: min(100%, 520px);
-  line-height: 0;
-  text-decoration: none;
-  border: 1px solid var(--line);
-  background: #fff;
-}
-
-.tower-link img {
-  display: block;
-  width: 100%;
-  height: auto;
-  cursor: pointer;
-}
-
-  .tower-link:hover {
-    opacity: 0.97;
+  .tower-link {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    line-height: 0;
+    text-decoration: none;
+    overflow: hidden;
   }
 
-  @media screen and (max-width: 600px) {
-    body {
-      padding-top: 24px;
-      padding-bottom: 40px;
-      padding-left: 16px;
-      padding-right: 16px;
-    }
-
-    .tower-link img {
-      width: min(100%, 420px);
-    }
+  .tower-link img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
   }
 </style>
 </head>
