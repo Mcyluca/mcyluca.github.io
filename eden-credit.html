@@ -1,1 +1,229 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EDEN CREDIT</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
+    body {
+      background: #000;
+      color: #fff;
+      font-family: "Yu Gothic", "Hiragino Kaku Gothic ProN", sans-serif;
+    }
+
+    .eden-menu {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.88);
+      backdrop-filter: blur(4px);
+      -webkit-backdrop-filter: blur(4px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .eden-menu a {
+      color: #fff;
+      text-decoration: none;
+      display: block;
+      padding: 18px 24px;
+      font-size: 1.15rem;
+      letter-spacing: 0.12em;
+      transition: background 0.25s ease, opacity 0.25s ease;
+    }
+
+    .eden-menu a:hover {
+      background: rgba(255, 255, 255, 0.08);
+      opacity: 0.95;
+    }
+
+    .credit-visual {
+      position: relative;
+      width: 100%;
+      line-height: 0;
+    }
+
+    .credit-visual img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .credit-overlay {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding-top: 120px;
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+
+    .credit-box {
+      width: min(100%, 980px);
+      background: rgba(0, 0, 0, 0.45);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      padding: 48px 40px;
+      line-height: normal;
+    }
+
+    .page-title {
+      font-size: 2rem;
+      letter-spacing: 0.12em;
+      margin-bottom: 32px;
+      text-align: center;
+    }
+
+    .credit-section + .credit-section {
+      margin-top: 28px;
+    }
+
+    .credit-item-box {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      padding: 24px 24px 28px;
+    }
+
+    .credit-item-title {
+      font-size: 1.2rem;
+      letter-spacing: 0.08em;
+      margin-bottom: 14px;
+    }
+
+    .credit-text {
+      font-size: 0.98rem;
+      line-height: 2;
+      letter-spacing: 0.04em;
+      color: rgba(255, 255, 255, 0.92);
+    }
+
+    .credit-text p + p {
+      margin-top: 0.8em;
+    }
+
+    .credit-text a {
+      color: #fff;
+      text-decoration: underline;
+      text-underline-offset: 0.2em;
+    }
+
+    @media screen and (max-width: 900px) {
+      .credit-overlay {
+        padding-top: 80px;
+      }
+
+      .credit-box {
+        padding: 36px 28px;
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      .eden-menu {
+        justify-content: flex-start;
+      }
+
+      .eden-menu a {
+        padding: 14px 14px;
+        font-size: 0.88rem;
+        letter-spacing: 0.08em;
+      }
+
+      .credit-overlay {
+        padding-top: 40px;
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+
+      .credit-box {
+        padding: 24px 18px;
+      }
+
+      .page-title {
+        font-size: 1.5rem;
+        margin-bottom: 24px;
+      }
+
+      .credit-item-box {
+        padding: 18px 16px 22px;
+      }
+
+      .credit-item-title {
+        font-size: 1.05rem;
+      }
+
+      .credit-text {
+        font-size: 0.92rem;
+        line-height: 1.9;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="eden-menu">
+    <a href="index.html">Home</a>
+    <a href="eden-top.html">Top</a>
+    <a href="eden-story.html">Story</a>
+    <a href="eden-character.html">Character</a>
+    <a href="eden-word.html">Word</a>
+    <a href="eden-credit.html">Credit</a>
+  </nav>
+
+  <section class="credit-visual">
+    <img src="e-tower2.png" alt="雨のEDENタワー">
+
+    <div class="credit-overlay">
+      <div class="credit-box">
+        <h1 class="page-title">Credit</h1>
+
+        <section class="credit-section">
+          <div class="credit-item-box">
+            <h2 class="credit-item-title">Font</h2>
+            <div class="credit-text">
+              <p>ここにフォント素材のクレジットを入れる。</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="credit-section">
+          <div class="credit-item-box">
+            <h2 class="credit-item-title">Image</h2>
+            <div class="credit-text">
+              <p>ここに画像素材のクレジットを入れる。</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="credit-section">
+          <div class="credit-item-box">
+            <h2 class="credit-item-title">Sound</h2>
+            <div class="credit-text">
+              <p>ここにBGM・SEなどのクレジットを入れる。</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="credit-section">
+          <div class="credit-item-box">
+            <h2 class="credit-item-title">Special Thanks</h2>
+            <div class="credit-text">
+              <p>ここに謝辞や参考元などを入れる。</p>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </section>
+</body>
+</html>
