@@ -1,1 +1,209 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EDEN WORD</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
+    body {
+      background: #000;
+      color: #fff;
+      font-family: "Yu Gothic", "Hiragino Kaku Gothic ProN", sans-serif;
+    }
+
+    .eden-menu {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.88);
+      backdrop-filter: blur(4px);
+      -webkit-backdrop-filter: blur(4px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .eden-menu a {
+      color: #fff;
+      text-decoration: none;
+      display: block;
+      padding: 18px 24px;
+      font-size: 1.15rem;
+      letter-spacing: 0.12em;
+      transition: background 0.25s ease, opacity 0.25s ease;
+    }
+
+    .eden-menu a:hover {
+      background: rgba(255, 255, 255, 0.08);
+      opacity: 0.95;
+    }
+
+    .word-visual {
+      position: relative;
+      width: 100%;
+      line-height: 0;
+    }
+
+    .word-visual img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .word-overlay {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding-top: 120px;
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+
+    .word-box {
+      width: min(100%, 980px);
+      background: rgba(0, 0, 0, 0.45);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      padding: 48px 40px;
+      line-height: normal;
+    }
+
+    .page-title {
+      font-size: 2rem;
+      letter-spacing: 0.12em;
+      margin-bottom: 32px;
+      text-align: center;
+    }
+
+    .term-section + .term-section {
+      margin-top: 28px;
+    }
+
+    .term-box {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      padding: 24px 24px 28px;
+    }
+
+    .term-title {
+      font-size: 1.2rem;
+      letter-spacing: 0.08em;
+      margin-bottom: 14px;
+    }
+
+    .term-text {
+      font-size: 0.98rem;
+      line-height: 2;
+      letter-spacing: 0.04em;
+      color: rgba(255, 255, 255, 0.92);
+    }
+
+    @media screen and (max-width: 900px) {
+      .word-overlay {
+        padding-top: 80px;
+      }
+
+      .word-box {
+        padding: 36px 28px;
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      .eden-menu {
+        justify-content: flex-start;
+      }
+
+      .eden-menu a {
+        padding: 14px 14px;
+        font-size: 0.88rem;
+        letter-spacing: 0.08em;
+      }
+
+      .word-overlay {
+        padding-top: 40px;
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+
+      .word-box {
+        padding: 24px 18px;
+      }
+
+      .page-title {
+        font-size: 1.5rem;
+        margin-bottom: 24px;
+      }
+
+      .term-box {
+        padding: 18px 16px 22px;
+      }
+
+      .term-title {
+        font-size: 1.05rem;
+      }
+
+      .term-text {
+        font-size: 0.92rem;
+        line-height: 1.9;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="eden-menu">
+    <a href="index.html">Home</a>
+    <a href="eden-top.html">Top</a>
+    <a href="eden-story.html">Story</a>
+    <a href="eden-character.html">Character</a>
+    <a href="eden-word.html">Word</a>
+  </nav>
+
+  <section class="word-visual">
+    <img src="e-tower2.png" alt="雨のEDENタワー">
+
+    <div class="word-overlay">
+      <div class="word-box">
+        <h1 class="page-title">Word</h1>
+
+        <section class="term-section">
+          <div class="term-box">
+            <h2 class="term-title">EDENタワー</h2>
+            <p class="term-text">
+              ここにEDENタワーの説明を入れる。
+            </p>
+          </div>
+        </section>
+
+        <section class="term-section">
+          <div class="term-box">
+            <h2 class="term-title">絵田町</h2>
+            <p class="term-text">
+              ここに絵田町の説明を入れる。
+            </p>
+          </div>
+        </section>
+
+        <section class="term-section">
+          <div class="term-box">
+            <h2 class="term-title">After the Rain</h2>
+            <p class="term-text">
+              ここにAfter the Rainの説明を入れる。
+            </p>
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </section>
+</body>
+</html>
