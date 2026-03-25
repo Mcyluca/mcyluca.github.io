@@ -79,13 +79,17 @@
     }
 
     .work-links a {
-      color: var(--link);
-      transition: color 0.2s ease;
-    }
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 0.16em;
+  text-decoration-thickness: 1px;
+  transition: color 0.2s ease, opacity 0.2s ease;
+}
 
-    .work-links a:hover {
-      color: var(--link-hover);
-    }
+.work-links a:hover {
+  color: var(--link-hover);
+  opacity: 0.75;
+}
 
     .separator {
       margin: 0 22px;
