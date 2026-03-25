@@ -169,10 +169,18 @@
         padding: 0 16px;
       }
 
-   .credit-song.indent {
-     display: inline-block;
-      margin-left: 10.5em;
-     }
+.credit-entry {
+  margin-bottom: 1.2em;
+}
+
+.credit-name {
+  margin: 0;
+}
+
+.credit-detail {
+  margin: 0.35em 0 0 2em;
+  line-height: 2;
+}
 
     
       .credit-toggle:checked + .credit-label + .credit-content {
@@ -234,12 +242,25 @@
           <label for="credit-bgm" class="credit-label">Music</label>
           <div class="credit-content">
             <div class="credit-text">
-              <p><a href="https://www.youtube.com/@JinRokudo">六道 迅</a> 様
-              <使用楽曲>「夢」「run and run and run」「Silent Love」「Daily」</p>
-              <p><a href="http://studiottd.com/">shimtone</a> 様
-<span class="credit-song">＜使用楽曲＞「雨音の静か」「Navy Blue Heaven」「雨の路地裏」「不可思議話」</span><br>
-  <span class="credit-song indent">「Iswed」「水晶のカレイドスコープ」</span></p>
-            </div>
+  <div class="credit-entry">
+    <p class="credit-name">
+      <a href="https://example.com/">六道 迅 様</a>
+    </p>
+    <p class="credit-detail">
+      ＜使用楽曲＞「夢」「run and run and run」「Silent Love」「Daily」
+    </p>
+  </div>
+
+  <div class="credit-entry">
+    <p class="credit-name">
+      <a href="https://example.com/">shimtone 様</a>
+    </p>
+    <p class="credit-detail">
+      ＜使用楽曲＞「雨音の静か」「Navy Blue Heaven」「雨の路地裏」「不可思議話」<br>
+      「Iswed」「水晶のカレイドスコープ」
+    </p>
+  </div>
+</div>
           </div>
         </section>
 
