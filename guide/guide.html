@@ -1,1 +1,161 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>攻略 - 置き所</title>
+  <style>
+    @font-face {
+      font-family: "KokuGothicLight";
+      src: url("font_1_kokugl_1.15_rls.ttf") format("truetype");
+      font-weight: normal;
+      font-style: normal;
+    }
 
+    :root {
+      --bg: #efefef;
+      --text: #2f2b28;
+      --sub: #5a5450;
+      --line: #bfb8b2;
+      --link: #3f3a36;
+      --link-hover: #7a726b;
+      --panel: #f4f4f4;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "Yu Gothic", "YuGothic", sans-serif;
+      line-height: 1.9;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 40px 28px 100px;
+    }
+
+    .guide-wrap {
+      max-width: 840px;
+      margin: 0 auto;
+    }
+
+    .notice {
+      margin: 0 0 54px;
+      text-align: center;
+      font-size: 28px;
+      color: var(--text);
+    }
+
+    .game-block + .game-block {
+      margin-top: 72px;
+    }
+
+    .game-title {
+      margin: 0 0 24px;
+      font-size: 38px;
+      font-weight: 400;
+      color: var(--text);
+    }
+
+    .guide-list {
+      margin: 0;
+      padding-left: 1.2em;
+      font-size: 30px;
+    }
+
+    .guide-list li + li {
+      margin-top: 18px;
+    }
+
+    .guide-list a {
+      color: var(--text);
+      transition: color 0.2s ease;
+    }
+
+    .guide-list a:hover {
+      color: var(--link-hover);
+    }
+
+    .bottom-nav {
+      margin-top: 110px;
+      padding-top: 28px;
+      border-top: 1px solid var(--line);
+      text-align: center;
+      font-size: 22px;
+      line-height: 1.8;
+      font-family: "KokuGothicLight", "Hiragino Sans", "Yu Gothic", sans-serif;
+    }
+
+    .bottom-nav a {
+      color: var(--text);
+      transition: color 0.2s ease;
+    }
+
+    .bottom-nav a:hover {
+      color: var(--link-hover);
+    }
+
+    .separator {
+      margin: 0 10px;
+      color: var(--sub);
+    }
+
+      .notice {
+        font-size: 22px;
+        margin-bottom: 40px;
+      }
+
+      .game-title {
+        font-size: 30px;
+      }
+
+      .guide-list {
+        font-size: 22px;
+      }
+
+      .bottom-nav {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <main class="guide-wrap">
+      <p class="notice">※各ページはネタバレを含みます</p>
+
+      <section class="game-block">
+        <h1 class="game-title">EDEN（旧版）</h1>
+        <ul class="guide-list">
+          <li><a href="guide-old1.html">ＯＰ〜プロローグ終了まで</a></li>
+          <li><a href="guide-old-layer1.html">〜第一層まで</a></li>
+          <li><a href="guide-old-more.html">以下続く</a></li>
+        </ul>
+      </section>
+    </main>
+
+    <nav class="bottom-nav" aria-label="ページ移動">
+      <a href="index.html">Top</a>
+      <span class="separator">/</span>
+      <a href="eden.html">EDEN</a>
+      <span class="separator">/</span>
+      <a href="published.html">Game</a>
+      <span class="separator">/</span>
+      <a href="guide.html">攻略</a>
+      <span class="separator">/</span>
+      <a href="contact.html">問い合わせ</a>
+    </nav>
+  </div>
+</body>
+</html>
