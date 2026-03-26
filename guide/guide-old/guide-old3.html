@@ -1,1 +1,416 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>第一層 - 置き所</title>
 
+  <style>
+    @font-face {
+      font-family: "KokuGothicLight";
+      src: url("../../font_1_kokugl_1.15_rls.ttf") format("truetype");
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    :root {
+      --bg: #efefef;
+      --text: #2f2b28;
+      --sub: #5a5450;
+      --line: #cfc8c2;
+      --line-soft: #ddd7d1;
+      --panel: #f7f7f5;
+      --link-hover: #7a726b;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "Yu Gothic", "Hiragino Sans", sans-serif;
+      line-height: 1.8;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 36px 28px 100px;
+    }
+
+    .guide-wrap {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+.page-range {
+  margin: 0 0 18px;
+  font-size: 34px;
+  font-family: "Yu Gothic", "Hiragino Sans", sans-serif;
+  color: var(--text);
+  letter-spacing: 0.03em;
+}
+
+.title-line {
+  width: 100%;
+  height: 1px;
+  background:#cfc8c2;
+  margin: 0 0 28px;
+}
+
+.guide-keyvisual {
+  width: 100%;
+  max-width: 700px;
+  height: 360px;
+  margin: 0 auto 28px;
+  overflow: hidden;
+}
+
+.guide-keyvisual img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.page-note {
+  margin: 0 0 20px;
+  font-size: 14px;
+  color: var(--sub);
+}
+
+    .page-title {
+      margin: 0 0 18px;
+      font-size: 52px;
+      font-weight: 400;
+      color: var(--text);
+      letter-spacing: 0.03em;
+      font-family: "Yu Gothic", "Hiragino Sans", sans-serif;
+    }
+
+    .guide-lead {
+      margin: 0 0 32px;
+      font-size: 18px;
+      color: var(--sub);
+    }
+
+    .guide-table {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--panel);
+    }
+
+    .guide-table tr {
+      border-bottom: 1px solid var(--line-soft);
+    }
+
+    .guide-table tr:first-child {
+      border-top: 1px solid var(--line-soft);
+    }
+
+    .step-num {
+      width: 56px;
+      padding: 16px 8px;
+      text-align: center;
+      vertical-align: middle;
+      font-size: 20px;
+      color: var(--sub);
+      border-right: 1px solid var(--line-soft);
+      white-space: nowrap;
+    }
+
+.step-text {
+  padding: 16px 18px;
+  font-size: 16px;
+  color: var(--text);
+  text-align: left;
+  vertical-align: top;
+}
+
+.step-line {
+  margin: 0 0 12px;
+  text-align: left;
+}
+
+.step-image {
+  margin: 0;
+  text-align: left;
+}
+
+.step-image img {
+  width: 220px;
+  height: auto;
+  border: 1px solid #d8d2cc;
+  display: block;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.step-image img:hover {
+  opacity: 0.85;
+}
+
+  .image-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+}
+
+.modal-image {
+  max-width: 90vw;
+  max-height: 90vh;
+  display: block;
+  border: 1px solid #d8d2cc;
+}  
+
+.map-name {
+  font-size: 25px;
+  font-weight: 900;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  margin: 18px 0 10px;
+  margin-top: 42px;
+  color: #0f2238;
+  font-family: "Yu Gothic", "Hiragino Sans", sans-serif;
+}
+
+.pager {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+  margin: 70px 0 0;
+  font-size: 24px;
+  line-height: 1.6;
+  font-family: "Yu Gothic", "Hiragino Sans", sans-serif;
+}
+
+.pager-item {
+  color: #4a4038;
+  text-decoration: none;
+}
+
+.pager-item:hover {
+  opacity: 0.7;
+}
+
+.pager-item.disabled {
+  opacity: 0.35;
+  pointer-events: none;
+}
+
+    .back-guide {
+      margin-top: 56px;
+      text-align: center;
+      font-size: 18px;
+      color: var(--sub);
+    }
+
+    .back-guide a {
+      transition: color 0.2s ease;
+    }
+
+    .back-guide a:hover {
+      color: var(--link-hover);
+    }
+
+    .bottom-nav {
+      margin-top: 80px;
+      padding-top: 28px;
+      border-top: 1px solid var(--line);
+      text-align: center;
+      font-size: 22px;
+      line-height: 1.8;
+      color: var(--text);
+      font-family: "KokuGothicLight", "Yu Gothic", "Hiragino Sans", sans-serif;
+    }
+
+    .bottom-nav a {
+      transition: color 0.2s ease;
+    }
+
+    .bottom-nav a:hover {
+      color: var(--link-hover);
+    }
+
+    .separator {
+      margin: 0 10px;
+      color: var(--sub);
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        padding: 28px 18px 80px;
+      }
+
+      .page-range {
+        margin-bottom: 28px;
+        font-size: 24px;
+        font-family: "Yu Gothic", "Hiragino Sans", sans-serif;
+      }
+
+      .page-title {
+        font-size: 36px;
+      }
+
+      .guide-lead {
+        margin-bottom: 24px;
+        font-size: 16px;
+      }
+
+      .step-num {
+        width: 48px;
+        font-size: 18px;
+        padding: 14px 6px;
+      }
+
+      .step-text {
+        padding: 14px 14px;
+        font-size: 15px;
+      }
+      
+      .bottom-nav {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <main class="guide-wrap">
+<p class="page-range">第一層</p>
+<div class="title-line"></div>
+
+<div class="guide-keyvisual">
+  <img src="guide-old-images/eden-o2.png" alt="プロローグ攻略イメージ">
+</div>
+
+<h2 class="map-name">刑死者の間</h2>
+      
+ <table class="guide-table" aria-label="プロローグ攻略手順">
+
+        <tr>
+          <td class="step-num">1</td>
+          <td class="step-text">４カ所の角をスタート地点から時計回りに回ります <br>
+            １度でも反時計回りに踏んだ場合最初からやり直してください
+          </td>
+        </tr>
+      </table>
+
+<h2 class="map-name">ＥＤＥＮタワー (展望デッキ)</h2>
+
+<table class="guide-table" aria-label="プロローグ攻略手順">
+
+        <tr>
+          <td class="step-num">1</td>
+          <td class="step-text">南エリアから中央エリアに移動し、エレベーターに乗ります</td>
+        </tr>
+   
+        </table>
+
+<h2 class="map-name">部屋</h2>
+<table class="guide-table" aria-label="プロローグ攻略手順">
+
+        <tr>
+          <td class="step-num">1</td>
+          <td class="step-text">寝ます</td>
+        </tr>
+
+        <tr>
+          <td class="step-num">2</td>
+          <td class="step-text">青い本を読みます</td>
+        </tr>
+  
+        </table>
+
+<h2 class="map-name">青い本</h2>
+<table class="guide-table" aria-label="プロローグ攻略手順">
+
+        <tr>
+          <td class="step-num">1</td>
+          <td class="step-text">謎の人物を追います<br>
+          迷子になったら宿に戻りましょう</td>
+        </tr>
+  
+        </table>
+
+<h2 class="map-name">部屋</h2>
+<table class="guide-table" aria-label="プロローグ攻略手順">
+
+        <tr>
+          <td class="step-num">1</td>
+          <td class="step-text">マッチでランプに火を点け、本の続きを読みます</td>
+        </tr>
+  
+        </table>
+
+<h2 class="map-name">青い本</h2>
+<table class="guide-table" aria-label="プロローグ攻略手順">
+
+<tr>
+  <td class="step-num">1</td>
+  <td class="step-text">
+    <p class="step-line">謎の人物よりも先に鉄格子の中に入ります<br>
+      後ろから付いていくと閉め出されるので下の道から向かいます</p>
+    <div class="step-image">
+      <img src="guide-old-images/eden-o3.png" alt="椅子の下のタイル" onclick="openImage(this.src)">
+    </div>
+  </td>
+</tr>
+          </table>
+
+<nav class="pager">
+  <a href="guide-old1.html" class="pager-item">前へ</a>
+  <a href="../guide.html" class="pager-item">攻略一覧</a>
+  <a href="guide-old3.html" class="pager-item">次へ</a>
+</nav>
+    </main>
+
+    <nav class="bottom-nav" aria-label="ページ移動">
+      <a href="../index.html">Top</a>
+      <span class="separator">/</span>
+      <a href="../eden/eden.html">EDEN</a>
+      <span class="separator">/</span>
+      <a href="../published.html">Game</a>
+      <span class="separator">/</span>
+      <a href="guide.html">攻略</a>
+      <span class="separator">/</span>
+      <a href="../contact.html">問い合わせ</a>
+    </nav>
+  </div>
+
+<div id="imageModal" class="image-modal" onclick="closeImage()">
+  <img id="modalImage" class="modal-image" src="" alt="拡大画像">
+</div>
+
+<script>
+  function openImage(src) {
+    document.getElementById("modalImage").src = src;
+    document.getElementById("imageModal").style.display = "flex";
+  }
+
+  function closeImage() {
+    document.getElementById("imageModal").style.display = "none";
+  }
+</script>
+
+</body>
+</html>
