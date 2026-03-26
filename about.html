@@ -1,1 +1,183 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About - 置き所</title>
+  <style>
+    @font-face {
+      font-family: "KokuGothicLight";
+      src: url("font_1_kokugl_1.15_rls.ttf") format("truetype");
+      font-weight: normal;
+      font-style: normal;
+    }
 
+    :root {
+      --bg: #efefef;
+      --text: #2f2b28;
+      --sub: #5a5450;
+      --line: #bfb8b2;
+      --panel: #f4f4f4;
+      --link-hover: #7a726b;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "Yu Gothic", "YuGothic", sans-serif;
+      line-height: 1.9;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 28px 28px 100px;
+    }
+
+    .page-title {
+      text-align: center;
+      font-size: 36px;
+      font-weight: 400;
+      letter-spacing: 0.08em;
+      margin: 0 0 50px;
+      font-family: "KokuGothicLight", "Hiragino Sans", "Yu Gothic", sans-serif;
+    }
+
+    .about-box {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 34px 38px;
+      border: 1px solid var(--line);
+      background: transparent;
+    }
+
+    .about-section + .about-section {
+      margin-top: 30px;
+      padding-top: 26px;
+      border-top: 1px solid rgba(191, 184, 178, 0.55);
+    }
+
+    .about-heading {
+      margin: 0 0 14px;
+      font-size: 22px;
+      font-weight: 400;
+      letter-spacing: 0.06em;
+      font-family: "KokuGothicLight", "Hiragino Sans", "Yu Gothic", sans-serif;
+    }
+
+    .about-text {
+      margin: 0;
+      font-size: 18px;
+      color: var(--text);
+    }
+
+    .font-list {
+      margin: 0;
+      padding-left: 1.2em;
+      font-size: 18px;
+    }
+
+    .font-list li + li {
+      margin-top: 8px;
+    }
+
+    .bottom-nav {
+      margin-top: 110px;
+      padding-top: 28px;
+      border-top: 1px solid var(--line);
+      text-align: center;
+      font-size: 22px;
+      line-height: 1.8;
+      font-family: "KokuGothicLight", "Hiragino Sans", "Yu Gothic", sans-serif;
+    }
+
+    .bottom-nav a {
+      color: var(--text);
+      transition: color 0.2s ease;
+    }
+
+    .bottom-nav a:hover {
+      color: var(--link-hover);
+    }
+
+    .bottom-nav .separator {
+      margin: 0 10px;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        padding: 24px 20px 80px;
+      }
+
+      .page-title {
+        font-size: 30px;
+        margin-bottom: 36px;
+      }
+
+      .about-box {
+        padding: 26px 22px;
+      }
+
+      .about-heading {
+        font-size: 20px;
+      }
+
+      .about-text,
+      .font-list {
+        font-size: 16px;
+      }
+
+      .bottom-nav {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="page-title">About</h1>
+
+    <section class="about-box">
+      <div class="about-section">
+        <h2 class="about-heading">Site</h2>
+        <p class="about-text">管理人：町屋るか</p>
+      </div>
+
+      <div class="about-section">
+        <h2 class="about-heading">Credit</h2>
+        <p class="about-text">このサイトはChatGPTのサポートを受けながら制作しています。</p>
+      </div>
+
+      <div class="about-section">
+        <h2 class="about-heading">Font</h2>
+        <ul class="font-list">
+          <li>Koku Gothic Light</li>
+          <li>ここに使用フォント名を追加</li>
+        </ul>
+      </div>
+    </section>
+
+    <nav class="bottom-nav" aria-label="ページ移動">
+      <a href="index.html">Top</a>
+      <span class="separator">/</span>
+      <a href="eden/eden.html">EDEN</a>
+      <span class="separator">/</span>
+      <a href="published.html">Game</a>
+      <span class="separator">/</span>
+      <a href="guide/guide.html">攻略</a>
+      <span class="separator">/</span>
+      <a href="contact.html">問い合わせ</a>
+    </nav>
+  </div>
+</body>
+</html>
