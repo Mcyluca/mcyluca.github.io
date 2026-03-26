@@ -1,1 +1,227 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EDEN WORD</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
+    body {
+      background: #000;
+      color: #fff;
+      font-family: "Yu Gothic", "Hiragino Kaku Gothic ProN", sans-serif;
+    }
+
+    .eden-menu {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.88);
+      backdrop-filter: blur(4px);
+      -webkit-backdrop-filter: blur(4px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .eden-menu a {
+      color: #fff;
+      text-decoration: none;
+      display: block;
+      padding: 18px 24px;
+      font-size: 1.15rem;
+      letter-spacing: 0.12em;
+      transition: background 0.25s ease, opacity 0.25s ease;
+    }
+
+    .eden-menu a:hover {
+      background: rgba(255, 255, 255, 0.08);
+      opacity: 0.95;
+    }
+
+    .word-visual {
+      position: relative;
+      width: 100%;
+      line-height: 0;
+    }
+
+    .word-visual img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .word-overlay {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding-top: 120px;
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+
+    .word-box {
+      width: min(100%, 980px);
+      background: rgba(0, 0, 0, 0.45);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      padding: 48px 40px;
+      line-height: normal;
+    }
+
+    .page-title {
+      font-size: 2rem;
+      letter-spacing: 0.12em;
+      margin-bottom: 32px;
+      text-align: center;
+    }
+
+    .term-section + .term-section {
+      margin-top: 20px;
+    }
+
+    .term-toggle {
+      display: none;
+    }
+
+    .term-label {
+      display: block;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      padding: 22px 24px;
+      font-size: 1.15rem;
+      letter-spacing: 0.08em;
+      cursor: pointer;
+      transition: background 0.25s ease, border-color 0.25s ease;
+      line-height: 1.6;
+    }
+
+    .term-label:hover {
+      background: rgba(255, 255, 255, 0.1);
+      border-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .term-content {
+      max-height: 0;
+      overflow: hidden;
+      background: rgba(0, 0, 0, 0.35);
+      border-left: 1px solid rgba(255, 255, 255, 0.12);
+      border-right: 1px solid rgba(255, 255, 255, 0.12);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+      transition: max-height 0.35s ease, padding 0.35s ease;
+      padding: 0 24px;
+    }
+
+    .term-content p {
+      font-size: 0.98rem;
+      line-height: 2;
+      letter-spacing: 0.04em;
+      color: rgba(255, 255, 255, 0.92);
+    }
+
+    .term-toggle:checked + .term-label + .term-content {
+      max-height: 300px;
+      padding: 20px 24px 24px;
+    }
+
+      .word-box {
+        padding: 36px 28px;
+      }
+    }
+
+      .eden-menu a {
+        padding: 14px 14px;
+        font-size: 0.88rem;
+        letter-spacing: 0.08em;
+      }
+
+      .word-overlay {
+        padding-top: 40px;
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+
+      .word-box {
+        padding: 24px 18px;
+      }
+
+      .page-title {
+        font-size: 1.5rem;
+        margin-bottom: 24px;
+      }
+
+      .term-label {
+        padding: 18px 16px;
+        font-size: 1.02rem;
+      }
+
+      .term-content {
+        padding: 0 16px;
+      }
+
+      .term-toggle:checked + .term-label + .term-content {
+        padding: 16px 16px 20px;
+      }
+
+      .term-content p {
+        font-size: 0.92rem;
+        line-height: 1.9;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="eden-menu">
+    <a href="index.html">Home</a>
+    <a href="eden-top.html">Top</a>
+    <a href="eden-story.html">Story</a>
+    <a href="eden-character.html">Character</a>
+    <a href="eden-word.html">Word</a>
+    <a href="eden-credit.html">Credit</a>
+  </nav>
+
+  <section class="word-visual">
+    <img src="images/e-tower2.png" alt="雨のEDENタワー">
+
+    <div class="word-overlay">
+      <div class="word-box">
+        <h1 class="page-title">Word</h1>
+
+        <section class="term-section">
+          <input type="radio" name="word-term" id="term-tower" class="term-toggle">
+          <label for="term-tower" class="term-label">EDENタワー</label>
+          <div class="term-content">
+            <p>ここにEDENタワーの説明を入れる。</p>
+          </div>
+        </section>
+
+        <section class="term-section">
+          <input type="radio" name="word-term" id="term-etamachi" class="term-toggle">
+          <label for="term-etamachi" class="term-label">絵田町</label>
+          <div class="term-content">
+            <p>ここに絵田町の説明を入れる。</p>
+          </div>
+        </section>
+
+        <section class="term-section">
+          <input type="radio" name="word-term" id="term-rain" class="term-toggle">
+          <label for="term-rain" class="term-label">After the Rain</label>
+          <div class="term-content">
+            <p>ここにAfter the Rainの説明を入れる。</p>
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </section>
+</body>
+</html>
