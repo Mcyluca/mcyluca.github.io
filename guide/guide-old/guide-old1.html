@@ -4,10 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ＯＰ〜プロローグ終了まで - 置き所</title>
+
   <style>
     @font-face {
       font-family: "KokuGothicLight";
-      src: url("font_1_kokugl_1.15_rls.ttf") format("truetype");
+      src: url("../font_1_kokugl_1.15_rls.ttf") format("truetype");
       font-weight: normal;
       font-style: normal;
     }
@@ -16,10 +17,10 @@
       --bg: #efefef;
       --text: #2f2b28;
       --sub: #5a5450;
-      --line: #bfb8b2;
-      --link: #3f3a36;
+      --line: #cfc8c2;
+      --line-soft: #ddd7d1;
+      --panel: #f7f7f5;
       --link-hover: #7a726b;
-      --panel: #f4f4f4;
     }
 
     * {
@@ -30,21 +31,14 @@
       scroll-behavior: smooth;
     }
 
-  body {
-    background: #f3f3f3;
-    color: #333;
-    font-family: "Yu Gothic", "Hiragino Kaku Gothic ProN", sans-serif;
-    line-height: 1.8;
-  }
-}
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "KokuGothicLight", "Hiragino Sans", "Yu Gothic", sans-serif;
+      line-height: 1.8;
+    }
 
-h1 {
-    font-size: 32px;
-    font-weight: normal;
-    margin-bottom: 16px;
-  }
-
-    
     a {
       color: inherit;
       text-decoration: none;
@@ -61,98 +55,67 @@ h1 {
       margin: 0 auto;
     }
 
- .guide-lead {
-    margin-bottom: 32px;
-    color: #666;
-  }
-
-  .guide-table {
-    width: 100%;
-    border-collapse: collapse;
-    background: #f8f8f8;
-  }
-
-  .guide-table tr {
-    border-bottom: 1px solid #ddd;
-  }
-
-.step-num {
-  width: 56px;
-  font-size: 20px;
-  padding: 16px 8px;
-}
-
-.step-text {
-  padding: 16px 18px;
-  font-size: 16px;
-}
-    
-    .page-title {
-      margin: 0 0 22px;
-      font-size: 38px;
-      font-weight: 400;
-      color: var(--text);
-    }
-
-    .section-nav {
-      margin: 0 0 56px;
-      font-size: 30px;
-      line-height: 1.5;
-      color: var(--text);
-      font-family: "KokuGothicLight", "Hiragino Sans", "Yu Gothic", sans-serif;
-    }
-
-    .section-nav a {
-      display: inline-block;
-      margin-right: 0.2em;
-      color: var(--text);
-      transition: color 0.2s ease;
-    }
-
-    .section-nav a:hover {
-      color: var(--link-hover);
-    }
-
-    .guide-section + .guide-section {
-      margin-top: 120px;
-    }
-
-    .guide-heading {
-      margin: 0 0 24px;
-      text-align: center;
+    .page-range {
+      margin: 0 0 42px;
       font-size: 34px;
       font-weight: 400;
       color: var(--text);
+      letter-spacing: 0.03em;
     }
 
-    .guide-body {
-      max-width: 760px;
-      margin: 0 auto;
-      font-size: 22px;
+    .page-title {
+      margin: 0 0 18px;
+      font-size: 52px;
+      font-weight: 400;
+      color: var(--text);
+      letter-spacing: 0.03em;
+    }
+
+    .guide-lead {
+      margin: 0 0 32px;
+      font-size: 18px;
+      color: var(--sub);
+    }
+
+    .guide-table {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--panel);
+    }
+
+    .guide-table tr {
+      border-bottom: 1px solid var(--line-soft);
+    }
+
+    .guide-table tr:first-child {
+      border-top: 1px solid var(--line-soft);
+    }
+
+    .step-num {
+      width: 56px;
+      padding: 16px 8px;
+      text-align: center;
+      vertical-align: top;
+      font-size: 20px;
+      color: var(--sub);
+      border-right: 1px solid var(--line-soft);
+      white-space: nowrap;
+    }
+
+    .step-text {
+      padding: 16px 18px;
+      font-size: 16px;
       color: var(--text);
     }
 
-    .guide-body p {
-      margin: 0 0 18px;
-    }
-
-.guide-image {
-  width: 900px;
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin-top: 24px;
-}
-
     .back-guide {
-      margin-top: 90px;
+      margin-top: 56px;
       text-align: center;
       font-size: 18px;
       color: var(--sub);
     }
 
     .back-guide a {
-      color: var(--sub);
       transition: color 0.2s ease;
     }
 
@@ -167,11 +130,10 @@ h1 {
       text-align: center;
       font-size: 22px;
       line-height: 1.8;
-      font-family: "KokuGothicLight", "Hiragino Sans", "Yu Gothic", sans-serif;
+      color: var(--text);
     }
 
     .bottom-nav a {
-      color: var(--text);
       transition: color 0.2s ease;
     }
 
@@ -184,26 +146,34 @@ h1 {
       color: var(--sub);
     }
 
-      .page-title {
-        font-size: 30px;
+    @media (max-width: 768px) {
+      .container {
+        padding: 28px 18px 80px;
       }
 
-      .section-nav {
+      .page-range {
+        margin-bottom: 28px;
         font-size: 24px;
-        margin-bottom: 44px;
       }
 
-      .guide-heading {
-        font-size: 28px;
+      .page-title {
+        font-size: 36px;
       }
 
-      .guide-body {
-        font-size: 18px;
-      }
-
-      .guide-image {
+      .guide-lead {
+        margin-bottom: 24px;
         font-size: 16px;
-        padding: 36px 16px;
+      }
+
+      .step-num {
+        width: 48px;
+        font-size: 18px;
+        padding: 14px 6px;
+      }
+
+      .step-text {
+        padding: 14px 14px;
+        font-size: 15px;
       }
 
       .bottom-nav {
@@ -212,67 +182,57 @@ h1 {
     }
   </style>
 </head>
+
 <body>
   <div class="container">
     <main class="guide-wrap">
-      <h1 class="page-title">ＯＰ〜プロローグ終了まで</h1>
+      <p class="page-range">ＯＰ〜プロローグ終了まで</p>
 
-      <nav class="section-nav" aria-label="ページ内移動">
-        <a href="#part1">①</a>
-        <a href="#part2">②</a>
-        <a href="#part3">③</a>
-        <a href="#part4">④</a>
-        <span>…</span>
-      </nav>
+      <h1 class="page-title">プロローグ攻略</h1>
+      <p class="guide-lead">プロローグの進行手順を順番にまとめています。</p>
 
-<h1>プロローグ攻略</h1>
-<p class="guide-lead">プロローグの進行手順を順番にまとめています。</p>
-
-<table class="guide-table">
-  <tr>
-    <td class="step-num">1</td>
-    <td class="step-text">人形を片付けます</td>
-  </tr>
-  <tr>
-    <td class="step-num">2</td>
-    <td class="step-text">椅子を片付けます</td>
-  </tr>
-  <tr>
-    <td class="step-num">3</td>
-    <td class="step-text">椅子の下のタイルを持ち上げます</td>
-  </tr>
-  <tr>
-    <td class="step-num">4</td>
-    <td class="step-text">割れたタイルの下からマッチ箱を取ります</td>
-  </tr>
-</table>
-
-      <section class="guide-section" id="part2">
-        <h2 class="guide-heading">～攻略②～</h2>
-        <div class="guide-body">
-          <p>ここに攻略本文を入れます。</p>
-
-          <div class="guide-image">ここに画像を入れる予定</div>
-        </div>
-      </section>
-
-      <section class="guide-section" id="part3">
-        <h2 class="guide-heading">～攻略③～</h2>
-        <div class="guide-body">
-          <p>ここに攻略本文を入れます。</p>
-
-          <div class="guide-image">ここに画像を入れる予定</div>
-        </div>
-      </section>
-
-      <section class="guide-section" id="part4">
-        <h2 class="guide-heading">～攻略④～</h2>
-        <div class="guide-body">
-          <p>ここに攻略本文を入れます。</p>
-
-          <div class="guide-image">ここに画像を入れる予定</div>
-        </div>
-      </section>
+      <table class="guide-table" aria-label="プロローグ攻略手順">
+        <tr>
+          <td class="step-num">1</td>
+          <td class="step-text">人形を片付けます</td>
+        </tr>
+        <tr>
+          <td class="step-num">2</td>
+          <td class="step-text">椅子を片付けます</td>
+        </tr>
+        <tr>
+          <td class="step-num">3</td>
+          <td class="step-text">椅子の下のタイルを持ち上げます</td>
+        </tr>
+        <tr>
+          <td class="step-num">4</td>
+          <td class="step-text">割れたタイルの下からマッチ箱を取ります</td>
+        </tr>
+        <tr>
+          <td class="step-num">5</td>
+          <td class="step-text">ランプに火を点けます</td>
+        </tr>
+        <tr>
+          <td class="step-num">6</td>
+          <td class="step-text">椅子を置きます</td>
+        </tr>
+        <tr>
+          <td class="step-num">7</td>
+          <td class="step-text">赤い本を取ります</td>
+        </tr>
+        <tr>
+          <td class="step-num">8</td>
+          <td class="step-text">赤い本を青い本にします</td>
+        </tr>
+        <tr>
+          <td class="step-num">9</td>
+          <td class="step-text">青い本を置きます</td>
+        </tr>
+        <tr>
+          <td class="step-num">10</td>
+          <td class="step-text">扉を調べます</td>
+        </tr>
+      </table>
 
       <div class="back-guide">
         <a href="guide.html">← 攻略一覧にもどる</a>
@@ -280,15 +240,15 @@ h1 {
     </main>
 
     <nav class="bottom-nav" aria-label="ページ移動">
-      <a href="index.html">Top</a>
+      <a href="../index.html">Top</a>
       <span class="separator">/</span>
-      <a href="eden.html">EDEN</a>
+      <a href="../eden/eden.html">EDEN</a>
       <span class="separator">/</span>
-      <a href="published.html">Game</a>
+      <a href="../published.html">Game</a>
       <span class="separator">/</span>
       <a href="guide.html">攻略</a>
       <span class="separator">/</span>
-      <a href="contact.html">問い合わせ</a>
+      <a href="../contact.html">問い合わせ</a>
     </nav>
   </div>
 </body>
