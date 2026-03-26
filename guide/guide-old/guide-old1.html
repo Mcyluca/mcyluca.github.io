@@ -189,7 +189,32 @@
   color: #0f2238;
   font-family: "Yu Gothic", "Hiragino Sans", sans-serif;
 }
-    
+
+.pager {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 36px;
+  margin: 80px 0 0;
+  font-size: 28px;
+  line-height: 1.6;
+  font-family: "KokuGothicLight", "Hiragino Sans", "Yu Gothic", sans-serif;
+}
+
+.pager-item {
+  color: #4a4038;
+  text-decoration: none;
+}
+
+.pager-item:hover {
+  opacity: 0.7;
+}
+
+.pager-item.disabled {
+  opacity: 0.35;
+  pointer-events: none;
+}
+
     .back-guide {
       margin-top: 56px;
       text-align: center;
@@ -339,9 +364,11 @@
         </tr>
       </table>
 
-      <div class="back-guide">
-        <a href="guide.html">← 攻略一覧にもどる</a>
-      </div>
+<nav class="pager">
+  <span class="pager-item disabled">前へ</span>
+  <a href="../guide.html" class="pager-item">攻略一覧</a>
+  <a href="next-page.html" class="pager-item">次へ</a>
+</nav>
     </main>
 
     <nav class="bottom-nav" aria-label="ページ移動">
