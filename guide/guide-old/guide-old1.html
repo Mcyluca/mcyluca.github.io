@@ -207,6 +207,21 @@
         font-size: 15px;
       }
 
+.step-image img {
+  width: 220px;
+  height: auto;
+  margin-top: 12px;
+  border: 1px solid #d8d2cc;
+  display: block;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.step-image img:hover {
+  opacity: 0.85;
+}
+
+      
       .bottom-nav {
         font-size: 18px;
       }
@@ -240,8 +255,12 @@
           <td class="step-text">椅子の下のタイルを持ち上げます</td>
         </tr>
         <tr>
-          <td class="step-num">4</td>
-          <td class="step-text">割れたタイルの下からマッチ箱を取ります</td>
+<td class="step-text">
+  椅子の下のタイルを持ち上げます
+  <div class="step-image">
+    <img src="guide-old-images/eden-o1.png" alt="椅子の下のタイル" onclick="openImage(this.src)">
+  </div>
+</td>
         </tr>
         <tr>
           <td class="step-num">5</td>
