@@ -162,7 +162,23 @@
   opacity: 0.85;
 }
 
-    
+  .image-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+}
+
+.modal-image {
+  max-width: 90vw;
+  max-height: 90vh;
+  display: block;
+  border: 1px solid #d8d2cc;
+}  
 
     .back-guide {
       margin-top: 56px;
@@ -317,5 +333,21 @@
       <a href="../contact.html">問い合わせ</a>
     </nav>
   </div>
+
+<div id="imageModal" class="image-modal" onclick="closeImage()">
+  <img id="modalImage" class="modal-image" src="" alt="拡大画像">
+</div>
+
+<script>
+  function openImage(src) {
+    document.getElementById("modalImage").src = src;
+    document.getElementById("imageModal").style.display = "flex";
+  }
+
+  function closeImage() {
+    document.getElementById("imageModal").style.display = "none";
+  }
+</script>
+
 </body>
 </html>
