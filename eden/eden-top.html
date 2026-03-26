@@ -1,1 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EDEN TOP</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
+    body {
+      background: #000;
+      color: #fff;
+      font-family: "Yu Gothic", "Hiragino Kaku Gothic ProN", sans-serif;
+    }
+
+    .eden-menu {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.88);
+      backdrop-filter: blur(4px);
+      -webkit-backdrop-filter: blur(4px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+
+   .eden-menu a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 18px 24px;
+  font-size: 1.15rem;
+  letter-spacing: 0.12em;
+  transition: background 0.25s ease, opacity 0.25s ease;
+}
+    .eden-menu a:hover {
+      background: rgba(255, 255, 255, 0.08);
+      opacity: 0.95;
+    }
+
+    .tower-wrap {
+      width: 100%;
+      line-height: 0;
+    }
+
+    .tower-wrap img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+  </style>
+</head>
+<body>
+  <nav class="eden-menu">
+    <a href="index.html">Home</a>
+    <a href="eden-top.html">Top</a>
+    <a href="eden-story.html">Story</a>
+    <a href="eden-character.html">Character</a>
+    <a href="eden-word.html">Word</a>
+    <a href="eden-credit.html">Credit</a>
+  </nav>
+
+  <div class="tower-wrap">
+    <img src="images/e-tower2.png" alt="雨のEDENタワー">
+  </div>
+</body>
+</html>
