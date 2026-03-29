@@ -162,6 +162,25 @@
   opacity: 0.85;
 }
 
+.step-image.multi {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  max-width: 500px;
+}
+
+.step-image.multi img {
+  width: 100%;
+  height: auto;
+  border: 1px solid #d8d2cc;
+  display: block;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+
+    
+
   .image-modal {
   display: none;
   position: fixed;
@@ -179,6 +198,11 @@
   display: block;
   border: 1px solid #d8d2cc;
 }  
+
+.step-emphasis {
+  font-size: 18px;
+  font-weight: 700;
+}
 
 .map-name {
   font-size: 25px;
@@ -350,7 +374,7 @@
 
         <tr>
           <td class="step-num">4</td>
-          <td class="step-text">ネーヴェ<br>
+          <td class="step-text"><span class="step-emphasis">ここだけ大きく太くしたい文字</span>ネーヴェ<br>
            南に移動します</td>
         </tr>
 
