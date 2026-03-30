@@ -162,6 +162,22 @@
   opacity: 0.85;
 }
 
+.step-image.multi {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  max-width: 500px;
+}
+
+.step-image.multi img {
+  width: 100%;
+  height: auto;
+  border: 1px solid #d8d2cc;
+  display: block;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+    
   .image-modal {
   display: none;
   position: fixed;
