@@ -162,6 +162,22 @@
   opacity: 0.85;
 }
 
+.step-image.multi {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  max-width: 500px;
+}
+
+.step-image.multi img {
+  width: 100%;
+  height: auto;
+  border: 1px solid #d8d2cc;
+  display: block;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
   .image-modal {
   display: none;
   position: fixed;
@@ -300,7 +316,7 @@
 <div class="title-line"></div>
 
 <div class="guide-keyvisual">
-  <img src="guide-old-images/eden-o6.png" alt="プロローグ攻略イメージ">
+  <img src="guide-old-images/eden-o50.png" alt="プロローグ攻略イメージ">
 </div>
 
 <h2 class="map-name">店(奥)</h2>
@@ -319,11 +335,15 @@
       
  <table class="guide-table" aria-label="プロローグ攻略手順">
 
-        <tr>
-          <td class="step-num">1</td>
-          <td class="step-text">妖精に話しかけます
-          </td>
-        </tr>
+<tr>
+  <td class="step-num">1</td>
+  <td class="step-text">
+    <p class="step-line">妖精に話しかけます</p>
+    <div class="step-image">
+      <img src="guide-old-images/eden-o51.png" alt="椅子の下のタイル" onclick="openImage(this.src)">
+    </div>
+  </td>
+</tr>
 
  </table>
 
@@ -349,37 +369,58 @@
       
  <table class="guide-table" aria-label="プロローグ攻略手順">
 
-        <tr>
-          <td class="step-num">1</td>
-          <td class="step-text">牢を出てすぐの兵士に話しかけます
-          </td>
-        </tr>
+<tr>
+  <td class="step-num">1</td>
+  <td class="step-text">
+    <p class="step-line">牢を出てすぐの兵士に話しかけます</p>
+    <div class="step-image">
+      <img src="guide-old-images/eden-o52.png" alt="椅子の下のタイル" onclick="openImage(this.src)">
+    </div>
+  </td>
+</tr>
 
-        <tr>
-          <td class="step-num">2</td>
-          <td class="step-text">図書室で本を読みます<br>
-            左の本棚、右の本棚、机の上の３つです
-          </td>
-        </tr>
+    <tr>
+  <td class="step-num">2</td>
+  <td class="step-text">
+    <p class="step-line">図書室で本を読みます<br>左の本棚、右の本棚、机の上の３つです</p>
+    <div class="step-image multi">
+      <img src="guide-old-images/eden-o53.png" alt="画像1" onclick="openImage(this.src)">
+      <img src="guide-old-images/eden-o54.png" alt="画像2" onclick="openImage(this.src)">
+      <img src="guide-old-images/eden-o55.png" alt="画像3" onclick="openImage(this.src)">
+    </div>
+  </td>
+</tr>
 
-        <tr>
-          <td class="step-num">3</td>
-          <td class="step-text">通路の兵士に話しかけます
-          </td>
-        </tr>
+<tr>
+  <td class="step-num">3</td>
+  <td class="step-text">
+    <p class="step-line">通路の兵士に話しかけます</p>
+    <div class="step-image">
+      <img src="guide-old-images/eden-o56.png" alt="椅子の下のタイル" onclick="openImage(this.src)">
+    </div>
+  </td>
+</tr>
 
-        <tr>
-          <td class="step-num">4</td>
-          <td class="step-text">倉庫で松明を取ります
-          </td>
-        </tr>
+   
+   <tr>
+  <td class="step-num">4</td>
+  <td class="step-text">
+    <p class="step-line">倉庫で松明を取ります</p>
+    <div class="step-image">
+      <img src="guide-old-images/eden-o57.png" alt="椅子の下のタイル" onclick="openImage(this.src)">
+    </div>
+  </td>
+</tr>
 
-        <tr>
-          <td class="step-num">5</td>
-          <td class="step-text">城を出て町を南に進み、小さな橋を渡ります
-          </td>
-        </tr>
-
+   <tr>
+  <td class="step-num">5</td>
+  <td class="step-text">
+    <p class="step-line">城を出て町を南に進み、小さな橋を渡ります</p>
+    <div class="step-image">
+      <img src="guide-old-images/eden-o58.png" alt="椅子の下のタイル" onclick="openImage(this.src)">
+    </div>
+  </td>
+</tr>
         <tr>
           <td class="step-num">6</td>
           <td class="step-text">山小屋の会話を確認しておきます
