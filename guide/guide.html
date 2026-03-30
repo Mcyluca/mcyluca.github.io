@@ -56,33 +56,25 @@
       color: var(--text);
     }
 
-    /* 作品ごとの大きなブロック */
-    .guide-block {
+    .guide-panel {
       max-width: 760px;
       margin: 0 auto;
       border: 1px solid var(--line);
       background: transparent;
     }
 
-    .guide-block + .guide-block {
-      margin-top: 48px;
-    }
-
-    .guide-title {
+    .guide-panel-title {
       margin: 0;
-      padding: 18px 20px;
+      padding: 14px 18px;
       text-align: center;
       font-size: 22px;
       font-weight: 400;
+      color: var(--text);
       border-bottom: 1px solid var(--line);
       line-height: 1.4;
     }
 
     .guide-image {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 170px;
       border-bottom: 1px solid var(--line);
       overflow: hidden;
     }
@@ -99,58 +91,69 @@
       object-fit: cover;
     }
 
-    /* 2列の短い攻略 */
-    .guide-short-grid {
+    .guide-grid-two {
       display: grid;
       grid-template-columns: 1fr 1fr;
       border-bottom: 1px solid var(--line);
     }
 
-    .guide-short-item {
-      min-height: 88px;
-      padding: 14px 18px;
+    .guide-grid-last {
+      border-bottom: none;
+    }
+
+    .guide-row-single {
+      border-bottom: 1px solid var(--line);
+    }
+
+    .guide-cell {
+      min-height: 92px;
+      padding: 18px 20px;
       display: flex;
       align-items: center;
       justify-content: center;
       text-align: center;
-      font-size: 20px;
-      line-height: 1.6;
+      font-size: 22px;
+      line-height: 1.5;
+      color: var(--text);
       transition: opacity 0.2s ease, color 0.2s ease;
     }
 
-    .guide-short-item:first-child {
+    .guide-grid-two .guide-cell:first-child {
       border-right: 1px solid var(--line);
     }
 
-    .guide-short-item:hover {
+    .guide-cell:hover,
+    .sub-links a:hover,
+    .badge:hover {
       opacity: 0.7;
       color: var(--link-hover);
     }
 
-    /* 分岐する攻略 */
-    .guide-branch {
-      padding: 18px 20px;
-      text-align: center;
-      border-bottom: 1px solid var(--line);
+    .guide-cell-single {
+      width: 100%;
     }
 
-    .guide-branch-title {
-      font-size: 21px;
-      line-height: 1.6;
+    .guide-cell-branch {
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .guide-label {
+      font-size: 22px;
+      line-height: 1.4;
+      color: var(--text);
     }
 
     .badge-group {
       display: inline-flex;
-      gap: 10px;
+      gap: 8px;
       flex-wrap: wrap;
       justify-content: center;
-      margin-left: 10px;
-      vertical-align: middle;
     }
 
     .badge {
-      width: 32px;
-      height: 32px;
+      width: 30px;
+      height: 30px;
       border: 1px solid var(--line);
       border-radius: 50%;
       display: inline-flex;
@@ -158,23 +161,49 @@
       justify-content: center;
       font-size: 17px;
       line-height: 1;
-      transition: opacity 0.2s ease, color 0.2s ease;
+      color: var(--text);
       flex-shrink: 0;
+      transition: opacity 0.2s ease, color 0.2s ease;
     }
 
-    .badge:hover {
+    .sub-links {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      flex-wrap: wrap;
+      justify-content: center;
+      font-size: 18px;
+      line-height: 1.5;
+    }
+
+    .sub-links a {
+      color: var(--text);
+      transition: opacity 0.2s ease, color 0.2s ease;
+    }
+
+    .slash {
+      color: var(--text);
+    }
+
+    .outside-links {
+      max-width: 760px;
+      margin: 18px auto 0;
+      display: grid;
+      gap: 12px;
+    }
+
+    .outside-link {
+      border: 1px solid var(--line);
+      padding: 16px 18px;
+      text-align: center;
+      font-size: 20px;
+      line-height: 1.5;
+      transition: opacity 0.2s ease, color 0.2s ease;
+    }
+
+    .outside-link:hover {
       opacity: 0.7;
       color: var(--link-hover);
-    }
-
-    /* 下に追加の行を入れたいとき用 */
-    .guide-extra {
-      min-height: 84px;
-      border-bottom: 1px solid var(--line);
-    }
-
-    .guide-extra:last-child {
-      border-bottom: none;
     }
 
     .bottom-nav {
@@ -211,42 +240,42 @@
         margin-bottom: 34px;
       }
 
-      .guide-title {
+      .guide-panel-title {
         font-size: 24px;
-        padding: 16px 16px;
+        padding: 16px 18px;
       }
 
-      .guide-image {
-        min-height: 140px;
-      }
-
-      .guide-short-grid {
+      .guide-grid-two {
         grid-template-columns: 1fr;
       }
 
-      .guide-short-item {
-        min-height: 74px;
-        font-size: 21px;
-        padding: 14px 16px;
-      }
-
-      .guide-short-item:first-child {
+      .guide-grid-two .guide-cell:first-child {
         border-right: none;
         border-bottom: 1px solid var(--line);
       }
 
-      .guide-branch {
-        padding: 16px;
+      .guide-cell {
+        min-height: 82px;
+        font-size: 24px;
+        padding: 16px 18px;
       }
 
-      .guide-branch-title {
-        font-size: 22px;
+      .guide-label {
+        font-size: 24px;
       }
 
       .badge {
         width: 40px;
         height: 40px;
         font-size: 21px;
+      }
+
+      .sub-links {
+        font-size: 20px;
+      }
+
+      .outside-link {
+        font-size: 19px;
       }
 
       .bottom-nav {
@@ -260,68 +289,75 @@
     <main class="guide-wrap">
       <p class="notice">※各ページはネタバレを含みます</p>
 
-      <section class="guide-block">
-        <h1 class="guide-title">EDEN(旧)攻略</h1>
+      <section class="guide-panel">
+        <h1 class="guide-panel-title">EDEN(旧)攻略</h1>
 
-        <!-- 画像 -->
         <div class="guide-image">
           <a href="guide-old/guide-old1.html">
             <img src="../img/guide/eden-old-guide.jpg" alt="EDEN(旧)攻略" />
           </a>
         </div>
 
-        <!-- 短い攻略2つ -->
-        <div class="guide-short-grid">
-          <a href="guide-old/guide-old1.html" class="guide-short-item">ＯＰ〜プロローグ</a>
-          <a href="guide-old/guide-old2.html" class="guide-short-item">第一層</a>
+        <div class="guide-grid-two">
+          <a href="guide-old/guide-old1.html" class="guide-cell">ＯＰ〜プロローグ</a>
+          <a href="guide-old/guide-old2.html" class="guide-cell">第一層</a>
         </div>
 
-        <!-- 分岐や複数ページ系 -->
-        <div class="guide-branch">
-          <span class="guide-branch-title">第二層 前半</span>
-          <span class="badge-group">
-            <a href="guide-old/guide-old4.html" class="badge">1</a>
-            <a href="guide-old/guide-old5.html" class="badge">2</a>
-            <a href="guide-old/guide-old6.html" class="badge">3</a>
-            <a href="guide-old/guide-old7.html" class="badge">4</a>
-          </span>
+        <div class="guide-row-single">
+          <a href="guide-old/guide-old3.html" class="guide-cell guide-cell-single">間章</a>
         </div>
 
-        <div class="guide-branch">
-          <span class="guide-branch-title">第二層 後半</span>
-          <span class="badge-group">
-            <a href="guide-old/guide-old8.html" class="badge">1</a>
-            <a href="guide-old/guide-old9.html" class="badge">2</a>
-            <a href="guide-old/guide-old10.html" class="badge">3</a>
-            <a href="guide-old/guide-old11.html" class="badge">4</a>
-          </span>
+        <div class="guide-row-single">
+          <div class="guide-cell guide-cell-single guide-cell-branch">
+            <span class="guide-label">第二層　前半</span>
+            <span class="badge-group">
+              <a href="guide-old/guide-old4.html" class="badge">1</a>
+              <a href="guide-old/guide-old5.html" class="badge">2</a>
+              <a href="guide-old/guide-old6.html" class="badge">3</a>
+              <a href="guide-old/guide-old7.html" class="badge">4</a>
+            </span>
+          </div>
         </div>
 
-        <div class="guide-branch">
-          <span class="guide-branch-title">第三層</span>
-          <span class="badge-group">
-            <a href="guide-old/guide-old13.html" class="badge">技</a>
-            <a href="guide-old/guide-old14.html" class="badge">夢</a>
-            <a href="guide-old/guide-old15.html" class="badge">遊</a>
-          </span>
+        <div class="guide-row-single">
+          <div class="guide-cell guide-cell-single guide-cell-branch">
+            <span class="guide-label">第二層　後半</span>
+            <span class="badge-group">
+              <a href="guide-old/guide-old8.html" class="badge">1</a>
+              <a href="guide-old/guide-old9.html" class="badge">2</a>
+              <a href="guide-old/guide-old10.html" class="badge">3</a>
+              <a href="guide-old/guide-old11.html" class="badge">4</a>
+            </span>
+          </div>
         </div>
 
-        <!-- 必要ならこのへんに単独行を追加 -->
-        <div class="guide-short-grid">
-          <a href="guide-old/guide-old3.html" class="guide-short-item">間章</a>
-          <a href="guide-old/guide-old16.html" class="guide-short-item">間章２</a>
+        <div class="guide-row-single">
+          <div class="guide-cell guide-cell-single guide-cell-branch">
+            <a href="guide-old/guide-old12.html" class="guide-label">第三層</a>
+            <span class="sub-links">
+              <a href="guide-old/guide-old13.html">スキル</a>
+              <span class="slash">/</span>
+              <a href="guide-old/guide-old14.html">夢</a>
+              <span class="slash">/</span>
+              <a href="guide-old/guide-old15.html">ゲーム</a>
+            </span>
+          </div>
         </div>
 
-        <div class="guide-short-grid">
-          <a href="guide-old/guide-old17.html" class="guide-short-item">第四層</a>
-          <a href="guide-old/guide-old18.html" class="guide-short-item">第五層</a>
+        <div class="guide-row-single">
+          <a href="guide-old/guide-old16.html" class="guide-cell guide-cell-single">間章２</a>
         </div>
 
-        <div class="guide-short-grid">
-          <a href="guide-old/guide-old19.html" class="guide-short-item">ゲームオーバーっぽいものまとめ</a>
-          <a href="guide-old/guide-old20.html" class="guide-short-item">フラグメント</a>
+        <div class="guide-grid-two guide-grid-last">
+          <a href="guide-old/guide-old17.html" class="guide-cell">第四層</a>
+          <a href="guide-old/guide-old18.html" class="guide-cell">第五層</a>
         </div>
       </section>
+
+      <div class="outside-links">
+        <a href="guide-old/guide-old19.html" class="outside-link">ゲームオーバーっぽいものまとめ</a>
+        <a href="guide-old/guide-old20.html" class="outside-link">フラグメント</a>
+      </div>
     </main>
 
     <nav class="bottom-nav" aria-label="ページ移動">
