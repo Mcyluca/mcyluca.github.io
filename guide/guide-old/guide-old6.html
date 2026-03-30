@@ -177,6 +177,11 @@
   cursor: pointer;
   transition: opacity 0.2s ease;
 }
+
+.step-emphasis {
+  font-size: 18px;
+  font-weight: 700;
+}
     
   .image-modal {
   display: none;
@@ -379,37 +384,51 @@
 
         <tr>
           <td class="step-num">1</td>
-          <td class="step-text">オアシスへの道<br>
+          <td class="step-text"><span class="step-emphasis">オアシスへの道</span><br>
             道を外れないように砂漠を西(左)に進みます</td>
         </tr>
 
         <tr>
           <td class="step-num">2</td>
-          <td class="step-text">地下迷宮 エリア１<br>
+          <td class="step-text"><span class="step-emphasis">地下迷宮 エリア１</span><br>
            起き上がります(方向キー上)</td>
         </tr>
 
-        <tr>
-          <td class="step-num">3</td>
-          <td class="step-text"> 進みます</td>
-        </tr>
-
+<tr>
+  <td class="step-num">3</td>
+  <td class="step-text">
+    <p class="step-line">進みます</p>
+    <div class="step-image">
+      <img src="guide-old-images/eden-31.png" alt="椅子の下のタイル" onclick="openImage(this.src)">
+    </div>
+  </td>
+</tr>
         <tr>
           <td class="step-num">4</td>
           <td class="step-text">作業員の後をついていきます</td>
         </tr>
 
-        <tr>
-          <td class="step-num">5</td>
-          <td class="step-text">地下迷宮 エリア２<br>
-           引き続き作業員の後をついていきます</td>
-        </tr>
+<tr>
+  <td class="step-num">5</td>
+  <td class="step-text">
+    <p class="step-line"><span class="step-emphasis">地下迷宮 エリア２</span><br>
+      引き続き作業員の後をついていきます</p>
+    <div class="step-image">
+      <img src="guide-old-images/eden-32.png" alt="椅子の下のタイル" onclick="openImage(this.src)">
+    </div>
+  </td>
+</tr>
 
-        <tr>
-          <td class="step-num">6</td>
-          <td class="step-text">地下迷宮 エリア３<br>
-           パスワードを探しに行きます</td>
-        </tr>
+<tr>
+  <td class="step-num">6</td>
+  <td class="step-text">
+    <p class="step-line"><span class="step-emphasis">地下迷宮 エリア３</span><br>
+      パスワードを探しに行きます</p>
+    <div class="step-image">
+      <img src="guide-old-images/eden-33.png" alt="椅子の下のタイル" onclick="openImage(this.src)">
+    </div>
+  </td>
+</tr>
 
         <tr>
           <td class="step-num">7</td>
