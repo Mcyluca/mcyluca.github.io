@@ -162,6 +162,22 @@
   opacity: 0.85;
 }
 
+.step-image.multi {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  max-width: 500px;
+}
+
+.step-image.multi img {
+  width: 100%;
+  height: auto;
+  border: 1px solid #d8d2cc;
+  display: block;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+    
   .image-modal {
   display: none;
   position: fixed;
@@ -334,12 +350,18 @@
 <h2 class="map-name">ビラ配り</h2>
 <table class="guide-table" aria-label="プロローグ攻略手順">
 
-        <tr>
-          <td class="step-num">1</td>
-          <td class="step-text">ピオジャ、マータル、イー、ネーヴェにビラを配ります<br>
-         どの順番でも構いません</td>
-        </tr>
-
+    <tr>
+  <td class="step-num">1</td>
+  <td class="step-text">
+    <p class="step-line">ピオジャ、マータル、イー、ネーヴェにビラを配ります</p>
+    <div class="step-image multi">
+      <img src="guide-old-images/eden-o26.png" alt="画像1" onclick="openImage(this.src)">
+      <img src="guide-old-images/eden-o27.png" alt="画像2" onclick="openImage(this.src)">
+      <img src="guide-old-images/eden-o28.png" alt="画像3" onclick="openImage(this.src)">
+      <img src="guide-old-images/eden-o29.png" alt="画像3" onclick="openImage(this.src)">
+    </div>
+  </td>
+</tr>
         <tr>
           <td class="step-num">2</td>
           <td class="step-text">シュバでビラを渡します<br>
