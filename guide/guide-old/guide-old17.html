@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>第四層- 置き所</title>
+  <title>間章２ - 置き所</title>
 
   <style>
     @font-face {
@@ -55,49 +55,40 @@
       margin: 0 auto;
     }
 
-.page-range {
-  margin: 0 0 18px;
-  font-size: 34px;
-  font-family: "Yu Gothic", "Hiragino Sans", sans-serif;
-  color: var(--text);
-  letter-spacing: 0.03em;
-}
-
-.title-line {
-  width: 100%;
-  height: 1px;
-  background:#cfc8c2;
-  margin: 0 0 28px;
-}
-
-.guide-keyvisual {
-  width: 100%;
-  max-width: 700px;
-  height: 360px;
-  margin: 0 auto 28px;
-  overflow: hidden;
-}
-
-.guide-keyvisual img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.page-note {
-  margin: 0 0 20px;
-  font-size: 14px;
-  color: var(--sub);
-}
-
-    .page-title {
+    .page-range {
       margin: 0 0 18px;
-      font-size: 52px;
-      font-weight: 400;
+      font-size: 34px;
+      font-family: "Yu Gothic", "Hiragino Sans", sans-serif;
       color: var(--text);
       letter-spacing: 0.03em;
-      font-family: "Yu Gothic", "Hiragino Sans", sans-serif;
+    }
+
+    .title-line {
+      width: 100%;
+      height: 1px;
+      background: #cfc8c2;
+      margin: 0 0 28px;
+    }
+
+    .guide-keyvisual {
+      width: 100%;
+      max-width: 700px;
+      height: 360px;
+      margin: 0 auto 28px;
+      overflow: hidden;
+    }
+
+    .guide-keyvisual img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .page-note {
+      margin: 0 0 20px;
+      font-size: 14px;
+      color: var(--sub);
     }
 
     .guide-lead {
@@ -131,90 +122,89 @@
       white-space: nowrap;
     }
 
-.step-text {
-  padding: 16px 18px;
-  font-size: 16px;
-  color: var(--text);
-  text-align: left;
-  vertical-align: top;
-}
+    .step-text {
+      padding: 16px 18px;
+      font-size: 16px;
+      color: var(--text);
+      text-align: left;
+      vertical-align: top;
+    }
 
-.step-line {
-  margin: 0 0 12px;
-  text-align: left;
-}
+    .step-line {
+      margin: 0 0 12px;
+      text-align: left;
+    }
 
-.step-image {
-  margin: 0;
-  text-align: left;
-}
+    .step-image {
+      margin: 0;
+      text-align: left;
+    }
 
-.step-image img {
-  width: 220px;
-  height: auto;
-  border: 1px solid #d8d2cc;
-  display: block;
-  cursor: pointer;
-  transition: opacity 0.2s ease;
-}
+    .step-image img {
+      width: 220px;
+      height: auto;
+      border: 1px solid #d8d2cc;
+      display: block;
+      cursor: pointer;
+      transition: opacity 0.2s ease;
+    }
 
-.step-image img:hover {
-  opacity: 0.85;
-}
+    .step-image img:hover {
+      opacity: 0.85;
+    }
 
-  .image-modal {
-  display: none;
-  position: fixed;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.75);
-  z-index: 9999;
-  justify-content: center;
-  align-items: center;
-  padding: 24px;
-}
+    .image-modal {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.75);
+      z-index: 9999;
+      justify-content: center;
+      align-items: center;
+      padding: 24px;
+    }
 
-.modal-image {
-  max-width: 90vw;
-  max-height: 90vh;
-  display: block;
-  border: 1px solid #d8d2cc;
-}  
+    .modal-image {
+      max-width: 90vw;
+      max-height: 90vh;
+      display: block;
+      border: 1px solid #d8d2cc;
+    }
 
-.map-name {
-  font-size: 25px;
-  font-weight: 900;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  margin: 18px 0 10px;
-  margin-top: 42px;
-  color: #0f2238;
-  font-family: "Yu Gothic", "Hiragino Sans", sans-serif;
-}
+    .map-name {
+      font-size: 25px;
+      font-weight: 900;
+      line-height: 1.2;
+      letter-spacing: 0.02em;
+      margin: 42px 0 10px;
+      color: #0f2238;
+      font-family: "Yu Gothic", "Hiragino Sans", sans-serif;
+    }
 
-.pager {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 28px;
-  margin: 70px 0 0;
-  font-size: 24px;
-  line-height: 1.6;
-  font-family: "Yu Gothic", "Hiragino Sans", sans-serif;
-}
+    .pager {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 28px;
+      margin: 70px 0 0;
+      font-size: 24px;
+      line-height: 1.6;
+      font-family: "Yu Gothic", "Hiragino Sans", sans-serif;
+    }
 
-.pager-item {
-  color: #4a4038;
-  text-decoration: none;
-}
+    .pager-item {
+      color: #4a4038;
+      text-decoration: none;
+    }
 
-.pager-item:hover {
-  opacity: 0.7;
-}
+    .pager-item:hover {
+      opacity: 0.7;
+    }
 
-.pager-item.disabled {
-  opacity: 0.35;
-  pointer-events: none;
-}
+    .pager-item.disabled {
+      opacity: 0.35;
+      pointer-events: none;
+    }
 
     .back-guide {
       margin-top: 56px;
@@ -254,182 +244,97 @@
       margin: 0 10px;
       color: var(--sub);
     }
-
-    @media (max-width: 768px) {
-      .container {
-        padding: 28px 18px 80px;
-      }
-
-      .page-range {
-        margin-bottom: 28px;
-        font-size: 24px;
-        font-family: "Yu Gothic", "Hiragino Sans", sans-serif;
-      }
-
-      .page-title {
-        font-size: 36px;
-      }
-
-      .guide-lead {
-        margin-bottom: 24px;
-        font-size: 16px;
-      }
-
-      .step-num {
-        width: 48px;
-        font-size: 18px;
-        padding: 14px 6px;
-      }
-
-      .step-text {
-        padding: 14px 14px;
-        font-size: 15px;
-      }
-      
-      .bottom-nav {
-        font-size: 18px;
-      }
-    }
   </style>
 </head>
 
 <body>
   <div class="container">
     <main class="guide-wrap">
-<p class="page-range">第四層</p>
-<div class="title-line"></div>
+      <p class="page-range">間章２</p>
+      <div class="title-line"></div>
 
-<div class="guide-keyvisual">
-  <img src="guide-old-images/eden-o142.png" alt="プロローグ攻略イメージ">
-</div>
+      <div class="guide-keyvisual">
+        <img src="guide-old-images/eden-o138.png" alt="間章２攻略イメージ">
+      </div>
 
-<h2 class="map-name">部屋</h2>
-<p class="page-note">※１～６はどの順番でも大丈夫です</p>
-<table class="guide-table" aria-label="部屋攻略手順">
+      <h2 class="map-name">部屋</h2>
 
-<tr>
-  <td class="step-num">1</td>
-  <td class="step-text">
-    <p class="step-line">散らばった本を集めます<br>
-      緑色の本</p>
-    <div class="step-image">
-      <img src="guide-old-images/eden-o143.png" alt="椅子の下のタイル" onclick="openImage(this.src)">
-    </div>
-  </td>
-</tr>
+      <table class="guide-table" aria-label="間章２攻略手順">
+        <tr>
+          <td class="step-num">1</td>
+          <td class="step-text">実験メモ７を参考にキーワードを作ります</td>
+        </tr>
+      </table>
 
-<tr>
-  <td class="step-num">2</td>
-  <td class="step-text">
-    <p class="step-line">青色の本</p>
-    <div class="step-image">
-      <img src="guide-old-images/eden-o144.png" alt="椅子の下のタイル" onclick="openImage(this.src)">
-    </div>
-  </td>
-</tr>
+      <h2 class="map-name">夢</h2>
 
-<tr>
-  <td class="step-num">3</td>
-  <td class="step-text">
-    <p class="step-line">赤色の本</p>
-    <div class="step-image">
-      <img src="guide-old-images/eden-o145.png" alt="椅子の下のタイル" onclick="openImage(this.src)">
-    </div>
-  </td>
-</tr>
+      <table class="guide-table" aria-label="間章２攻略手順">
+        <tr>
+          <td class="step-num">1</td>
+          <td class="step-text">
+            <p class="step-line">キーワードを使い扉を開けます</p>
+            <div class="step-image">
+              <img src="guide-old-images/eden-o139.png" alt="夢の扉" onclick="openImage(this.src)">
+            </div>
+          </td>
+        </tr>
+      </table>
 
-<tr>
-  <td class="step-num">4</td>
-  <td class="step-text">
-    <p class="step-line">水色の本<br>ベッドを調べます</p>
-    <div class="step-image">
-      <img src="guide-old-images/eden-o146.png" alt="椅子の下のタイル" onclick="openImage(this.src)">
-    </div>
-  </td>
-</tr>
+      <h2 class="map-name">シェルター</h2>
 
-<tr>
-  <td class="step-num">5</td>
-  <td class="step-text">
-    <p class="step-line">紫色の本<br>机を調べます</p>
-    <div class="step-image">
-      <img src="guide-old-images/eden-o147.png" alt="椅子の下のタイル" onclick="openImage(this.src)">
-    </div>
-  </td>
-</tr>
+      <table class="guide-table" aria-label="間章２攻略手順">
+        <tr>
+          <td class="step-num">1</td>
+          <td class="step-text">リビングに向かいます</td>
+        </tr>
+        <tr>
+          <td class="step-num">2</td>
+          <td class="step-text">本を読みます</td>
+        </tr>
+      </table>
 
-<tr>
-  <td class="step-num">6</td>
-  <td class="step-text">
-    <p class="step-line">橙色の本<br>本棚を起こした後、もう一度本棚を調べます</p>
-    <div class="step-image">
-      <img src="guide-old-images/eden-o148.png" alt="椅子の下のタイル" onclick="openImage(this.src)">
-    </div>
-  </td>
-</tr>
+      <h2 class="map-name">塔の間</h2>
 
-  <tr>
-    <td class="step-num">7</td>
-    <td class="step-text">本棚に本を戻します<br>１巻から順番に戻してください</td>
-  </tr>
-  <tr>
-    <td class="step-num">3</td>
-    <td class="step-text">地下に降ります</td>
-  </tr>
-  <tr>
-    <td class="step-num">4</td>
-    <td class="step-text">廊下の奥の扉に入ります</td>
-  </tr>
-</table>
+      <table class="guide-table" aria-label="間章２攻略手順">
+        <tr>
+          <td class="step-num">1</td>
+          <td class="step-text">階段を上ります</td>
+        </tr>
+        <tr>
+          <td class="step-num">2</td>
+          <td class="step-text">方向キー(上)で起き上がります</td>
+        </tr>
+        <tr>
+          <td class="step-num">3</td>
+          <td class="step-text">３カ所の像を調べます<br>像は１つ調べるごとに出現します</td>
+        </tr>
 
-<h2 class="map-name">？？？</h2>
+        <tr>
+          <td class="step-num">4</td>
+          <td class="step-text">
+            <p class="step-line">２つ目の像は１つ目の像の左上辺りに出現します</p>
+            <div class="step-image">
+              <img src="guide-old-images/eden-o140.png" alt="2つ目の像の場所" onclick="openImage(this.src)">
+            </div>
+          </td>
+        </tr>
 
-<table class="guide-table" aria-label="？？？攻略手順">
+        <tr>
+          <td class="step-num">5</td>
+          <td class="step-text">
+            <p class="step-line">３つ目の像は２つ目の像の左上辺りに出現します</p>
+            <div class="step-image">
+              <img src="guide-old-images/eden-o141.png" alt="3つ目の像の場所" onclick="openImage(this.src)">
+            </div>
+          </td>
+        </tr>
+      </table>
 
-<tr>
-  <td class="step-num">1</td>
-  <td class="step-text">
-    <p class="step-line">アンブレラの背後の壁を攻撃します<br>５回攻撃すると壊れます</p>
-    <div class="step-image">
-      <img src="guide-old-images/eden-o149.png" alt="椅子の下のタイル" onclick="openImage(this.src)">
-    </div>
-  </td>
-</tr>
-
-<h2 class="map-name">部屋</h2>
-
-<table class="guide-table" aria-label="部屋攻略手順">
-  <tr>
-    <td class="step-num">1</td>
-    <td class="step-text">起き上がります</td>
-  </tr>
-  <tr>
-    <td class="step-num">2</td>
-    <td class="step-text">寝ます</td>
-  </tr>
-  <tr>
-    <td class="step-num">3</td>
-    <td class="step-text">起きます</td>
-  </tr>
-  <tr>
-    <td class="step-num">4</td>
-    <td class="step-text">３回眠った後扉を調べると中に入ることができます</td>
-  </tr>
-  <tr>
-    <td class="step-num">5</td>
-    <td class="step-text">店主と話をします</td>
-  </tr>
-  <tr>
-    <td class="step-num">6</td>
-    <td class="step-text">再度寝ます</td>
-  </tr>
-</table>
-      
-<nav class="pager">
-  <a href="guide-old16.html" class="pager-item">前へ</a>
-  <a href="../guide.html" class="pager-item">攻略一覧</a>
-  <a href="guide-old18.html" class="pager-item">次へ</a>
-</nav>
+      <nav class="pager">
+        <a href="guide-old15.html" class="pager-item">前へ</a>
+        <a href="../guide.html" class="pager-item">攻略一覧</a>
+        <a href="guide-old17.html" class="pager-item">次へ</a>
+      </nav>
     </main>
 
     <nav class="bottom-nav" aria-label="ページ移動">
@@ -445,20 +350,19 @@
     </nav>
   </div>
 
-<div id="imageModal" class="image-modal" onclick="closeImage()">
-  <img id="modalImage" class="modal-image" src="" alt="拡大画像">
-</div>
+  <div id="imageModal" class="image-modal" onclick="closeImage()">
+    <img id="modalImage" class="modal-image" src="" alt="拡大画像">
+  </div>
 
-<script>
-  function openImage(src) {
-    document.getElementById("modalImage").src = src;
-    document.getElementById("imageModal").style.display = "flex";
-  }
+  <script>
+    function openImage(src) {
+      document.getElementById("modalImage").src = src;
+      document.getElementById("imageModal").style.display = "flex";
+    }
 
-  function closeImage() {
-    document.getElementById("imageModal").style.display = "none";
-  }
-</script>
-
+    function closeImage() {
+      document.getElementById("imageModal").style.display = "none";
+    }
+  </script>
 </body>
 </html>
