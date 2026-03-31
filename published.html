@@ -44,37 +44,37 @@
       padding: 40px 28px 100px;
     }
 
-.series-intro {
-  max-width: 840px;
-  margin: 0 auto 56px;
-  padding-bottom: 18px;
-  border-bottom: 1px solid rgba(60, 40, 20, 0.12);
-}
+    .series-intro {
+      max-width: 840px;
+      margin: 0 auto 56px;
+      padding-bottom: 18px;
+      border-bottom: 1px solid rgba(60, 40, 20, 0.12);
+    }
 
-.series-title {
-  margin: 0;
-  font-size: 34px;
-  font-weight: 400;
-  color: var(--text);
-  text-align: center;
-}
+    .series-title {
+      margin: 0;
+      font-size: 34px;
+      font-weight: 400;
+      color: var(--text);
+      text-align: center;
+    }
 
-.series-desc {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  font-size: 18px;
-  color: var(--sub);
-  line-height: 1.8;
-  max-width: 900px;
-}
+    .series-desc {
+      margin-top: 0;
+      margin-bottom: 0;
+      font-size: 18px;
+      color: var(--sub);
+      line-height: 1.8;
+      max-width: 900px;
+    }
 
-.series-subtitle {
-  margin-top: 20px;
-  margin-bottom: 0px;
-  font-size: 22px;
-  font-weight: 400;
-  color: var(--text);
-}
+    .series-subtitle {
+      margin-top: 20px;
+      margin-bottom: 0;
+      font-size: 22px;
+      font-weight: 400;
+      color: var(--text);
+    }
 
     .works {
       max-width: 840px;
@@ -92,16 +92,41 @@
       color: var(--text);
     }
 
-    .work-sub {
-      margin-top: 10px;
-      font-size: 22px;
-      color: var(--sub);
+    .work-summary {
+      margin-top: 0;
+      display: flex;
+      align-items: flex-start;
+      gap: 28px;
+      padding: 22px 0;
+      border-top: 1px solid rgba(60, 40, 20, 0.12);
+      border-bottom: 1px solid rgba(60, 40, 20, 0.12);
     }
 
-    .work-desc {
-      margin-top: 18px;
-      font-size: 22px;
-      color: var(--text);
+    .work-thumb {
+      width: 320px;
+      height: 180px;
+      object-fit: cover;
+      display: block;
+      flex-shrink: 0;
+      border: 1px solid rgba(60, 40, 20, 0.18);
+    }
+
+    .work-text {
+      font-size: 20px;
+      color: var(--sub);
+      line-height: 1.5;
+    }
+
+    .work-text p {
+      margin: 0;
+    }
+
+    .work-text p + p {
+      margin-top: 0.3em;
+    }
+
+    .work-note {
+      margin-top: 1.2em;
     }
 
     .work-links {
@@ -111,51 +136,18 @@
     }
 
     .work-links a {
-  color: var(--link);
-  text-decoration: underline;
-  text-underline-offset: 0.16em;
-  text-decoration-thickness: 1px;
-  transition: color 0.2s ease, opacity 0.2s ease;
-}
+      color: var(--link);
+      text-decoration: underline;
+      text-underline-offset: 0.16em;
+      text-decoration-thickness: 1px;
+      transition: color 0.2s ease, opacity 0.2s ease;
+    }
 
-.work-links a:hover {
-  color: var(--link-hover);
-  opacity: 0.75;
-}
+    .work-links a:hover {
+      color: var(--link-hover);
+      opacity: 0.75;
+    }
 
-.work-summary {
-  margin-top: 0px;
-  display: flex;
-  align-items: flex-start;
-  gap: 28px;
-  padding: 22px 0;
-  border-top: 1px solid rgba(60, 40, 20, 0.12);
-  border-bottom: 1px solid rgba(60, 40, 20, 0.12);
-}
-
-.work-thumb {
-  width: 320px;
-  height: 180px;
-  object-fit: cover;
-  display: block;
-  flex-shrink: 0;
-  border: 1px solid rgba(60, 40, 20, 0.18);
-}
-
-.work-text {
-  font-size: 20px;
-  color: var(--sub);
-  line-height: 1.5;
-}
-
-.work-text p {
-  margin: 0;
-}
-
-.work-text p + p {
-  margin-top: 0.3em;
-}
-    
     .separator {
       margin: 0 22px;
       color: var(--sub);
@@ -183,71 +175,66 @@
     .bottom-nav .separator {
       margin: 0 10px;
     }
-
   </style>
 </head>
 <body>
   <div class="container">
     <main class="works">
+      <section class="series-intro">
+        <h1 class="series-title">ＥＤＥＮシリーズ</h1>
 
-<section class="series-intro">
-  <h1 class="series-title">ＥＤＥＮシリーズ</h1>
+        <p class="series-desc">
+          3つのルートと、その先にある真相ルートで構成されたマルチルートアドベンチャーです。<br>
+          ルートごとに物語やゲーム性が異なり、謎解きや探索、RPG要素など、さまざまな形で世界の真相へ近づいていきます。
+        </p>
 
-  <p class="series-desc">
-    3つのルートと、その先にある真相ルートで構成されたマルチルートアドベンチャーです。<br>
-    ルートごとに物語やゲーム性が異なり、謎解きや探索、RPG要素など、さまざまな形で世界の真相へ近づいていきます。
-  </p>
+        <h2 class="series-subtitle">フラグメント</h2>
 
-  <h2 class="series-subtitle">フラグメント</h2>
-
-  <p class="series-desc">
-    世界の断片であり、新たなルートやイベントを解放する鍵でもあります。<br>
-    それぞれの物語を巡って集めた断片は、やがてひとつの真実へと繋がっていきます。
-  </p>
-</section>
-      
-<section class="work-item">
-  <h1 class="work-title">EDEN（旧版）</h1>
-<div class="work-summary">
-  <img src="images/eden-o-s.png" alt="EDEN（旧版）スクリーンショット" class="work-thumb">
-  <div class="work-text">
-    <p>ルートＡのみ</p>
-    <p>クリア後に少しおまけ要素があります</p>
-
-    <div class="work-links">
-      <a href="https://www.freem.ne.jp/win/game/33577">ふりーむ</a>
-      <span class="separator">/</span>
-      <a href="https://freegame-mugen.jp/adventure/game_13457.html">夢現</a>
-    </div>
-  </div>
-</div>
-</section>
+        <p class="series-desc">
+          世界の断片であり、新たなルートやイベントを解放する鍵でもあります。<br>
+          それぞれの物語を巡って集めた断片は、やがてひとつの真実へと繋がっていきます。
+        </p>
+      </section>
 
       <section class="work-item">
-  <h1 class="work-title">EDEN ルートA</h1>
-<div class="work-summary">
-  <img src="images/cs.png" alt="EDEN ルートAスクリーンショット" class="work-thumb">
-  <div class="work-text">
-    <p>EDEN(旧版)のリメイクです</p>
-    <p>近日公開予定</p>
-    <br>
-　　<p>ふりーむ、夢現での公開を予定しています</p>
-  </div>
-</div>
-</section>
+        <h2 class="work-title">EDEN（旧版）</h2>
+        <div class="work-summary">
+          <img src="images/eden-o-s.png" alt="EDEN（旧版）スクリーンショット" class="work-thumb">
+          <div class="work-text">
+            <p>ルートＡのみ</p>
+            <p>クリア後に少しおまけ要素があります</p>
+
+            <div class="work-links">
+              <a href="https://www.freem.ne.jp/win/game/33577">ふりーむ</a>
+              <span class="separator">/</span>
+              <a href="https://freegame-mugen.jp/adventure/game_13457.html">夢現</a>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <section class="work-item">
-  <h1 class="work-title">EDEN ルートF(体験版)</h1>
-<div class="work-summary">
-  <img src="images/cs.png" alt="EDEN ルートFスクリーンショット" class="work-thumb">
-  <div class="work-text">
-    <p>今夏公開予定</p>
-    <br><br>
-　　<p>ふりーむ、夢現での公開を予定しています</p>
-  </div>
-</div>
-</section>
+        <h2 class="work-title">EDEN ルートA</h2>
+        <div class="work-summary">
+          <img src="images/cs.png" alt="EDEN ルートAスクリーンショット" class="work-thumb">
+          <div class="work-text">
+            <p>EDEN(旧版)のリメイクです</p>
+            <p>近日公開予定</p>
+            <p class="work-note">ふりーむ、夢現での公開を予定しています</p>
+          </div>
+        </div>
+      </section>
 
+      <section class="work-item">
+        <h2 class="work-title">EDEN ルートF(体験版)</h2>
+        <div class="work-summary">
+          <img src="images/cs.png" alt="EDEN ルートFスクリーンショット" class="work-thumb">
+          <div class="work-text">
+            <p>今夏公開予定</p>
+            <p class="work-note">ふりーむ、夢現での公開を予定しています</p>
+          </div>
+        </div>
+      </section>
     </main>
 
     <nav class="bottom-nav" aria-label="ページ移動">
