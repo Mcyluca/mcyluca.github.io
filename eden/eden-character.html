@@ -170,19 +170,26 @@
       line-height: 1;
     }
 
-    .modal-content {
-      display: grid;
-      grid-template-columns: minmax(180px, 260px) 1fr;
-      gap: 28px;
-      align-items: start;
-    }
+.modal-content {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 28px;
+  align-items: start;
+}
 
-    .modal-image img {
-      display: block;
-      width: 100%;
-      height: auto;
-      background: rgba(255, 255, 255, 0.03);
-    }
+.modal-image {
+  width: 260px;
+  margin: 0 auto;
+}
+
+.modal-image img {
+  display: block;
+  width: 100%;
+  max-width: 260px;
+  height: auto;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.03);
+}
 
     .modal-text h2 {
       font-size: 1.6rem;
@@ -205,74 +212,6 @@
       color: rgba(255, 255, 255, 0.94);
     }
 
-      .character-box {
-        padding: 36px 28px;
-      }
-
-      .modal-content {
-        grid-template-columns: 1fr;
-      }
-
-      .modal-image {
-        max-width: 340px;
-        margin: 0 auto;
-      }
-    }
-
-      .eden-menu a {
-        padding: 14px 14px;
-        font-size: 0.88rem;
-        letter-spacing: 0.08em;
-      }
-
-      .character-overlay {
-        padding-top: 40px;
-        padding-left: 16px;
-        padding-right: 16px;
-      }
-
-      .character-box {
-        padding: 24px 18px;
-      }
-
-      .page-title {
-        font-size: 1.5rem;
-        margin-bottom: 24px;
-      }
-
-      .route-box {
-        padding: 18px 16px 22px;
-      }
-
-      .route-title {
-        font-size: 1.05rem;
-      }
-
-      .thumb-list {
-        gap: 14px;
-      }
-
-      .thumb-btn {
-        width: 100px;
-      }
-
-      .modal {
-        padding: 14px;
-      }
-
-      .modal-panel {
-        padding: 28px 18px 20px;
-      }
-
-      .modal-text h2 {
-        font-size: 1.3rem;
-      }
-
-      .modal-description {
-        font-size: 0.94rem;
-        line-height: 1.9;
-      }
-    }
   </style>
 </head>
 <body>
