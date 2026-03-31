@@ -125,12 +125,18 @@
       border-right: 1px solid var(--line);
     }
 
-    .guide-cell:hover,
-    .sub-links a:hover,
-    .badge:hover {
-      opacity: 0.7;
-      color: var(--link-hover);
-    }
+.guide-cell a:hover,
+.sub-links a:hover,
+.badge:hover {
+  opacity: 0.7;
+  color: var(--link-hover);
+}
+
+  .guide-cell a {
+  color: var(--text);
+  text-decoration: none;
+  transition: opacity 0.2s ease, color 0.2s ease;
+}  
 
     .guide-cell-single {
       width: 100%;
@@ -301,14 +307,16 @@
           </a>
         </div>
 
-        <div class="guide-grid-two">
-          <a href="guide-old/guide-old1.html" class="guide-cell">ＯＰ〜プロローグ</a>
-          <a href="guide-old/guide-old2.html" class="guide-cell">第一層</a>
-        </div>
+<div class="guide-grid-two">
+  <div class="guide-cell"><a href="guide-old/guide-old1.html">ＯＰ〜プロローグ</a></div>
+  <div class="guide-cell"><a href="guide-old/guide-old2.html">第一層</a></div>
+</div>
 
-        <div class="guide-row-single">
-          <a href="guide-old/guide-old3.html" class="guide-cell guide-cell-single">間章</a>
-        </div>
+<div class="guide-row-single">
+  <div class="guide-cell guide-cell-single">
+    <a href="guide-old/guide-old3.html">間章</a>
+  </div>
+</div>
 
         <div class="guide-row-single">
           <div class="guide-cell guide-cell-single guide-cell-branch">
