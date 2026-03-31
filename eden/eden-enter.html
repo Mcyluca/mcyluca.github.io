@@ -13,12 +13,12 @@
     }
 
     @font-face {
-  font-family: "KokuGothicLight";
-  src: url("../font_1_kokugl_1.15_rls.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-    
+      font-family: "KokuGothicLight";
+      src: url("../font_1_kokugl_1.15_rls.ttf") format("truetype");
+      font-weight: normal;
+      font-style: normal;
+    }
+
     body {
       background: #000;
       color: #fff;
@@ -54,10 +54,10 @@
     }
 
     .line2-text {
-     display: inline-block;
-     transform: translateX(0.12em);
-     }
-    
+      display: inline-block;
+      transform: translateX(0.12em);
+    }
+
     .char {
       opacity: 0;
       display: inline-block;
@@ -70,32 +70,33 @@
     .char:nth-child(3) { animation-delay: 1.0s; }
     .char:nth-child(4) { animation-delay: 1.4s; }
 
-@keyframes charFade {
-  0% {
-    opacity: 0;
-    transform: translateX(-4px);
-    filter: blur(6px);
-  }
-  60% {
-    opacity: 0.7;
-    transform: translateX(-3px);
-    filter: blur(2px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-    filter: blur(0);
-  }
-}
+    @keyframes charFade {
+      0% {
+        opacity: 0;
+        transform: translateX(-4px);
+        filter: blur(6px);
+      }
+      60% {
+        opacity: 0.7;
+        transform: translateX(-3px);
+        filter: blur(2px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateX(0);
+        filter: blur(0);
+      }
+    }
 
     @keyframes line2Show {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
     @keyframes wholeFade {
       0% {
         opacity: 1;
