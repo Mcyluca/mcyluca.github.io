@@ -170,48 +170,40 @@
       line-height: 1;
     }
 
-.modal-content {
-  display: grid;
-  grid-template-columns: 260px 1fr;
-  gap: 28px;
-  align-items: start;
-}
-
-.modal-image {
-  width: 260px;
-  margin: 0 auto;
-}
-
-.modal-image img {
-  display: block;
-  width: 100%;
-  max-width: 260px;
-  height: auto;
-  margin: 0 auto;
-  background: rgba(255, 255, 255, 0.03);
-}
-
-.modal-text h2 {
-  font-size: 2rem;
-  letter-spacing: 0.08em;
-  margin-bottom: 18px;
-  line-height: 1.4;
-}
-
-    .modal-route {
-      font-size: 0.92rem;
-      letter-spacing: 0.08em;
-      color: rgba(255, 255, 255, 0.72);
-      margin-bottom: 20px;
+    .modal-content {
+      display: grid;
+      grid-template-columns: 260px 1fr;
+      gap: 28px;
+      align-items: start;
     }
 
-.modal-description {
-  font-size: 1.15rem;
-  line-height: 2;
-  letter-spacing: 0.04em;
-  color: rgba(255, 255, 255, 0.94);
-}
+    .modal-image {
+      width: 260px;
+      margin: 0 auto;
+    }
 
+    .modal-image img {
+      display: block;
+      width: 100%;
+      max-width: 260px;
+      height: auto;
+      margin: 0 auto;
+      background: rgba(255, 255, 255, 0.03);
+    }
+
+    .modal-text h2 {
+      font-size: 2rem;
+      letter-spacing: 0.08em;
+      margin-bottom: 18px;
+      line-height: 1.4;
+    }
+
+    .modal-description {
+      font-size: 1.15rem;
+      line-height: 2;
+      letter-spacing: 0.04em;
+      color: rgba(255, 255, 255, 0.94);
+    }
   </style>
 </head>
 <body>
@@ -234,14 +226,15 @@
         <section class="route-section">
           <div class="route-box">
             <h2 class="route-title">ルートA</h2>
-            <div class="thumb-list"><button
+            <div class="thumb-list">
+              <button
                 class="thumb-btn"
                 type="button"
                 data-name="繝弱い繝ｻ繧｢繝?繝?繧ｹ"
                 data-image="../characte-images/eve-t.png"
                 data-description="何も思い出せない…"
               >
-                <img src="../characte-images/eve-s.png" alt="">
+                <img src="../characte-images/eve-s.png" alt="イヴ">
               </button>
 
               <button
@@ -249,13 +242,10 @@
                 type="button"
                 data-name="ノア"
                 data-image="../characte-images/noa-t.png"
-                data-description="小説家<br>
-                人気ファンタジー小説『After the Rain』の作者<br>
-                審判の雨の中、レインと共に避難生活を送っている"
+                data-description="小説家<br>人気ファンタジー小説『After the Rain』の作者<br>審判の雨の中、レインと共に避難生活を送っている"
               >
                 <img src="../characte-images/noa-s.png" alt="ノア">
               </button>
-              
             </div>
           </div>
         </section>
@@ -293,7 +283,6 @@
             </div>
           </div>
         </section>
-
       </div>
     </div>
   </section>
