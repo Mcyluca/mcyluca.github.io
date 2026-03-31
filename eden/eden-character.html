@@ -249,8 +249,8 @@
                 type="button"
                 data-name="ノア"
                 data-image="../characte-images/noa-t.png"
-                data-description="小説家
-                人気ファンタジー小説『After the Rain』の作者
+                data-description="小説家<br>
+                人気ファンタジー小説『After the Rain』の作者<br>
                 審判の雨の中、レインと共に避難生活を送っている"
               >
                 <img src="../characte-images/noa-s.png" alt="ノア">
@@ -328,7 +328,7 @@
         modalImage.src = button.dataset.image;
         modalImage.alt = button.dataset.name;
         modalName.textContent = button.dataset.name;
-        modalDescription.textContent = button.dataset.description;
+        modalDescription.innerHTML = button.dataset.description;
         modal.classList.add("is-open");
       });
     });
