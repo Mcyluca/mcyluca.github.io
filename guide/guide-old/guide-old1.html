@@ -55,49 +55,40 @@
       margin: 0 auto;
     }
 
-.page-range {
-  margin: 0 0 18px;
-  font-size: 34px;
-  font-family: "Yu Gothic", "Hiragino Sans", sans-serif;
-  color: var(--text);
-  letter-spacing: 0.03em;
-}
-
-.title-line {
-  width: 100%;
-  height: 1px;
-  background:#cfc8c2;
-  margin: 0 0 28px;
-}
-
-.guide-keyvisual {
-  width: 100%;
-  max-width: 700px;
-  height: 360px;
-  margin: 0 auto 28px;
-  overflow: hidden;
-}
-
-.guide-keyvisual img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.page-note {
-  margin: 0 0 20px;
-  font-size: 14px;
-  color: var(--sub);
-}
-
-    .page-title {
+    .page-range {
       margin: 0 0 18px;
-      font-size: 52px;
-      font-weight: 400;
+      font-size: 34px;
+      font-family: "Yu Gothic", "Hiragino Sans", sans-serif;
       color: var(--text);
       letter-spacing: 0.03em;
-      font-family: "Yu Gothic", "Hiragino Sans", sans-serif;
+    }
+
+    .title-line {
+      width: 100%;
+      height: 1px;
+      background: #cfc8c2;
+      margin: 0 0 28px;
+    }
+
+    .guide-keyvisual {
+      width: 100%;
+      max-width: 700px;
+      height: 360px;
+      margin: 0 auto 28px;
+      overflow: hidden;
+    }
+
+    .guide-keyvisual img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .page-note {
+      margin: 0 0 20px;
+      font-size: 14px;
+      color: var(--sub);
     }
 
     .guide-lead {
@@ -131,109 +122,105 @@
       white-space: nowrap;
     }
 
-.step-text {
-  padding: 16px 18px;
-  font-size: 16px;
-  color: var(--text);
-  text-align: left;
-  vertical-align: top;
-}
+    .step-text {
+      padding: 16px 18px;
+      font-size: 16px;
+      color: var(--text);
+      text-align: left;
+      vertical-align: top;
+    }
 
-.step-line {
-  margin: 0 0 12px;
-  text-align: left;
-}
+    .step-line {
+      margin: 0 0 12px;
+      text-align: left;
+    }
 
-.step-image {
-  margin: 0;
-  text-align: left;
-}
+    .step-image {
+      margin: 0;
+      text-align: left;
+    }
 
-.step-image img {
-  width: 220px;
-  height: auto;
-  border: 1px solid #d8d2cc;
-  display: block;
-  cursor: pointer;
-  transition: opacity 0.2s ease;
-}
+    .step-image img {
+      width: 220px;
+      height: auto;
+      border: 1px solid #d8d2cc;
+      display: block;
+      cursor: pointer;
+      transition: opacity 0.2s ease;
+    }
 
-.step-image img:hover {
-  opacity: 0.85;
-}
+    .step-image img:hover {
+      opacity: 0.85;
+    }
 
-.step-image.multi {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 12px;
-  max-width: 500px;
-}
+    .step-image.multi {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      max-width: 500px;
+    }
 
-.step-image.multi img {
-  width: 100%;
-  height: auto;
-  border: 1px solid #d8d2cc;
-  display: block;
-  cursor: pointer;
-  transition: opacity 0.2s ease;
-}
+    .step-image.multi img {
+      width: 100%;
+      height: auto;
+      border: 1px solid #d8d2cc;
+      display: block;
+      cursor: pointer;
+      transition: opacity 0.2s ease;
+    }
 
+    .image-modal {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.75);
+      z-index: 9999;
+      justify-content: center;
+      align-items: center;
+      padding: 24px;
+    }
 
+    .modal-image {
+      max-width: 90vw;
+      max-height: 90vh;
+      display: block;
+      border: 1px solid #d8d2cc;
+    }
 
-    
-  .image-modal {
-  display: none;
-  position: fixed;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.75);
-  z-index: 9999;
-  justify-content: center;
-  align-items: center;
-  padding: 24px;
-}
+    .map-name {
+      font-size: 25px;
+      font-weight: 900;
+      line-height: 1.2;
+      letter-spacing: 0.02em;
+      margin: 42px 0 10px;
+      color: #0f2238;
+      font-family: "Yu Gothic", "Hiragino Sans", sans-serif;
+    }
 
-.modal-image {
-  max-width: 90vw;
-  max-height: 90vh;
-  display: block;
-  border: 1px solid #d8d2cc;
-}  
+    .pager {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 28px;
+      margin: 70px 0 0;
+      font-size: 24px;
+      line-height: 1.6;
+      font-family: "Yu Gothic", "Hiragino Sans", sans-serif;
+    }
 
-.map-name {
-  font-size: 25px;
-  font-weight: 900;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  margin: 18px 0 10px;
-  margin-top: 42px;
-  color: #0f2238;
-  font-family: "Yu Gothic", "Hiragino Sans", sans-serif;
-}
+    .pager-item {
+      color: #4a4038;
+      text-decoration: none;
+    }
 
-.pager {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 28px;
-  margin: 70px 0 0;
-  font-size: 24px;
-  line-height: 1.6;
-  font-family: "Yu Gothic", "Hiragino Sans", sans-serif;
-}
+    .pager-item:hover {
+      opacity: 0.7;
+    }
 
-.pager-item {
-  color: #4a4038;
-  text-decoration: none;
-}
-
-.pager-item:hover {
-  opacity: 0.7;
-}
-
-.pager-item.disabled {
-  opacity: 0.35;
-  pointer-events: none;
-}
+    .pager-item.disabled {
+      opacity: 0.35;
+      pointer-events: none;
+    }
 
     .back-guide {
       margin-top: 56px;
@@ -273,81 +260,44 @@
       margin: 0 10px;
       color: var(--sub);
     }
-
-    @media (max-width: 768px) {
-      .container {
-        padding: 28px 18px 80px;
-      }
-
-      .page-range {
-        margin-bottom: 28px;
-        font-size: 24px;
-        font-family: "Yu Gothic", "Hiragino Sans", sans-serif;
-      }
-
-      .page-title {
-        font-size: 36px;
-      }
-
-      .guide-lead {
-        margin-bottom: 24px;
-        font-size: 16px;
-      }
-
-      .step-num {
-        width: 48px;
-        font-size: 18px;
-        padding: 14px 6px;
-      }
-
-      .step-text {
-        padding: 14px 14px;
-        font-size: 15px;
-      }
-      
-      .bottom-nav {
-        font-size: 18px;
-      }
-    }
   </style>
 </head>
 
 <body>
   <div class="container">
     <main class="guide-wrap">
-<p class="page-range">OP～プロローグ</p>
-<div class="title-line"></div>
+      <p class="page-range">OP～プロローグ</p>
+      <div class="title-line"></div>
 
-<div class="guide-keyvisual">
-  <img src="guide-old-images/eden-o1.png" alt="プロローグ攻略イメージ">
-</div>
+      <div class="guide-keyvisual">
+        <img src="guide-old-images/eden-o1.png" alt="プロローグ攻略イメージ">
+      </div>
 
-<h2 class="map-name">魔術師の間</h2>
-      
-<p class="page-note">※１～９はどの順番でも大丈夫です</p>
+      <h2 class="map-name">魔術師の間</h2>
 
- <table class="guide-table" aria-label="プロローグ攻略手順">
+      <p class="page-note">※１～９はどの順番でも大丈夫です</p>
 
+      <table class="guide-table" aria-label="プロローグ攻略手順">
         <tr>
           <td class="step-num">1</td>
           <td class="step-text">人形を片付けます</td>
         </tr>
-   
+
         <tr>
           <td class="step-num">2</td>
           <td class="step-text">椅子を片付けます</td>
         </tr>
-   
-<tr>
-  <td class="step-num">3</td>
-  <td class="step-text">
-    <p class="step-line">椅子の下のタイルを持ち上げます<br>
-      この方向から持ち上げてください</p>
-    <div class="step-image">
-      <img src="guide-old-images/eden-o4.png" alt="椅子の下のタイル" onclick="openImage(this.src)">
-    </div>
-  </td>
-</tr>
+
+        <tr>
+          <td class="step-num">3</td>
+          <td class="step-text">
+            <p class="step-line">椅子の下のタイルを持ち上げます<br>
+              この方向から持ち上げてください</p>
+            <div class="step-image">
+              <img src="guide-old-images/eden-o4.png" alt="椅子の下のタイル" onclick="openImage(this.src)">
+            </div>
+          </td>
+        </tr>
 
         <tr>
           <td class="step-num">4</td>
@@ -358,72 +308,74 @@
           <td class="step-num">5</td>
           <td class="step-text">ランプに火を点けます</td>
         </tr>
+
         <tr>
           <td class="step-num">6</td>
           <td class="step-text">椅子を置きます</td>
         </tr>
-   
+
         <tr>
-  <td class="step-num">7</td>
-  <td class="step-text">
-    <p class="step-line">赤い本を取ります</p>
-    <div class="step-image">
-      <img src="guide-old-images/eden-o8.png" alt="椅子の下のタイル" onclick="openImage(this.src)">
-    </div>
-  </td>
-</tr>
+          <td class="step-num">7</td>
+          <td class="step-text">
+            <p class="step-line">赤い本を取ります</p>
+            <div class="step-image">
+              <img src="guide-old-images/eden-o8.png" alt="赤い本の場所" onclick="openImage(this.src)">
+            </div>
+          </td>
+        </tr>
+
         <tr>
           <td class="step-num">8</td>
           <td class="step-text">鍋を調べ、赤い本を青い本にします</td>
         </tr>
+
         <tr>
           <td class="step-num">9</td>
           <td class="step-text">青い本を置きます</td>
         </tr>
+
         <tr>
           <td class="step-num">10</td>
           <td class="step-text">扉を調べます</td>
         </tr>
       </table>
 
-<h2 class="map-name">マンション</h2>
+      <h2 class="map-name">マンション</h2>
 
-<table class="guide-table" aria-label="プロローグ攻略手順">
-
+      <table class="guide-table" aria-label="プロローグ攻略手順">
         <tr>
           <td class="step-num">1</td>
           <td class="step-text">鍵を探しに初めの部屋に戻ります</td>
-        </tr>  
-        </table>
-
-<h2 class="map-name">EDENタワー(ロビー)</h2>
-<table class="guide-table" aria-label="プロローグ攻略手順">
-
-    <tr>
-  <td class="step-num">1</td>
-  <td class="step-text">
-    <p class="step-line">話しかけると消える３人の人物に話しかけます<br>
-    ※どの順番でも大丈夫です</p>
-    <div class="step-image multi">
-      <img src="guide-old-images/eden-o10.png" alt="画像1" onclick="openImage(this.src)">
-      <img src="guide-old-images/eden-o11.png" alt="画像2" onclick="openImage(this.src)">
-      <img src="guide-old-images/eden-o12.png" alt="画像3" onclick="openImage(this.src)">
-    </div>
-  </td>
-</tr>
-  
-      <tr>
-          <td class="step-num">2</td>
-          <td class="step-text">噴水前に現れた人物に話しかけ、<いいえ>を選択します</td>
         </tr>
-  
-        </table>
-      
-<nav class="pager">
-  <span class="pager-item disabled">前へ</span>
-  <a href="../guide.html" class="pager-item">攻略一覧</a>
-  <a href="guide-old2.html" class="pager-item">次へ</a>
-</nav>
+      </table>
+
+      <h2 class="map-name">EDENタワー(ロビー)</h2>
+
+      <table class="guide-table" aria-label="プロローグ攻略手順">
+        <tr>
+          <td class="step-num">1</td>
+          <td class="step-text">
+            <p class="step-line">話しかけると消える３人の人物に話しかけます<br>
+            ※どの順番でも大丈夫です</p>
+            <div class="step-image multi">
+              <img src="guide-old-images/eden-o10.png" alt="人物1" onclick="openImage(this.src)">
+              <img src="guide-old-images/eden-o11.png" alt="人物2" onclick="openImage(this.src)">
+              <img src="guide-old-images/eden-o12.png" alt="人物3" onclick="openImage(this.src)">
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="step-num">2</td>
+          <td class="step-text">噴水前に現れた人物に話しかけ、&lt;いいえ&gt;を選択します</td>
+        </tr>
+      </table>
+
+      <nav class="pager">
+        <span class="pager-item disabled">前へ</span>
+        <a href="../guide.html" class="pager-item">攻略一覧</a>
+        <a href="guide-old2.html" class="pager-item">次へ</a>
+      </nav>
     </main>
 
     <nav class="bottom-nav" aria-label="ページ移動">
@@ -439,20 +391,19 @@
     </nav>
   </div>
 
-<div id="imageModal" class="image-modal" onclick="closeImage()">
-  <img id="modalImage" class="modal-image" src="" alt="拡大画像">
-</div>
+  <div id="imageModal" class="image-modal" onclick="closeImage()">
+    <img id="modalImage" class="modal-image" src="" alt="拡大画像">
+  </div>
 
-<script>
-  function openImage(src) {
-    document.getElementById("modalImage").src = src;
-    document.getElementById("imageModal").style.display = "flex";
-  }
+  <script>
+    function openImage(src) {
+      document.getElementById("modalImage").src = src;
+      document.getElementById("imageModal").style.display = "flex";
+    }
 
-  function closeImage() {
-    document.getElementById("imageModal").style.display = "none";
-  }
-</script>
-
+    function closeImage() {
+      document.getElementById("imageModal").style.display = "none";
+    }
+  </script>
 </body>
 </html>
