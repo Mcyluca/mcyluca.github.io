@@ -55,49 +55,40 @@
       margin: 0 auto;
     }
 
-.page-range {
-  margin: 0 0 18px;
-  font-size: 34px;
-  font-family: "Yu Gothic", "Hiragino Sans", sans-serif;
-  color: var(--text);
-  letter-spacing: 0.03em;
-}
-
-.title-line {
-  width: 100%;
-  height: 1px;
-  background:#cfc8c2;
-  margin: 0 0 28px;
-}
-
-.guide-keyvisual {
-  width: 100%;
-  max-width: 700px;
-  height: 360px;
-  margin: 0 auto 28px;
-  overflow: hidden;
-}
-
-.guide-keyvisual img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.page-note {
-  margin: 0 0 20px;
-  font-size: 14px;
-  color: var(--sub);
-}
-
-    .page-title {
+    .page-range {
       margin: 0 0 18px;
-      font-size: 52px;
-      font-weight: 400;
+      font-size: 34px;
+      font-family: "Yu Gothic", "Hiragino Sans", sans-serif;
       color: var(--text);
       letter-spacing: 0.03em;
-      font-family: "Yu Gothic", "Hiragino Sans", sans-serif;
+    }
+
+    .title-line {
+      width: 100%;
+      height: 1px;
+      background: #cfc8c2;
+      margin: 0 0 28px;
+    }
+
+    .guide-keyvisual {
+      width: 100%;
+      max-width: 700px;
+      height: 360px;
+      margin: 0 auto 28px;
+      overflow: hidden;
+    }
+
+    .guide-keyvisual img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .page-note {
+      margin: 0 0 20px;
+      font-size: 14px;
+      color: var(--sub);
     }
 
     .guide-lead {
@@ -131,106 +122,105 @@
       white-space: nowrap;
     }
 
-.step-text {
-  padding: 16px 18px;
-  font-size: 16px;
-  color: var(--text);
-  text-align: left;
-  vertical-align: top;
-}
+    .step-text {
+      padding: 16px 18px;
+      font-size: 16px;
+      color: var(--text);
+      text-align: left;
+      vertical-align: top;
+    }
 
-.step-line {
-  margin: 0 0 12px;
-  text-align: left;
-}
+    .step-line {
+      margin: 0 0 12px;
+      text-align: left;
+    }
 
-.step-image {
-  margin: 0;
-  text-align: left;
-}
+    .step-image {
+      margin: 0;
+      text-align: left;
+    }
 
-.step-image img {
-  width: 220px;
-  height: auto;
-  border: 1px solid #d8d2cc;
-  display: block;
-  cursor: pointer;
-  transition: opacity 0.2s ease;
-}
+    .step-image img {
+      width: 220px;
+      height: auto;
+      border: 1px solid #d8d2cc;
+      display: block;
+      cursor: pointer;
+      transition: opacity 0.2s ease;
+    }
 
-.step-image img:hover {
-  opacity: 0.85;
-}
+    .step-image img:hover {
+      opacity: 0.85;
+    }
 
-.step-image.multi {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 12px;
-  max-width: 500px;
-}
+    .step-image.multi {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      max-width: 500px;
+    }
 
-.step-image.multi img {
-  width: 100%;
-  height: auto;
-  border: 1px solid #d8d2cc;
-  display: block;
-  cursor: pointer;
-  transition: opacity 0.2s ease;
-}
-    
-  .image-modal {
-  display: none;
-  position: fixed;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.75);
-  z-index: 9999;
-  justify-content: center;
-  align-items: center;
-  padding: 24px;
-}
+    .step-image.multi img {
+      width: 100%;
+      height: auto;
+      border: 1px solid #d8d2cc;
+      display: block;
+      cursor: pointer;
+      transition: opacity 0.2s ease;
+    }
 
-.modal-image {
-  max-width: 90vw;
-  max-height: 90vh;
-  display: block;
-  border: 1px solid #d8d2cc;
-}  
+    .image-modal {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.75);
+      z-index: 9999;
+      justify-content: center;
+      align-items: center;
+      padding: 24px;
+    }
 
-.map-name {
-  font-size: 25px;
-  font-weight: 900;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  margin: 18px 0 10px;
-  margin-top: 42px;
-  color: #0f2238;
-  font-family: "Yu Gothic", "Hiragino Sans", sans-serif;
-}
+    .modal-image {
+      max-width: 90vw;
+      max-height: 90vh;
+      display: block;
+      border: 1px solid #d8d2cc;
+    }
 
-.pager {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 28px;
-  margin: 70px 0 0;
-  font-size: 24px;
-  line-height: 1.6;
-  font-family: "Yu Gothic", "Hiragino Sans", sans-serif;
-}
+    .map-name {
+      font-size: 25px;
+      font-weight: 900;
+      line-height: 1.2;
+      letter-spacing: 0.02em;
+      margin: 42px 0 10px;
+      color: #0f2238;
+      font-family: "Yu Gothic", "Hiragino Sans", sans-serif;
+    }
 
-.pager-item {
-  color: #4a4038;
-  text-decoration: none;
-}
+    .pager {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 28px;
+      margin: 70px 0 0;
+      font-size: 24px;
+      line-height: 1.6;
+      font-family: "Yu Gothic", "Hiragino Sans", sans-serif;
+    }
 
-.pager-item:hover {
-  opacity: 0.7;
-}
+    .pager-item {
+      color: #4a4038;
+      text-decoration: none;
+    }
 
-.pager-item.disabled {
-  opacity: 0.35;
-  pointer-events: none;
-}
+    .pager-item:hover {
+      opacity: 0.7;
+    }
+
+    .pager-item.disabled {
+      opacity: 0.35;
+      pointer-events: none;
+    }
 
     .back-guide {
       margin-top: 56px;
@@ -270,434 +260,391 @@
       margin: 0 10px;
       color: var(--sub);
     }
-
-    @media (max-width: 768px) {
-      .container {
-        padding: 28px 18px 80px;
-      }
-
-      .page-range {
-        margin-bottom: 28px;
-        font-size: 24px;
-        font-family: "Yu Gothic", "Hiragino Sans", sans-serif;
-      }
-
-      .page-title {
-        font-size: 36px;
-      }
-
-      .guide-lead {
-        margin-bottom: 24px;
-        font-size: 16px;
-      }
-
-      .step-num {
-        width: 48px;
-        font-size: 18px;
-        padding: 14px 6px;
-      }
-
-      .step-text {
-        padding: 14px 14px;
-        font-size: 15px;
-      }
-      
-      .bottom-nav {
-        font-size: 18px;
-      }
-    }
   </style>
 </head>
 
 <body>
   <div class="container">
     <main class="guide-wrap">
-<p class="page-range">フラグメント</p>
-<div class="title-line"></div>
+      <p class="page-range">フラグメント</p>
+      <div class="title-line"></div>
 
-<div class="guide-keyvisual">
-  <img src="guide-old-images/eden-o153.png" alt="プロローグ攻略イメージ">
-</div>
+      <div class="guide-keyvisual">
+        <img src="guide-old-images/eden-o153.png" alt="フラグメント一覧イメージ">
+      </div>
 
-<h2 class="map-name">I～XVII</h2>
-I、IV、IX、XII、XVI、XVIIはストーリー中に入手できます<br>
-そのうちIVは自動的に入手できます<br>
-VII、XIVはおまけモードにて入手できます<br>
-ヒントはありません
-<table class="guide-table" aria-label="I～XVII一覧">
+      <h2 class="map-name">I～XVII</h2>
+      I、IV、IX、XII、XVI、XVIIはストーリー中に入手できます<br>
+      そのうちIVは自動的に入手できます<br>
+      VII、XIVはおまけモードにて入手できます<br>
+      ヒントはありません
+      <table class="guide-table" aria-label="I～XVII一覧">
+        <tr>
+          <td class="step-num">I</td>
+          <td class="step-text">
+            <p class="step-line">魔術師の間で扉が開いた後、引き返して紙を拾います</p>
+            <div class="step-image">
+              <img src="guide-old-images/eden-o154.png" alt="紙の場所" onclick="openImage(this.src)">
+            </div>
+          </td>
+        </tr>
 
-<tr>
-  <td class="step-num">I</td>
-  <td class="step-text">
-    <p class="step-line">魔術師の間で扉が開いた後、引き返して紙を拾います</p>
-    <div class="step-image">
-      <img src="guide-old-images/eden-o154.png" alt="椅子の下のタイル" onclick="openImage(this.src)">
-    </div>
-  </td>
-</tr>
+        <tr>
+          <td class="step-num">VII</td>
+          <td class="step-text">戦車の間で１度も茨を斬らずにクリアします</td>
+        </tr>
+        <tr>
+          <td class="step-num">IX</td>
+          <td class="step-text">呼び水を９回飲みます</td>
+        </tr>
 
-  <tr>
-    <td class="step-num">VII</td>
-    <td class="step-text">戦車の間で１度も茨を斬らずにクリアします</td>
-  </tr>
-  <tr>
-    <td class="step-num">IX</td>
-    <td class="step-text">呼び水を９回飲みます</td>
-  </tr>
+        <tr>
+          <td class="step-num">XVII</td>
+          <td class="step-text">
+            <p class="step-line">刑死者の間(３)でもう１人の人物を目撃します<br>時計回りに止まらずに歩いていれば見られます</p>
+            <div class="step-image">
+              <img src="guide-old-images/eden-o155.png" alt="もう1人の人物の目撃地点" onclick="openImage(this.src)">
+            </div>
+          </td>
+        </tr>
 
-<tr>
-  <td class="step-num">XVII</td>
-  <td class="step-text">
-    <p class="step-line">刑死者の間(３)でもう１人の人物を目撃します<br>時計回りに止まらずに歩いていれば見られます</p>
-    <div class="step-image">
-      <img src="guide-old-images/eden-o155.png" alt="椅子の下のタイル" onclick="openImage(this.src)">
-    </div>
-  </td>
-</tr>
+        <tr>
+          <td class="step-num">XIV</td>
+          <td class="step-text">
+            <p class="step-line">運命の間で青い本を拾い、手放さないままクリアします</p>
+            <div class="step-image">
+              <img src="guide-old-images/eden-o155.png" alt="青い本の関連地点" onclick="openImage(this.src)">
+            </div>
+          </td>
+        </tr>
 
-<tr>
-  <td class="step-num">XIV</td>
-  <td class="step-text">
-    <p class="step-line">運命の間で青い本を拾い、手放さないままクリアします</p>
-    <div class="step-image">
-      <img src="guide-old-images/eden-o155.png" alt="椅子の下のタイル" onclick="openImage(this.src)">
-    </div>
-  </td>
-</tr>
+        <tr>
+          <td class="step-num">XVI</td>
+          <td class="step-text">塔の間で全ての瓦礫を踏みます</td>
+        </tr>
 
-  <tr>
-    <td class="step-num">XVI</td>
-    <td class="step-text">塔の間で全ての瓦礫を踏みます</td>
-  </tr>
+        <tr>
+          <td class="step-num">XVII</td>
+          <td class="step-text">
+            <p class="step-line">星の間で扉を開けた後、クリスタルの乗っていない台座を調べます</p>
+            <div class="step-image">
+              <img src="guide-old-images/eden-o156.png" alt="クリスタルのない台座" onclick="openImage(this.src)">
+            </div>
+          </td>
+        </tr>
+      </table>
 
-<tr>
-  <td class="step-num">XVII</td>
-  <td class="step-text">
-    <p class="step-line">星の間で扉を開けた後、クリスタルの乗っていない台座を調べます</p>
-    <div class="step-image">
-      <img src="guide-old-images/eden-o156.png" alt="椅子の下のタイル" onclick="openImage(this.src)">
-    </div>
-  </td>
-</tr>
-</table>
+      <h2 class="map-name">第１層～第５層</h2>
+      ストーリー攻略中に自動的に入手できます<br>
+      ヒントはありません
 
-<h2 class="map-name">第１層～第５層</h2>
-ストーリー攻略中に自動的に入手できます<br>
-ヒントはありません
-      
-<h2 class="map-name">001～010</h2>
-001、002、005、010はストーリー攻略中に自動的に入手できます<br>
-ヒントはありません
-<table class="guide-table" aria-label="001～010一覧">
+      <h2 class="map-name">001～010</h2>
+      001、002、005、010はストーリー攻略中に自動的に入手できます<br>
+      ヒントはありません
+      <table class="guide-table" aria-label="001～010一覧">
+        <tr>
+          <td class="step-num">003</td>
+          <td class="step-text">
+            <p class="step-line">【ヒント】お目が高いですね<br><br>
+              木材購入の仕事でレイヘンで木材を購入する<br>先に男性にメガネを届ける必要があります</p>
+            <div class="step-image">
+              <img src="guide-old-images/eden-o157.png" alt="メガネ関連の場所" onclick="openImage(this.src)">
+            </div><br>
+            <p class="step-line">１．少年に話を聞きます</p>
+            <div class="step-image">
+              <img src="guide-old-images/eden-o158.png" alt="少年の場所" onclick="openImage(this.src)">
+            </div><br>
+            <p class="step-line">２．端の木箱の上に出現します</p>
+            <div class="step-image">
+              <img src="guide-old-images/eden-o159.png" alt="メガネの出現場所" onclick="openImage(this.src)">
+            </div>
+          </td>
+        </tr>
 
-<tr>
-  <td class="step-num">003</td>
-  <td class="step-text">
-    <p class="step-line">【ヒント】お目が高いですね<br><br>
-      木材購入の仕事でレイヘンで木材を購入する<br>先に男性にメガネを届ける必要があります</p>
-    <div class="step-image">
-      <img src="guide-old-images/eden-o157.png" alt="椅子の下のタイル" onclick="openImage(this.src)">
-    </div><br>
-    <p class="step-line">１．少年に話を聞きます</p>
-    <div class="step-image">
-      <img src="guide-old-images/eden-o158.png" alt="椅子の下のタイル" onclick="openImage(this.src)">
-    </div><br>
-        <p class="step-line">２．端の木箱の上に出現します</p>
-    <div class="step-image">
-      <img src="guide-old-images/eden-o159.png" alt="椅子の下のタイル" onclick="openImage(this.src)">
-    </div>
-  </td>
-</tr>
+        <tr>
+          <td class="step-num">004</td>
+          <td class="step-text">
+            <p class="step-line">【ヒント】幸せを探して<br><br>オアシスで花が咲いているサボテンを見ます</p>
+            <div class="step-image">
+              <img src="guide-old-images/eden-o160.png" alt="花が咲いたサボテン" onclick="openImage(this.src)">
+            </div>
+          </td>
+        </tr>
 
-<tr>
-  <td class="step-num">004</td>
-  <td class="step-text">
-    <p class="step-line">【ヒント】幸せを探して<br><br>オアシスで花が咲いているサボテンを見ます</p>
-    <div class="step-image">
-      <img src="guide-old-images/eden-o160.png" alt="椅子の下のタイル" onclick="openImage(this.src)">
-    </div>
-  </td>
-</tr>
-
-  <tr>
-    <td class="step-num">006</td>
-    <td class="step-text">【ヒント】誤配送の保証はない<br><br>店で<帰りたい>を選択し、部屋じゃない場所に移動する<br>
+        <tr>
+          <td class="step-num">006</td>
+          <td class="step-text">【ヒント】誤配送の保証はない<br><br>店で&lt;帰りたい&gt;を選択し、部屋じゃない場所に移動する<br>
 通常１％の確率で出現します</td>
-  </tr>
+        </tr>
 
-<tr>
-  <td class="step-num">007</td>
-  <td class="step-text">
-    <p class="step-line">【ヒント】雨雨雨雨雨雨雨雨<br><br>夢で紋章のついていない扉を開ける<br>キーワード「雨」を８回使うと開きます</p>
-    <div class="step-image">
-      <img src="guide-old-images/eden-o161.png" alt="椅子の下のタイル" onclick="openImage(this.src)">
-    </div>
-  </td>
-</tr>
+        <tr>
+          <td class="step-num">007</td>
+          <td class="step-text">
+            <p class="step-line">【ヒント】雨雨雨雨雨雨雨雨<br><br>夢で紋章のついていない扉を開ける<br>キーワード「雨」を８回使うと開きます</p>
+            <div class="step-image">
+              <img src="guide-old-images/eden-o161.png" alt="紋章のない扉" onclick="openImage(this.src)">
+            </div>
+          </td>
+        </tr>
 
-<tr>
-  <td class="step-num">008</td>
-  <td class="step-text">
-    <p class="step-line">【ヒント】流れ流され<br><br>１度EDを見た後、船着き場に落ちている瓶を調べます</p>
-    <div class="step-image">
-      <img src="guide-old-images/eden-o162.png" alt="椅子の下のタイル" onclick="openImage(this.src)">
-    </div>
-  </td>
-</tr>
+        <tr>
+          <td class="step-num">008</td>
+          <td class="step-text">
+            <p class="step-line">【ヒント】流れ流され<br><br>１度EDを見た後、船着き場に落ちている瓶を調べます</p>
+            <div class="step-image">
+              <img src="guide-old-images/eden-o162.png" alt="瓶の場所" onclick="openImage(this.src)">
+            </div>
+          </td>
+        </tr>
 
-  <tr>
-    <td class="step-num">009</td>
-    <td class="step-text">【ヒント】迷わずの森<br><br>妖精の里に行く際に１度も間違わずに道を選ぶ</td>
-  </tr>
-</table>
+        <tr>
+          <td class="step-num">009</td>
+          <td class="step-text">【ヒント】迷わずの森<br><br>妖精の里に行く際に１度も間違わずに道を選ぶ</td>
+        </tr>
+      </table>
 
-<h2 class="map-name">011～020</h2>
-012はストーリー攻略中に自動的に入手できます<br>
-ヒントはありません
-<table class="guide-table" aria-label="011～020一覧">
+      <h2 class="map-name">011～020</h2>
+      012はストーリー攻略中に自動的に入手できます<br>
+      ヒントはありません
+      <table class="guide-table" aria-label="011～020一覧">
+        <tr>
+          <td class="step-num">011</td>
+          <td class="step-text">
+            <p class="step-line">【ヒント】デビルハンター<br><br>全ての悪魔を見つけます<br>&lt;レイヘン&gt;</p>
+            <div class="step-image">
+              <img src="guide-old-images/eden-o163.png" alt="レイヘンの悪魔" onclick="openImage(this.src)">
+            </div>
+            <p class="step-line">&lt;イー&gt;</p>
+            <div class="step-image">
+              <img src="guide-old-images/eden-o164.png" alt="イーの悪魔" onclick="openImage(this.src)">
+            </div><br>
+            <p class="step-line">&lt;シュバ&gt;<br>オアシスの洞窟にいます</p>
+            <div class="step-image">
+              <img src="guide-old-images/eden-o165.png" alt="シュバの悪魔" onclick="openImage(this.src)">
+            </div><br>
+            <p class="step-line">&lt;ネーヴェ&gt;<br>雪だるまを移動させた後、かまくらの中にいます</p>
+            <div class="step-image">
+              <img src="guide-old-images/eden-o166.png" alt="ネーヴェの悪魔" onclick="openImage(this.src)">
+            </div><br>
+            <p class="step-line">1.雪だるまに話しかけた後、枝を２本拾いに行きます<br>２本拾ったら雪だるまに届けます</p>
+            <div class="step-image">
+              <img src="guide-old-images/eden-o167.png" alt="雪だるまイベント" onclick="openImage(this.src)">
+            </div><br>
+            <div class="step-image multi">
+              <img src="guide-old-images/eden-o168.png" alt="枝の場所1" onclick="openImage(this.src)">
+              <img src="guide-old-images/eden-o169.png" alt="枝の場所2" onclick="openImage(this.src)">
+              <img src="guide-old-images/eden-o170.png" alt="枝の場所3" onclick="openImage(this.src)">
+            </div><br>
+            <p class="step-line">&lt;ピオジャ&gt;<br>コンポ購入後、夜の宿屋にいます</p>
+            <div class="step-image">
+              <img src="guide-old-images/eden-o171.png" alt="ピオジャの悪魔" onclick="openImage(this.src)">
+            </div><br>
+            <p class="step-line">&lt;マータル&gt;<br>写真を撮ります<br>青い枠は上記の全ての悪魔を見つけた後に出現します</p>
+            <div class="step-image">
+              <img src="guide-old-images/eden-o172.png" alt="マータルの悪魔" onclick="openImage(this.src)">
+            </div>
+          </td>
+        </tr>
 
-<tr>
-  <td class="step-num">011</td>
-  <td class="step-text">
-    <p class="step-line">【ヒント】デビルハンター<br><br>全ての悪魔を見つけます<br><レイヘン></p>
-    <div class="step-image">
-      <img src="guide-old-images/eden-o163.png" alt="椅子の下のタイル" onclick="openImage(this.src)">
-    </div>
-<p class="step-line"><イー></p>
-    <div class="step-image">
-      <img src="guide-old-images/eden-o164.png" alt="椅子の下のタイル" onclick="openImage(this.src)">
-    </div><br>
-<p class="step-line"><シュバ><br>オアシスの洞窟にいます</p>
-    <div class="step-image">
-      <img src="guide-old-images/eden-o165.png" alt="椅子の下のタイル" onclick="openImage(this.src)">
-    </div><br>
-<p class="step-line"><ネーヴェ><br>雪だるまを移動させた後、かまくらの中にいます</p>
-    <div class="step-image">
-      <img src="guide-old-images/eden-o166.png" alt="椅子の下のタイル" onclick="openImage(this.src)">
-    </div><br>
-<p class="step-line">1.雪だるまに話しかけた後、枝を２本拾いに行きます<br>２本拾ったら雪だるまに届けます</p>
-    <div class="step-image">
-      <img src="guide-old-images/eden-o167.png" alt="椅子の下のタイル" onclick="openImage(this.src)">
-    </div><br>
-    <div class="step-image multi">
-      <img src="guide-old-images/eden-o168.png" alt="画像1" onclick="openImage(this.src)">
-      <img src="guide-old-images/eden-o169.png" alt="画像2" onclick="openImage(this.src)">
-      <img src="guide-old-images/eden-o170.png" alt="画像3" onclick="openImage(this.src)">
-    </div><br>
-<p class="step-line"><ピオジャ><br>コンポ購入後、夜の宿屋にいます</p>
-    <div class="step-image">
-      <img src="guide-old-images/eden-o171.png" alt="椅子の下のタイル" onclick="openImage(this.src)">
-    </div><br>
+        <tr>
+          <td class="step-num">013</td>
+          <td class="step-text">【ヒント】黄金に憧れて<br><br>老人のおつかいで金の塗料を購入します</td>
+        </tr>
 
-<p class="step-line"><マータル><br>写真を撮ります<br>青い枠は上記の全ての悪魔を見つけた後に出現します</p>
-    <div class="step-image">
-      <img src="guide-old-images/eden-o172.png" alt="椅子の下のタイル" onclick="openImage(this.src)">
-    </div>
-   </td>
-</tr>
+        <tr>
+          <td class="step-num">014</td>
+          <td class="step-text">【ヒント】刷り込み<br><br>卵を割ってモンスターに襲われます<br>6000歩で割れます</td>
+        </tr>
 
-  <tr>
-    <td class="step-num">013</td>
-    <td class="step-text">【ヒント】黄金に憧れて<br><br>老人のおつかいで金の塗料を購入します</td>
-  </tr>
+        <tr>
+          <td class="step-num">015</td>
+          <td class="step-text">【ヒント】カリギュラ効果<br><br>オアシスに行く際、道を外れます</td>
+        </tr>
 
-  <tr>
-    <td class="step-num">014</td>
-    <td class="step-text">【ヒント】刷り込み<br><br>卵を割ってモンスターに襲われます<br>6000歩で割れます</td>
-  </tr>
-  
-  <tr>
-    <td class="step-num">015</td>
-    <td class="step-text">【ヒント】カリギュラ効果<br><br>オアシスに行く際、道を外れます</td>
-  </tr>
+        <tr>
+          <td class="step-num">016</td>
+          <td class="step-text">【ヒント】「それ」まで残り…<br><br>制限日数をオーバーします</td>
+        </tr>
 
-  <tr>
-    <td class="step-num">016</td>
-    <td class="step-text">【ヒント】「それ」まで残り…<br><br>制限日数をオーバーします</td>
-  </tr>
+        <tr>
+          <td class="step-num">017</td>
+          <td class="step-text">
+            <p class="step-line">【ヒント】虎穴に入って食べられる<br><br>卵の配達の仕事を受けている状態でイーの裏世界で宝箱を開けます</p>
+            <div class="step-image">
+              <img src="guide-old-images/eden-o173.png" alt="宝箱の場所" onclick="openImage(this.src)">
+            </div>
+          </td>
+        </tr>
 
-<tr>
-  <td class="step-num">017</td>
-  <td class="step-text">
-    <p class="step-line">【ヒント】虎穴に入って食べられる<br><br>卵の配達の仕事を受けている状態でイーの裏世界で宝箱を開けます</p>
-    <div class="step-image">
-      <img src="guide-old-images/eden-o173.png" alt="椅子の下のタイル" onclick="openImage(this.src)">
-    </div>
-  </td>
-</tr>
+        <tr>
+          <td class="step-num">018</td>
+          <td class="step-text">
+            <p class="step-line">【ヒント】驫?豐ｳ驩?％縺ｮ螟<br><br>雨の降る街で消滅する人物全員に話しかけた後、宿屋の扉を開けます<br>1.子供２人</p>
+            <div class="step-image">
+              <img src="guide-old-images/eden-o174.png" alt="子供2人の場所" onclick="openImage(this.src)">
+            </div><br>
+            <p class="step-line">2.子供</p>
+            <div class="step-image">
+              <img src="guide-old-images/eden-o175.png" alt="子供の場所" onclick="openImage(this.src)">
+            </div><br>
+            <p class="step-line">3.柱の近くの２人</p>
+            <div class="step-image">
+              <img src="guide-old-images/eden-o176.png" alt="柱の近くの2人" onclick="openImage(this.src)">
+            </div><br>
+            <p class="step-line">4.階段の下の２人</p>
+            <div class="step-image">
+              <img src="guide-old-images/eden-o177.png" alt="階段の下の2人" onclick="openImage(this.src)">
+            </div><br>
+            <p class="step-line">5.両脇の２人</p>
+            <div class="step-image">
+              <img src="guide-old-images/eden-o178.png" alt="両脇の2人" onclick="openImage(this.src)">
+            </div><br>
+          </td>
+        </tr>
 
-<tr>
-  <td class="step-num">018</td>
-  <td class="step-text">
-    <p class="step-line">【ヒント】驫?豐ｳ驩?％縺ｮ螟<br><br>雨の降る街で消滅する人物全員に話しかけた後、宿屋の扉を開けます<br>1.子供２人</p>
-    <div class="step-image">
-      <img src="guide-old-images/eden-o174.png" alt="椅子の下のタイル" onclick="openImage(this.src)">
-    </div><br>
-<p class="step-line">2.子供</p>
-    <div class="step-image">
-      <img src="guide-old-images/eden-o175.png" alt="椅子の下のタイル" onclick="openImage(this.src)">
-    </div><br>
-<p class="step-line">3.柱の近くの２人</p>
-    <div class="step-image">
-      <img src="guide-old-images/eden-o176.png" alt="椅子の下のタイル" onclick="openImage(this.src)">
-    </div><br>
-<p class="step-line">4.階段の下の２人</p>
-    <div class="step-image">
-      <img src="guide-old-images/eden-o177.png" alt="椅子の下のタイル" onclick="openImage(this.src)">
-    </div><br>
-<p class="step-line">5.両脇の２人</p>
-    <div class="step-image">
-      <img src="guide-old-images/eden-o178.png" alt="椅子の下のタイル" onclick="openImage(this.src)">
-    </div><br>
-   </td>
-</tr>
+        <tr>
+          <td class="step-num">019</td>
+          <td class="step-text">
+            <p class="step-line">【ヒント】そこまで言われると…<br><br>イーの子供に道を通してもらいます</p>
+            <div class="step-image">
+              <img src="guide-old-images/eden-o179.png" alt="イーの子供" onclick="openImage(this.src)">
+            </div>
+          </td>
+        </tr>
 
-<tr>
-  <td class="step-num">019</td>
-  <td class="step-text">
-    <p class="step-line">【ヒント】そこまで言われると…<br><br>イーの子供に道を通してもらいます</p>
-    <div class="step-image">
-      <img src="guide-old-images/eden-o179.png" alt="椅子の下のタイル" onclick="openImage(this.src)">
-    </div>
-  </td>
-</tr>
+        <tr>
+          <td class="step-num">020</td>
+          <td class="step-text">
+            <p class="step-line">【ヒント】これなあに？<br><br>名称不明の素材を作業員に渡します</p>
+            <div class="step-image">
+              <img src="guide-old-images/eden-o180.png" alt="名称不明の素材" onclick="openImage(this.src)">
+            </div>
+          </td>
+        </tr>
+      </table>
 
-<tr>
-  <td class="step-num">020</td>
-  <td class="step-text">
-    <p class="step-line">【ヒント】これなあに？<br><br>名称不明の素材を作業員に渡します</p>
-    <div class="step-image">
-      <img src="guide-old-images/eden-o180.png" alt="椅子の下のタイル" onclick="openImage(this.src)">
-    </div>
-  </td>
-</tr>
-</table>
+      <h2 class="map-name">021～030</h2>
+      021、026はストーリー攻略中に自動的に入手できます<br>
+      ヒントはありません
+      <table class="guide-table" aria-label="021～030一覧">
+        <tr>
+          <td class="step-num">022</td>
+          <td class="step-text">【ヒント】適当な相槌<br><br>第二層で出会う青い炎の質問に対して&lt;会話を続ける&gt;を選択した後、残りの質問に全て&lt;はい&gt;と答えます</td>
+        </tr>
 
-<h2 class="map-name">021～030</h2>
-021、026はストーリー攻略中に自動的に入手できます<br>
-ヒントはありません
-<table class="guide-table" aria-label="021～030一覧">
+        <tr>
+          <td class="step-num">023</td>
+          <td class="step-text">
+            <p class="step-line">【ヒント】誰の部屋？<br><br>シュバの砂漠の迷宮にある隠された部屋に入ります</p>
+            <div class="step-image">
+              <img src="guide-old-images/eden-o181.png" alt="隠された部屋の場所" onclick="openImage(this.src)">
+            </div>
+          </td>
+        </tr>
 
-  <tr>
-    <td class="step-num">022</td>
-    <td class="step-text">【ヒント】適当な相槌<br><br>第二層で出会う青い炎の質問に対して<会話を続ける>を選択した後、残りの質問に全て<はい>と答えます
-    </td>
-  </tr>
+        <tr>
+          <td class="step-num">024</td>
+          <td class="step-text">【ヒント】スキルマスター<br><br>ゲーム内の全てのスキルを解放します</td>
+        </tr>
 
-<tr>
-  <td class="step-num">023</td>
-  <td class="step-text">
-    <p class="step-line">【ヒント】誰の部屋？<br><br>シュバの砂漠の迷宮にある隠された部屋に入ります</p>
-    <div class="step-image">
-      <img src="guide-old-images/eden-o181.png" alt="椅子の下のタイル" onclick="openImage(this.src)">
-    </div>
-  </td>
-</tr>
+        <tr>
+          <td class="step-num">025</td>
+          <td class="step-text">
+            <p class="step-line">【ヒント】約束を果たす<br><br>ピオジャの井戸での作業員とのイベントを確認する</p>
+            <div class="step-image">
+              <img src="guide-old-images/eden-o182.png" alt="井戸の場所" onclick="openImage(this.src)">
+            </div>
+            <p class="step-line">１．ビラ配りの仕事でオアシスに向かう際のダンジョンで作業員との質問に、全て一番上の選択肢で答えます<br>
+              ２．洗濯機を購入した後、手ぬぐいを洗います<br>３．井戸に作業員が出現します</p>
+          </td>
+        </tr>
 
-  <tr>
-    <td class="step-num">024</td>
-    <td class="step-text">【ヒント】スキルマスター<br><br>ゲーム内の全てのスキルを解放します</td>
-  </tr>
+        <tr>
+          <td class="step-num">027</td>
+          <td class="step-text">【ヒント】必殺仕分人<br><br>ネーヴェの雪道での仕分けミニゲームで、２０個正解します</td>
+        </tr>
 
-<tr>
-  <td class="step-num">025</td>
-  <td class="step-text">
-    <p class="step-line">【ヒント】約束を果たす<br><br>ピオジャの井戸での作業員とのイベントを確認する</p>
-    <div class="step-image">
-      <img src="guide-old-images/eden-o182.png" alt="椅子の下のタイル" onclick="openImage(this.src)">
-  　</div>
- <p class="step-line">１．ビラ配りの仕事でオアシスに向かう際のダンジョンで作業員との質問に、全て一番上の選択肢で答えます<br>
-   ２．洗濯機を購入した後、手ぬぐいを洗います<br>３．井戸に作業員が出現します</p>
-  </td>
-</tr>
+        <tr>
+          <td class="step-num">028</td>
+          <td class="step-text">
+            <p class="step-line">【ヒント】探し物は見つけにくいものですか？<br><br>卵の配達を受けた後、イーの地下にいる作業員に仕事道具を届けます</p>
+            <div class="step-image">
+              <img src="guide-old-images/eden-o183.png" alt="地下の作業員" onclick="openImage(this.src)">
+            </div><br>
+            <p class="step-line">仕事道具はこの位置を調べると入手できます</p>
+            <div class="step-image">
+              <img src="guide-old-images/eden-o184.png" alt="仕事道具の場所" onclick="openImage(this.src)">
+            </div>
+          </td>
+        </tr>
 
-  <tr>
-    <td class="step-num">027</td>
-    <td class="step-text">【ヒント】必殺仕分人<br><br>ネーヴェの雪道での仕分けミニゲームで、２０個正解します</td>
-  </tr>
+        <tr>
+          <td class="step-num">029</td>
+          <td class="step-text">
+            <p class="step-line">ヒントなし<br><br>マンションで鍵を取りに戻った後、PCを調べます</p>
+            <div class="step-image">
+              <img src="guide-old-images/eden-o185.png" alt="PCの場所" onclick="openImage(this.src)">
+            </div>
+          </td>
+        </tr>
 
-<tr>
-  <td class="step-num">028</td>
-  <td class="step-text">
-    <p class="step-line">【ヒント】探し物は見つけにくいものですか？<br><br>卵の配達を受けた後、イーの地下にいる作業員に仕事道具を届けます</p>
-    <div class="step-image">
-      <img src="guide-old-images/eden-o183.png" alt="椅子の下のタイル" onclick="openImage(this.src)">
-    </div><br>
-<p class="step-line">仕事道具はこの位置を調べると入手できます</p>
- <div class="step-image">
-      <img src="guide-old-images/eden-o184.png" alt="椅子の下のタイル" onclick="openImage(this.src)">
-    </div>
-  </td>
-</tr>
+        <tr>
+          <td class="step-num">030</td>
+          <td class="step-text">【ヒント】ようこそ！<br><br>チュートリアルを確認します<br>※１度目にしか出現しないイベントです</td>
+        </tr>
+      </table>
 
-<tr>
-  <td class="step-num">029</td>
-  <td class="step-text">
-    <p class="step-line">ヒントなし<br><br>マンションで鍵を取りに戻った後、PCを調べます</p>
-    <div class="step-image">
-      <img src="guide-old-images/eden-o185.png" alt="椅子の下のタイル" onclick="openImage(this.src)">
-    </div>
-  </td>
-</tr>
+      <h2 class="map-name">031～</h2>
+      ・「THE END」「製作者より」はストーリー攻略中に自動的に入手できます<br>
+      ・「THE SECRET」はED到達までにフラグメントを31以上入手で取得できます(自動的に入手できるものも含む)<br>
+      ・「　」はおまけモードクリアで入手できます<br>
+      <br>
+      上記にヒントはありません
+      <table class="guide-table" aria-label="031～一覧">
+        <tr>
+          <td class="step-num">031</td>
+          <td class="step-text">
+            <p class="step-line">【ヒント】お得意様<br><br>店で全ての商品を購入します<br>
+            １．ゲーム内で紫色の紋章の扉を開けた後、青丸の位置の宝箱を開けます</p>
+            <div class="step-image multi">
+              <img src="guide-old-images/eden-o186.png" alt="青丸の宝箱1" onclick="openImage(this.src)">
+              <img src="guide-old-images/eden-o187.png" alt="青丸の宝箱2" onclick="openImage(this.src)">
+            </div><br>
+            <p class="step-line">２．売却します</p>
+          </td>
+        </tr>
 
-  <tr>
-    <td class="step-num">030</td>
-    <td class="step-text">【ヒント】ようこそ！<br><br>チュートリアルを確認します<br>※１度目にしか出現しないイベントです</td>
-  </tr>
-</table>
+        <tr>
+          <td class="step-num">032</td>
+          <td class="step-text">
+            <p class="step-line">【ヒント】良心の呵責<br><br>１．本棚購入の際、財布を渡さずに進行します<br>
+              ２．船の回収の際のイベントで財布を確認します</p>
+            <div class="step-image">
+              <img src="guide-old-images/eden-o188.png" alt="財布の確認場所" onclick="openImage(this.src)">
+            </div>
+          </td>
+        </tr>
 
-<h2 class="map-name">031～</h2>
-・「THE END」「製作者より」はストーリー攻略中に自動的に入手できます<br>
-・「THE SECRET」はED到達までにフラグメントを31以上入手で取得できます(自動的に入手できるものも含む)<br>
-・「　」はおまけモードクリアで入手できます<br>
+        <tr>
+          <td class="step-num">033</td>
+          <td class="step-text">
+            <p class="step-line">【ヒント】何番目？<br><br>本棚の７７番目を調べます</p>
+            <div class="step-image">
+              <img src="guide-old-images/eden-o189.png" alt="77番目の本棚" onclick="openImage(this.src)">
+            </div><br>
+            <p class="step-line">この位置が０です</p>
+            <div class="step-image">
+              <img src="guide-old-images/eden-o190.png" alt="本棚の基準位置" onclick="openImage(this.src)">
+            </div>
+          </td>
+        </tr>
+      </table>
 
-上記にヒントはありません
-<table class="guide-table" aria-label="031～一覧">
-
-<tr>
-  <td class="step-num">031</td>
-  <td class="step-text">
-    <p class="step-line">【ヒント】お得意様<br><br>店で全ての商品を購入します<br>
-    １．ゲーム内で紫色の紋章の扉を開けた後、青丸の位置の宝箱を開けます</p>
-    <div class="step-image multi">
-      <img src="guide-old-images/eden-o186.png" alt="画像1" onclick="openImage(this.src)">
-      <img src="guide-old-images/eden-o187.png" alt="画像2" onclick="openImage(this.src)">
-    </div><br>
-<p class="step-line">２．売却します</p>
-  </td>
-</tr>
-
-<tr>
-  <td class="step-num">032</td>
-  <td class="step-text">
-    <p class="step-line">【ヒント】良心の呵責<br><br>１．本棚購入の際、財布を渡さずに進行します<br>
-      ２．船の回収の際のイベントで財布を確認します</p>
-    <div class="step-image">
-      <img src="guide-old-images/eden-o188.png" alt="椅子の下のタイル" onclick="openImage(this.src)">
-    </div>
-  </td>
-</tr>
-
-<tr>
-  <td class="step-num">033</td>
-  <td class="step-text">
-    <p class="step-line">【ヒント】何番目？<br><br>本棚の７７番目を調べます</p>
-    <div class="step-image">
-      <img src="guide-old-images/eden-o189.png" alt="椅子の下のタイル" onclick="openImage(this.src)">
-    </div><br>
-    <p class="step-line">この位置が０です</p>
-    <div class="step-image">
-      <img src="guide-old-images/eden-o190.png" alt="椅子の下のタイル" onclick="openImage(this.src)">
-    </div>
-  </td>
-</tr>
-</table>
-      
-<nav class="pager">
-  <a href="guide-old19.html" class="pager-item">前へ</a>
-  <a href="../guide.html" class="pager-item">攻略一覧</a>
-  <span class="pager-item disabled">次へ</span>
-</nav>
+      <nav class="pager">
+        <a href="guide-old19.html" class="pager-item">前へ</a>
+        <a href="../guide.html" class="pager-item">攻略一覧</a>
+        <span class="pager-item disabled">次へ</span>
+      </nav>
     </main>
 
     <nav class="bottom-nav" aria-label="ページ移動">
@@ -713,20 +660,19 @@ VII、XIVはおまけモードにて入手できます<br>
     </nav>
   </div>
 
-<div id="imageModal" class="image-modal" onclick="closeImage()">
-  <img id="modalImage" class="modal-image" src="" alt="拡大画像">
-</div>
+  <div id="imageModal" class="image-modal" onclick="closeImage()">
+    <img id="modalImage" class="modal-image" src="" alt="拡大画像">
+  </div>
 
-<script>
-  function openImage(src) {
-    document.getElementById("modalImage").src = src;
-    document.getElementById("imageModal").style.display = "flex";
-  }
+  <script>
+    function openImage(src) {
+      document.getElementById("modalImage").src = src;
+      document.getElementById("imageModal").style.display = "flex";
+    }
 
-  function closeImage() {
-    document.getElementById("imageModal").style.display = "none";
-  }
-</script>
-
+    function closeImage() {
+      document.getElementById("imageModal").style.display = "none";
+    }
+  </script>
 </body>
 </html>
