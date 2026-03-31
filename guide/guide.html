@@ -202,19 +202,23 @@
     }
 
 .outside-link {
-  display: block;
   border: 1px solid var(--line);
   padding: 16px 18px;
   text-align: center;
   font-size: 20px;
   line-height: 1.5;
+}
+
+.outside-link a {
+  color: var(--text);
+  text-decoration: none;
   transition: opacity 0.2s ease, color 0.2s ease;
 }
 
-    .outside-link:hover {
-      opacity: 0.7;
-      color: var(--link-hover);
-    }
+.outside-link a:hover {
+  opacity: 0.7;
+  color: var(--link-hover);
+}
 
     .bottom-nav {
       margin-top: 110px;
@@ -367,10 +371,14 @@
 
       </section>
 
-      <div class="outside-links">
-<div class="guide-cell"><a href="guide-old/guide-old19.html">ゲームオーバーっぽいものまとめ</a></div>
-        <div class="guide-cell"><a href="guide-old/guide-old20.html">フラグメント</a></div>
-      </div>
+<div class="outside-links">
+  <div class="outside-link">
+    <a href="guide-old/guide-old19.html">ゲームオーバーっぽいものまとめ</a>
+  </div>
+  <div class="outside-link">
+    <a href="guide-old/guide-old20.html">フラグメント</a>
+  </div>
+</div>
     </main>
 
     <nav class="bottom-nav" aria-label="ページ移動">
