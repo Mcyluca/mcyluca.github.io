@@ -55,49 +55,40 @@
       margin: 0 auto;
     }
 
-.page-range {
-  margin: 0 0 18px;
-  font-size: 34px;
-  font-family: "Yu Gothic", "Hiragino Sans", sans-serif;
-  color: var(--text);
-  letter-spacing: 0.03em;
-}
-
-.title-line {
-  width: 100%;
-  height: 1px;
-  background:#cfc8c2;
-  margin: 0 0 28px;
-}
-
-.guide-keyvisual {
-  width: 100%;
-  max-width: 700px;
-  height: 360px;
-  margin: 0 auto 28px;
-  overflow: hidden;
-}
-
-.guide-keyvisual img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.page-note {
-  margin: 0 0 20px;
-  font-size: 14px;
-  color: var(--sub);
-}
-
-    .page-title {
+    .page-range {
       margin: 0 0 18px;
-      font-size: 52px;
-      font-weight: 400;
+      font-size: 34px;
+      font-family: "Yu Gothic", "Hiragino Sans", sans-serif;
       color: var(--text);
       letter-spacing: 0.03em;
-      font-family: "Yu Gothic", "Hiragino Sans", sans-serif;
+    }
+
+    .title-line {
+      width: 100%;
+      height: 1px;
+      background: #cfc8c2;
+      margin: 0 0 28px;
+    }
+
+    .guide-keyvisual {
+      width: 100%;
+      max-width: 700px;
+      height: 360px;
+      margin: 0 auto 28px;
+      overflow: hidden;
+    }
+
+    .guide-keyvisual img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .page-note {
+      margin: 0 0 20px;
+      font-size: 14px;
+      color: var(--sub);
     }
 
     .guide-lead {
@@ -131,114 +122,110 @@
       white-space: nowrap;
     }
 
-.step-text {
-  padding: 16px 18px;
-  font-size: 16px;
-  color: var(--text);
-  text-align: left;
-  vertical-align: top;
-}
+    .step-text {
+      padding: 16px 18px;
+      font-size: 16px;
+      color: var(--text);
+      text-align: left;
+      vertical-align: top;
+    }
 
-.step-line {
-  margin: 0 0 12px;
-  text-align: left;
-}
+    .step-line {
+      margin: 0 0 12px;
+      text-align: left;
+    }
 
-.step-image {
-  margin: 0;
-  text-align: left;
-}
+    .step-image {
+      margin: 0;
+      text-align: left;
+    }
 
-.step-image img {
-  width: 220px;
-  height: auto;
-  border: 1px solid #d8d2cc;
-  display: block;
-  cursor: pointer;
-  transition: opacity 0.2s ease;
-}
+    .step-image img {
+      width: 220px;
+      height: auto;
+      border: 1px solid #d8d2cc;
+      display: block;
+      cursor: pointer;
+      transition: opacity 0.2s ease;
+    }
 
-.step-image img:hover {
-  opacity: 0.85;
-}
+    .step-image img:hover {
+      opacity: 0.85;
+    }
 
-.step-image.multi {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 12px;
-  max-width: 500px;
-}
+    .step-image.multi {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      max-width: 500px;
+    }
 
-.step-image.multi img {
-  width: 100%;
-  height: auto;
-  border: 1px solid #d8d2cc;
-  display: block;
-  cursor: pointer;
-  transition: opacity 0.2s ease;
-}
+    .step-image.multi img {
+      width: 100%;
+      height: auto;
+      border: 1px solid #d8d2cc;
+      display: block;
+      cursor: pointer;
+      transition: opacity 0.2s ease;
+    }
 
+    .image-modal {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.75);
+      z-index: 9999;
+      justify-content: center;
+      align-items: center;
+      padding: 24px;
+    }
 
-    
+    .modal-image {
+      max-width: 90vw;
+      max-height: 90vh;
+      display: block;
+      border: 1px solid #d8d2cc;
+    }
 
-  .image-modal {
-  display: none;
-  position: fixed;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.75);
-  z-index: 9999;
-  justify-content: center;
-  align-items: center;
-  padding: 24px;
-}
+    .step-emphasis {
+      font-size: 18px;
+      font-weight: 700;
+    }
 
-.modal-image {
-  max-width: 90vw;
-  max-height: 90vh;
-  display: block;
-  border: 1px solid #d8d2cc;
-}  
+    .map-name {
+      font-size: 25px;
+      font-weight: 900;
+      line-height: 1.2;
+      letter-spacing: 0.02em;
+      margin: 42px 0 10px;
+      color: #0f2238;
+      font-family: "Yu Gothic", "Hiragino Sans", sans-serif;
+    }
 
-.step-emphasis {
-  font-size: 18px;
-  font-weight: 700;
-}
+    .pager {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 28px;
+      margin: 70px 0 0;
+      font-size: 24px;
+      line-height: 1.6;
+      font-family: "Yu Gothic", "Hiragino Sans", sans-serif;
+    }
 
-.map-name {
-  font-size: 25px;
-  font-weight: 900;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  margin: 18px 0 10px;
-  margin-top: 42px;
-  color: #0f2238;
-  font-family: "Yu Gothic", "Hiragino Sans", sans-serif;
-}
+    .pager-item {
+      color: #4a4038;
+      text-decoration: none;
+    }
 
-.pager {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 28px;
-  margin: 70px 0 0;
-  font-size: 24px;
-  line-height: 1.6;
-  font-family: "Yu Gothic", "Hiragino Sans", sans-serif;
-}
+    .pager-item:hover {
+      opacity: 0.7;
+    }
 
-.pager-item {
-  color: #4a4038;
-  text-decoration: none;
-}
-
-.pager-item:hover {
-  opacity: 0.7;
-}
-
-.pager-item.disabled {
-  opacity: 0.35;
-  pointer-events: none;
-}
+    .pager-item.disabled {
+      opacity: 0.35;
+      pointer-events: none;
+    }
 
     .back-guide {
       margin-top: 56px;
@@ -278,279 +265,227 @@
       margin: 0 10px;
       color: var(--sub);
     }
-
-    @media (max-width: 768px) {
-      .container {
-        padding: 28px 18px 80px;
-      }
-
-      .page-range {
-        margin-bottom: 28px;
-        font-size: 24px;
-        font-family: "Yu Gothic", "Hiragino Sans", sans-serif;
-      }
-
-      .page-title {
-        font-size: 36px;
-      }
-
-      .guide-lead {
-        margin-bottom: 24px;
-        font-size: 16px;
-      }
-
-      .step-num {
-        width: 48px;
-        font-size: 18px;
-        padding: 14px 6px;
-      }
-
-      .step-text {
-        padding: 14px 14px;
-        font-size: 15px;
-      }
-      
-      .bottom-nav {
-        font-size: 18px;
-      }
-    }
   </style>
 </head>
 
 <body>
   <div class="container">
     <main class="guide-wrap">
-<p class="page-range">第二層前半②</p>
-<div class="title-line"></div>
+      <p class="page-range">第二層前半②</p>
+      <div class="title-line"></div>
 
-<div class="guide-keyvisual">
-  <img src="guide-old-images/eden-o13.png" alt="プロローグ攻略イメージ">
-</div>
+      <div class="guide-keyvisual">
+        <img src="guide-old-images/eden-o13.png" alt="第二層前半②攻略イメージ">
+      </div>
 
-<h2 class="map-name">店(奥)</h2>
-      
- <table class="guide-table" aria-label="プロローグ攻略手順">
+      <h2 class="map-name">店(奥)</h2>
 
+      <table class="guide-table" aria-label="第二層前半②攻略手順">
         <tr>
           <td class="step-num">1</td>
-          <td class="step-text">カウンター越しに話しかけます
-          </td>
+          <td class="step-text">カウンター越しに話しかけます</td>
         </tr>
 
         <tr>
           <td class="step-num">2</td>
-          <td class="step-text">木材集めか卵の配達の仕事を引き受けます
-          </td>
+          <td class="step-text">木材集めか卵の配達の仕事を引き受けます</td>
         </tr>
-   
       </table>
 
-<h2 class="map-name">木材集め</h2>
-<table class="guide-table" aria-label="プロローグ攻略手順">
+      <h2 class="map-name">木材集め</h2>
 
-    <tr>
-  <td class="step-num">1</td>
-  <td class="step-text">
-    <p class="step-line">木材を購入します<br>
-    イー(赤色の本)、シュバ(橙色の本)、レイヘン(緑色の本)のいずれかで購入できます</p>
-    <div class="step-image multi">
-      <img src="guide-old-images/eden-o14.png" alt="画像1" onclick="openImage(this.src)">
-      <img src="guide-old-images/eden-o15.png" alt="画像2" onclick="openImage(this.src)">
-      <img src="guide-old-images/eden-o16.png" alt="画像3" onclick="openImage(this.src)">
-    </div>
-  </td>
-</tr>
+      <table class="guide-table" aria-label="第二層前半②攻略手順">
+        <tr>
+          <td class="step-num">1</td>
+          <td class="step-text">
+            <p class="step-line">木材を購入します<br>
+            イー(赤色の本)、シュバ(橙色の本)、レイヘン(緑色の本)のいずれかで購入できます</p>
+            <div class="step-image multi">
+              <img src="guide-old-images/eden-o14.png" alt="木材購入場所1" onclick="openImage(this.src)">
+              <img src="guide-old-images/eden-o15.png" alt="木材購入場所2" onclick="openImage(this.src)">
+              <img src="guide-old-images/eden-o16.png" alt="木材購入場所3" onclick="openImage(this.src)">
+            </div>
+          </td>
+        </tr>
+
         <tr>
           <td class="step-num">2</td>
-          <td class="step-text">店(奥)<br>
-            報告し、新しい仕事を受けます</td>
+          <td class="step-text">店(奥)<br>報告し、新しい仕事を受けます</td>
         </tr>
 
         <tr>
           <td class="step-num">3</td>
-          <td class="step-text">部屋<br>
-            水色の本を開きます</td>
+          <td class="step-text">部屋<br>水色の本を開きます</td>
         </tr>
 
         <tr>
           <td class="step-num">4</td>
-          <td class="step-text"><span class="step-emphasis">ネーヴェ</span><br>
-           南に移動します</td>
+          <td class="step-text"><span class="step-emphasis">ネーヴェ</span><br>南に移動します</td>
         </tr>
 
         <tr>
           <td class="step-num">5</td>
-          <td class="step-text"><span class="step-emphasis">裏世界</span><br>
-           黄色いヘルメットの作業員に話しかけます</td>
+          <td class="step-text"><span class="step-emphasis">裏世界</span><br>黄色いヘルメットの作業員に話しかけます</td>
         </tr>
 
         <tr>
           <td class="step-num">6</td>
-          <td class="step-text">仕分けミニゲーム<br>
-           ※成績はストーリー攻略には影響しません</td>
+          <td class="step-text">仕分けミニゲーム<br>※成績はストーリー攻略には影響しません</td>
         </tr>
 
-          <tr>
+        <tr>
           <td class="step-num">7</td>
           <td class="step-text">南に進み青い渦に入ります</td>
         </tr>
 
         <tr>
           <td class="step-num">8</td>
-          <td class="step-text"><span class="step-emphasis">ネーヴェ</span><br>
-        南に進みます</td>
+          <td class="step-text"><span class="step-emphasis">ネーヴェ</span><br>南に進みます</td>
         </tr>
 
-          <tr>
+        <tr>
           <td class="step-num">9</td>
           <td class="step-text">木材を渡します</td>
         </tr>
 
         <tr>
           <td class="step-num">10</td>
-          <td class="step-text"><span class="step-emphasis">店(奥)</span><br>
-        報告します</td>
+          <td class="step-text"><span class="step-emphasis">店(奥)</span><br>報告します</td>
         </tr>
-
-          <tr>
-          <td class="step-num">11</td>
-          <td class="step-text"><span class="step-emphasis">部屋</span><br>
-       水色の本を読みます</td>
-        </tr>
-  
-        </table>
-
-<h2 class="map-name">卵の配達</h2>
- <table class="guide-table" aria-label="プロローグ攻略手順">
 
         <tr>
+          <td class="step-num">11</td>
+          <td class="step-text"><span class="step-emphasis">部屋</span><br>水色の本を読みます</td>
+        </tr>
+      </table>
+
+      <h2 class="map-name">卵の配達</h2>
+
+      <table class="guide-table" aria-label="第二層前半②攻略手順">
+        <tr>
           <td class="step-num">1</td>
-          <td class="step-text"><span class="step-emphasis">部屋</span><br>
-       赤色の本を読みます</td>
+          <td class="step-text"><span class="step-emphasis">部屋</span><br>赤色の本を読みます</td>
         </tr>
 
         <tr>
           <td class="step-num">2</td>
-          <td class="step-text"><span class="step-emphasis">イー</span><br>
-       北に進みます</td>
+          <td class="step-text"><span class="step-emphasis">イー</span><br>北に進みます</td>
         </tr>
 
-<tr>
-  <td class="step-num">3</td>
-  <td class="step-text">
-    <p class="step-line">火山に入り、これ以上進めないことを確認します</p>
-    <div class="step-image">
-      <img src="guide-old-images/eden-o17.png" alt="椅子の下のタイル" onclick="openImage(this.src)">
-    </div>
-  </td>
-</tr>
-
-<tr>
-  <td class="step-num">4</td>
-  <td class="step-text">
-    <p class="step-line">引き返し鍛冶屋の横の道を通ります</p>
-    <div class="step-image">
-      <img src="guide-old-images/eden-o18.png" alt="椅子の下のタイル" onclick="openImage(this.src)">
-    </div>
-  </td>
-</tr>
-
         <tr>
-          <td class="step-num">5</td>
-          <td class="step-text">梯子を２回上り、穴を調べます
+          <td class="step-num">3</td>
+          <td class="step-text">
+            <p class="step-line">火山に入り、これ以上進めないことを確認します</p>
+            <div class="step-image">
+              <img src="guide-old-images/eden-o17.png" alt="火山入口" onclick="openImage(this.src)">
+            </div>
           </td>
         </tr>
 
-<tr>
-  <td class="step-num">6</td>
-  <td class="step-text">
-    <p class="step-line"><span class="step-emphasis">裏世界</span><br>下図のように進んでください<br>
-スタート地点は赤丸です</p>
-    <div class="step-image">
-      <img src="guide-old-images/eden-o19.png" alt="椅子の下のタイル" onclick="openImage(this.src)">
-    </div>
-  </td>
-</tr>
+        <tr>
+          <td class="step-num">4</td>
+          <td class="step-text">
+            <p class="step-line">引き返し鍛冶屋の横の道を通ります</p>
+            <div class="step-image">
+              <img src="guide-old-images/eden-o18.png" alt="鍛冶屋横の道" onclick="openImage(this.src)">
+            </div>
+          </td>
+        </tr>
 
-<tr>
-  <td class="step-num">7</td>
-  <td class="step-text">
-    <p class="step-line">この部分は調べると上り下りできます</p>
-    <div class="step-image">
-      <img src="guide-old-images/eden-o20.png" alt="椅子の下のタイル" onclick="openImage(this.src)">
-    </div>
-  </td>
-</tr>
+        <tr>
+          <td class="step-num">5</td>
+          <td class="step-text">梯子を２回上り、穴を調べます</td>
+        </tr>
 
-<tr>
-  <td class="step-num">8</td>
-  <td class="step-text">
-    <p class="step-line">下図のように進んでください<br>
-スタート地点は赤丸です</p>
-    <div class="step-image">
-      <img src="guide-old-images/eden-o21.png" alt="椅子の下のタイル" onclick="openImage(this.src)">
-    </div>
-  </td>
-</tr>
+        <tr>
+          <td class="step-num">6</td>
+          <td class="step-text">
+            <p class="step-line"><span class="step-emphasis">裏世界</span><br>下図のように進んでください<br>
+            スタート地点は赤丸です</p>
+            <div class="step-image">
+              <img src="guide-old-images/eden-o19.png" alt="裏世界の進み方1" onclick="openImage(this.src)">
+            </div>
+          </td>
+        </tr>
 
-    <tr>
-  <td class="step-num">9</td>
-  <td class="step-text">
-    <p class="step-line">この２カ所は通行できます</p>
-    <div class="step-image multi">
-      <img src="guide-old-images/eden-o22.png" alt="画像1" onclick="openImage(this.src)">
-      <img src="guide-old-images/eden-o23.png" alt="画像2" onclick="openImage(this.src)">
-    </div>
-  </td>
-</tr>
+        <tr>
+          <td class="step-num">7</td>
+          <td class="step-text">
+            <p class="step-line">この部分は調べると上り下りできます</p>
+            <div class="step-image">
+              <img src="guide-old-images/eden-o20.png" alt="上り下りできる場所" onclick="openImage(this.src)">
+            </div>
+          </td>
+        </tr>
 
-          <tr>
+        <tr>
+          <td class="step-num">8</td>
+          <td class="step-text">
+            <p class="step-line">下図のように進んでください<br>
+            スタート地点は赤丸です</p>
+            <div class="step-image">
+              <img src="guide-old-images/eden-o21.png" alt="裏世界の進み方2" onclick="openImage(this.src)">
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="step-num">9</td>
+          <td class="step-text">
+            <p class="step-line">この２カ所は通行できます</p>
+            <div class="step-image multi">
+              <img src="guide-old-images/eden-o22.png" alt="通行可能地点1" onclick="openImage(this.src)">
+              <img src="guide-old-images/eden-o23.png" alt="通行可能地点2" onclick="openImage(this.src)">
+            </div>
+          </td>
+        </tr>
+
+        <tr>
           <td class="step-num">10</td>
           <td class="step-text">黄色いヘルメットの作業員に話しかけます</td>
         </tr>
 
-          <tr>
+        <tr>
           <td class="step-num">11</td>
           <td class="step-text">トンネルを抜け青い渦に入ります</td>
         </tr>
 
         <tr>
           <td class="step-num">12</td>
-          <td class="step-text"><span class="step-emphasis">火山</span><br>
-       北(上)に進みます</td>
+          <td class="step-text"><span class="step-emphasis">火山</span><br>北(上)に進みます</td>
         </tr>
 
-          <tr>
+        <tr>
           <td class="step-num">13</td>
           <td class="step-text">割れた卵を調べます</td>
         </tr>
 
         <tr>
           <td class="step-num">14</td>
-          <td class="step-text"><span class="step-emphasis">鉱山</span><br>ランプを拾います</td>　　　　　　
+          <td class="step-text"><span class="step-emphasis">鉱山</span><br>ランプを拾います</td>
         </tr>
 
-<tr>
-  <td class="step-num">15</td>
-  <td class="step-text">
-    <p class="step-line">【赤】スタート<br>【緑】ツルハシ<br>【青】壊せる石柱<br>【紫】出口</p>
-    <div class="step-image">
-      <img src="guide-old-images/eden-o24.png" alt="椅子の下のタイル" onclick="openImage(this.src)">
-    </div>
-  </td>
-</tr>
+        <tr>
+          <td class="step-num">15</td>
+          <td class="step-text">
+            <p class="step-line">【赤】スタート<br>【緑】ツルハシ<br>【青】壊せる石柱<br>【紫】出口</p>
+            <div class="step-image">
+              <img src="guide-old-images/eden-o24.png" alt="鉱山マップ" onclick="openImage(this.src)">
+            </div>
+          </td>
+        </tr>
 
-          <tr>
+        <tr>
           <td class="step-num">16</td>
           <td class="step-text">ツルハシを拾います</td>
         </tr>
 
-          <tr>
+        <tr>
           <td class="step-num">17</td>
           <td class="step-text">柱を壊し中に入ります</td>
         </tr>
 
-             <tr>
+        <tr>
           <td class="step-num">18</td>
           <td class="step-text">鉱石を拾います</td>
         </tr>
@@ -559,21 +494,26 @@
           <td class="step-num">19</td>
           <td class="step-text"><span class="step-emphasis">店(奥)</span><br>報告します</td>
         </tr>
+      </table>
 
-   </table>
-   
-<h2 class="map-name">卵を割った場合</h2>
- <table class="guide-table" aria-label="プロローグ攻略手順">
+      <h2 class="map-name">卵を割った場合</h2>
 
-卵は一定歩数で割れます<br>
-割れた場合はもう一度依頼を受けてください<br>
-２回目は割れません
-      
-<nav class="pager">
-  <a href="guide-old4.html" class="pager-item">前へ</a>
-  <a href="../guide.html" class="pager-item">攻略一覧</a>
-  <a href="guide-old6.html" class="pager-item">次へ</a>
-</nav>
+      <table class="guide-table" aria-label="第二層前半②攻略手順">
+        <tr>
+          <td class="step-num">補足</td>
+          <td class="step-text">
+            卵は一定歩数で割れます<br>
+            割れた場合はもう一度依頼を受けてください<br>
+            ２回目は割れません
+          </td>
+        </tr>
+      </table>
+
+      <nav class="pager">
+        <a href="guide-old4.html" class="pager-item">前へ</a>
+        <a href="../guide.html" class="pager-item">攻略一覧</a>
+        <a href="guide-old6.html" class="pager-item">次へ</a>
+      </nav>
     </main>
 
     <nav class="bottom-nav" aria-label="ページ移動">
@@ -589,20 +529,19 @@
     </nav>
   </div>
 
-<div id="imageModal" class="image-modal" onclick="closeImage()">
-  <img id="modalImage" class="modal-image" src="" alt="拡大画像">
-</div>
+  <div id="imageModal" class="image-modal" onclick="closeImage()">
+    <img id="modalImage" class="modal-image" src="" alt="拡大画像">
+  </div>
 
-<script>
-  function openImage(src) {
-    document.getElementById("modalImage").src = src;
-    document.getElementById("imageModal").style.display = "flex";
-  }
+  <script>
+    function openImage(src) {
+      document.getElementById("modalImage").src = src;
+      document.getElementById("imageModal").style.display = "flex";
+    }
 
-  function closeImage() {
-    document.getElementById("imageModal").style.display = "none";
-  }
-</script>
-
+    function closeImage() {
+      document.getElementById("imageModal").style.display = "none";
+    }
+  </script>
 </body>
 </html>
